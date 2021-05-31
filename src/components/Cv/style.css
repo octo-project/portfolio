@@ -1,0 +1,9 @@
+.cvContainer{
+    display: flex;
+    flex-direction: column;
+}
+
+.titleCv{
+    color: blue;
+    font-weight: 300
+}

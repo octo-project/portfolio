@@ -1,7 +1,11 @@
 {
-  "name": "my-app",
-  "version": "0.1.0",
   "private": true,
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "application web to expose my project and experiences",
+  "main": "index.js",
+  "author": "Heriniaina Mathieu",
+  "license": "ISC",
   "dependencies": {
     "@testing-library/jest-dom": "^5.12.0",
     "@testing-library/react": "^11.2.7",
@@ -12,6 +16,7 @@
     "@types/react-dom": "^17.0.5",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
+    "react-router-dom": "^5.2.0",
     "react-scripts": "4.0.3",
     "typescript": "^4.2.4",
     "web-vitals": "^1.1.2"
@@ -39,5 +44,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@types/react-router-dom": "^5.1.7"
   }
 }

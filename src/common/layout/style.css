@@ -1,0 +1,112 @@
+.container {
+  height: 100vh;
+  overflow: hidden;
+}
+
+h4 {
+  color: #fff;
+  margin: 0;
+  padding: 10px;
+  text-align: center;
+  background: darkblue;
+}
+
+.navigation {
+  flex: 0 1 395px;
+  box-shadow: 0px 0px 5px 0px gray;
+}
+
+.root {
+  flex: 1;
+  margin: 28px 32px 0px 32px;
+}
+
+.menu{ 
+  display: flex;
+  flex-direction: row;
+  padding: 10px 10px 0px 10px;
+}
+
+.grid {
+  padding: 10px 10px 0px 10px;
+  display: grid;
+  grid-row-gap: 2px;
+  grid-column-gap: 5px;
+  grid-template-columns: repeat(2, calc(51% - 0.5rem));
+}
+
+.link {
+  color: #fff;
+  text-decoration: none;
+}
+
+.p10{
+  padding: 2px 10px;
+}
+
+.btn {
+  color: #fff;
+  padding: 8px;
+  height: 80px;
+  border-radius: 5px;
+  background: gray;
+  margin-bottom: 8px;
+  box-shadow: 0px 0px 2px 0px black;
+}
+
+.cvBtn {
+  display: flex;
+  font-size: 22px;
+  margin-right: 4px;
+  align-items: center;
+  justify-content: center;
+  background: rgb(0, 96, 210);
+  background: linear-gradient(
+    90deg,
+    rgba(0, 96, 210, 1) 0%,
+    rgba(1, 110, 215, 1) 50%,
+    rgba(0, 134, 255, 1) 50%
+  );
+}
+
+.projectBtn {
+  display: flex;
+  margin-left: 4px;
+  font-size: 20px;
+  flex-direction: column;
+  justify-content: space-between;
+  background: linear-gradient(
+    90deg,
+    rgb(41 11 159) 0%,
+    rgba(92, 30, 172, 1) 48%,
+    rgb(84 48 195) 48% 
+  );
+}
+
+.contactBtn {
+  padding: 8px;  
+  color: #000;
+  display: flex;
+  border-radius: 5px;
+  background: #80808057;
+  flex-direction: column;
+  box-shadow: 0px 0px 2px 0px #00000030;
+}
+
+.menuTitle{
+  font-size: 20px;
+  padding-left: 10px;
+}
+
+.statProject{ 
+  margin-bottom: 12px;
+}
+
+.totalProjects{ 
+  font-size: 35px;
+  margin-right: 8px;
+}
+
+.subTitleProject{
+  font-size: 12px;
+}

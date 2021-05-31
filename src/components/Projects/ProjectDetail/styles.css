@@ -1,0 +1,90 @@
+.detailsTitles {
+  width: 220px;
+  display: flex;
+  flex-direction: row;
+}
+
+.btnDetails {
+  width: 100px;
+  padding: 10px;
+  margin-right: 12px;
+  text-align: center;
+  border-radius: 15px;
+  background-color: #fff;
+  box-shadow: 0px 0px 4px -1px darkgrey;
+}
+
+.btnCustom {
+  padding: 10px;
+  font-weight: 600;
+  margin-right: 12px;
+  text-align: center;
+  border-radius: 15px;
+  background-color: #fff;
+  box-shadow: 0px 0px 4px -1px darkgrey;
+}
+
+.btnCustom:hover{
+    cursor: pointer;
+}
+
+.btnDetails:hover {
+  cursor: pointer;
+}
+
+.projectDetails {
+  height: 82vh;
+  overflow: auto;
+  margin-top: 12px;
+  padding: 0px 22px 22px 0px;
+}
+
+h5 {
+  color: #006bd5;
+  letter-spacing: 0.7px;
+}
+
+p {
+  letter-spacing: 1;
+  line-height: 1.4;
+}
+
+u:hover {
+  cursor: pointer;
+}
+
+.technoGrid {
+  display: grid;
+  margin-left: 1px;
+  grid-row-gap: 2px;
+  grid-column-gap: 35px;
+  grid-template-columns: repeat(8, calc(8% - 0.5rem));
+}
+
+.functionnalityCard {
+  margin: 8px;
+  padding: 7px;
+  color: #fff;
+  border-radius: 15px;
+  box-shadow: 0px 0px 4px -2px black;
+}
+
+.screenShootMobile {
+  display: grid;
+  margin-left: 1px;
+  grid-row-gap: 35px;
+  grid-column-gap: 35px;
+  grid-template-columns: repeat(4, calc(20% - 0.5em));
+}
+
+.greenBg {
+  background-color: #257f34;
+}
+
+.blueBg {
+  background-color: darkblue;
+}
+
+.purpleBg {
+  background-color: #6019a8;
+}

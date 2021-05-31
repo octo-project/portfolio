@@ -1,0 +1,8 @@
+.container{
+    display: flex;
+}
+
+.titleContact{
+    color: olive;
+    font-weight: 300
+}
