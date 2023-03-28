@@ -1,11 +1,11 @@
 import './style.css'
-import { FC } from 'react'
+import { FC, useState } from 'react'
 import { Link } from 'react-router-dom'
 import Contact from '../contact/Contact'
+import MyCvPicture from '../../assets/capture.png'
 import FbIcon from '../../assets/Portfolio Design V2/Assets/Fb.png'
 import GoogleIcon from '../../assets/Portfolio Design V2/Assets/Google.png'
 import LinkedInIcon from '../../assets/Portfolio Design V2/Assets/linkedin.png'
-import MyCvPicture from '../../assets/capture.png'
 
 interface layoutProps {
   children: any
@@ -13,10 +13,15 @@ interface layoutProps {
 
 const Layout: FC<layoutProps> = (props) => {
   const { children } = props
+  const [isActive, setActive] = useState(false)
+
+  const toggleClass = () => {
+    setActive(!isActive)
+  }
 
   return (
     <div className="container">
-      <div className="navigation">
+      <div className={isActive ? 'navigation active' : 'navigation'}>
         <div>
           <h4>TSIALONINA Heriniaina Mathieu</h4>
         </div>
@@ -61,7 +66,11 @@ const Layout: FC<layoutProps> = (props) => {
         </div>
       </div>
       <div className="root">
-        <div className="hamburger-menu" id="menu-button">
+        <div
+          className={isActive ? 'hamburger-menu active' : 'hamburger-menu'}
+          id="menu-button"
+          onClick={toggleClass}
+        >
           <div className="bar"></div>
           <div className="bar"></div>
           <div className="bar"></div>
