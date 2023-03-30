@@ -57,10 +57,10 @@ const Layout: FC<layoutProps> = (props) => {
         </div>
         <div className="footer">
           <div className="tooltip">
-            <span className="name">@TSIALONINA Heriniaina Mathieu</span>
+            <span>TSIALONINA Heriniaina Mathieu</span>
             <span className="tooltiptext">
               <img src={MyCvPicture} alt="Votre image" />
-              <span className="description">Dev Full Stack JS</span>
+              <span className="description">Dev Full Stack</span>
             </span>
           </div>
         </div>
