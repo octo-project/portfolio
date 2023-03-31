@@ -25,7 +25,11 @@ const Header: FC = (props) => {
       <div className="CvContent">
         <div>
           <span>TSIALONINA Heriniaina Mathieu</span>
-          <p>Born on 11 october 1996</p>
+          <p>
+            Je suis passionnée par la technologie informatique que ce soit sur
+            le domaine du web, du mobile, et desktop; avec les technos les plus
+            récents.
+          </p>
         </div>
         <div className="cvMenu">
           <div

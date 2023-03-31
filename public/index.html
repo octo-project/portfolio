@@ -46,19 +46,46 @@
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
   </body>
-  <script text="application/js">
-    const slideContainer = document.querySelector('.slide-container')
-    let isScrolling
+  <script>
+    // Ajout de l'événement de la roulette de la souris pour la navigation
+    const container = document.getElementById('slideshow-container')
+    let currentSlide = 1
 
-    slideContainer.addEventListener('scroll', function () {
-      clearTimeout(isScrolling)
-      isScrolling = setTimeout(function () {
-        const currentSlide = Math.round(
-          slideContainer.scrollLeft / window.innerWidth,
-        )
-        const slides = document.querySelectorAll('.slide')
-        slides[currentSlide].classList.add('active')
-      }, 100)
+    container.addEventListener('wheel', (event) => {
+      event.preventDefault()
+
+      // Calcul du déplacement horizontal en fonction de la direction de la roulette
+      const delta = Math.max(-1, Math.min(1, event.wheelDelta || -event.detail))
+
+      // Récupération de l'index de la diapositive actuelle
+      const slides = document.querySelectorAll('.slide')
+      slides.forEach((slide, index) => {
+        if (slide.classList.contains('active')) {
+          currentSlide = index + 1
+        }
+      })
+
+      // Calcul de l'index de la diapositive suivante
+      let nextSlide = currentSlide - delta
+      if (nextSlide < 1) {
+        nextSlide = slides.length
+      } else if (nextSlide > slides.length) {
+        nextSlide = 1
+      }
+
+      // Mise à jour de la classe active sur les diapositives
+      slides.forEach((slide) => {
+        slide.classList.remove('active')
+      })
+
+      slides[nextSlide - 1].classList.add('active')
+
+      // Mise à jour de la classe active sur les indicateurs de diapositives
+      const indicators = document.querySelectorAll('.slide-indicator')
+      indicators.forEach((indicator) => {
+        indicator.classList.remove('active')
+      })
+      indicators[nextSlide - 1].classList.add('active')
     })
   </script>
   <script

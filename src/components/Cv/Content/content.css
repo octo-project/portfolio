@@ -13,8 +13,79 @@
 .slide {
   display: inline-block;
   width: 100%;
-  height: 100vh;
-  padding: 50px;
+  padding: 17px;
   background: aliceblue;
   box-sizing: border-box;
+}
+
+#slideshow-container {
+  overflow-x: hidden;
+  width: 100%;
+  height: 500px;
+  min-height: 86px;
+  position: relative;
+}
+
+.slide {
+  top: 0;
+  left: 0;
+  height: auto;
+  width: 100%;
+  display: flex;
+  color: black;
+  font-size: 38px;
+  align-items: center;
+  position: absolute;
+  transition: transform 1s ease-in-out;
+}
+
+.slide:nth-child(1) {
+  background-color: #2196f3;
+}
+
+.slide:nth-child(2) {
+  /* background-color: #4caf50; */
+  left: 100%;
+}
+
+.slide:nth-child(3) {
+  /* background-color: #f44336; */
+  left: 200%;
+}
+
+.slide:nth-child(4) {
+  /* background-color: #ff9800; */
+  left: 300%;
+}
+
+.slide:nth-child(5) {
+  /* background-color: #9c27b0; */
+  left: 400%;
+}
+
+.slide-indicators {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  z-index: 9999;
+  position: relative;
+}
+
+.slide-indicator {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin: 0 5px;
+  background-color: red;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.slide.active {
+  left: 0%;
+  transition: transform 1s ease-in-out;
+}
+
+.slide-indicator.active {
+  background-color: grey;
 }
