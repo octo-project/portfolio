@@ -10,29 +10,27 @@ import { CvContext } from '../../../provider/CvProvider/CvProvider'
 const Content: FC = () => {
   const { currentTab } = useContext(CvContext)
 
-  const GET_CURRENT_COMPONENT: Record<CV_TAB, any> = {
-    Dîplome: <Diplome />,
-    Experience: <Experience />,
-    Parcour: <Parcour />,
-    Passion: <Passion />,
-  }
-
   return (
     <div className="contentContainer">
-      {GET_CURRENT_COMPONENT[currentTab]}
-      <div className="slide-container">
-        <div className="slide">
-          <h2>Slide 1</h2>
-          <p>Contenu de la slide 1</p>
+      <div id="slideshow-container">
+        <div className="slide" id="slide-1">
+          <Diplome />
         </div>
-        <div className="slide">
-          <h2>Slide 2</h2>
-          <p>Contenu de la slide 2</p>
+        <div className="slide" id="slide-2">
+          <Parcour />
         </div>
-        <div className="slide">
-          <h2>Slide 3</h2>
-          <p>Contenu de la slide 3</p>
+        <div className="slide" id="slide-3">
+          <Experience />
         </div>
+        <div className="slide" id="slide-4">
+          <Passion />
+        </div>
+      </div>
+      <div className="slide-indicators">
+        <div className="slide-indicator active"></div>
+        <div className="slide-indicator"></div>
+        <div className="slide-indicator"></div>
+        <div className="slide-indicator"></div>
       </div>
     </div>
   )
