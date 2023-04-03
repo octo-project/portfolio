@@ -12,7 +12,7 @@ const MyProject: FC = () => {
 
   return (
     <div className="containerProject">
-      <h3>
+      <h3 className="containerProjectTitle">
         <Link to="/" style={{ textDecoration: 'none' }}>
           PROJECTS
         </Link>{' '}

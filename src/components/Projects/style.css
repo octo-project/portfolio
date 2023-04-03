@@ -1,6 +1,10 @@
+.containerProjectTitle {
+  padding-left: 69px;
+}
 .containerProject {
   display: flex;
   padding-left: 8px;
+  margin-top: -81px;
   flex-direction: column;
 }
 
