@@ -6,7 +6,7 @@ import Content from './Content/Content'
 const MyCv: FC = () => {
   return (
     <div className="cvContainer titleCv">
-      <h3>CV</h3>
+      {/* <h3>CV</h3> */}
       <Header />
       <Content />
     </div>

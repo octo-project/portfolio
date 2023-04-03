@@ -1,36 +1,36 @@
-.CvHeaderContainer{
-    flex: 1;
-    display: flex;
-    padding-left: 81px;
-    flex-direction: row;
+.CvHeaderContainer {
+  display: flex;
+  padding-left: 81px;
+  flex-direction: row;
+  padding-bottom: 10px;
 }
 
-.photoCv{
-    flex: 0 1 160px;
+.photoCv {
+  flex: 0 1 160px;
 }
 
-.CvContent{
-    flex: 1;
-    display: flex;
-    padding-left: 32px;
-    flex-direction: column;
-    justify-content: space-between;
+.CvContent {
+  flex: 1;
+  display: flex;
+  padding-left: 32px;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
-.CvContent > div >span {
-    font-size: 24px;
-    font-weight: 400;
-    color: rgba(0, 96, 210, 1);
+.CvContent > div > span {
+  font-size: 24px;
+  font-weight: 400;
+  color: rgba(0, 96, 210, 1);
 }
 
-.CvContent > div > p{
-    color: #000;
-    font-weight: 600;
+.CvContent > div > p {
+  color: #000;
+  font-weight: 600;
 }
 
-.cvMenu{
-    color: #000;
-    display: flex;
-    flex-direction: row;
-    margin-bottom: 4px;
+.cvMenu {
+  color: #000;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 4px;
 }
