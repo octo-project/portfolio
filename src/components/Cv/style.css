@@ -1,9 +1,13 @@
-.cvContainer{
-    display: flex;
-    flex-direction: column;
+.cvContainer {
+  height: 93vh;
+  z-index: 300;
+  display: flex;
+  margin-top: -29px;
+  position: relative;
+  flex-direction: column;
 }
 
-.titleCv{
-    color: blue;
-    font-weight: 300
+.titleCv {
+  color: blue;
+  font-weight: 300;
 }

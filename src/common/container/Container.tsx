@@ -1,11 +1,7 @@
-import Layout from "../layout/Layout";
+import Layout from '../layout/Layout'
 
 const Container = (component: any) => () => {
-    return (
-        <Layout>
-            {component()}
-        </Layout>
-        )
+  return <Layout>{component()}</Layout>
 }
 
-export default Container;
+export default Container
