@@ -1,23 +1,31 @@
-import React from "react";
-import TechnoCard from "../../../../common/cards/technoCard/TechnoCard";
+import React, { FC } from 'react'
+import TechnoCard from '../../../../common/cards/technoCard/TechnoCard'
 
-const Screenshoot = () => {
+interface ScreenShootProps {
+  screenShoots: any[]
+}
+
+const Screenshoot: FC<ScreenShootProps> = (props) => {
+  const { screenShoots } = props
   return (
     <div className="projectDetails">
       <h5>
         Demo : <u>https://podcast-app-web.com</u>
       </h5>
       <div className="screenShootMobile">
-        <TechnoCard text="Home page" width={200} height={350} />
-        <TechnoCard text="Login page" width={200} height={350} />
-        <TechnoCard text="Reset password page" width={200} height={350} />
-        <TechnoCard text="Message page" width={200} height={350} />
-        <TechnoCard text="Setting page" width={200} height={350} />
-        <TechnoCard text="User account page" width={200} height={350} />
-        <TechnoCard text="Tracking page" width={200} height={350} />
+        {screenShoots.map((item) => {
+          return (
+            <TechnoCard
+              text={item.label}
+              img={item.image}
+              width={200}
+              height={400}
+            />
+          )
+        })}
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default Screenshoot;
+export default Screenshoot

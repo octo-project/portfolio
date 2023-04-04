@@ -22,7 +22,7 @@ const ProjectDetails: FC<ProjectDetailsProps> = (props) => {
 
   const GET_CURRENT_TAB: Record<tabType, JSX.Element> = {
     about: <About about={project.about} />,
-    screenshoot: <Screenshoot />,
+    screenshoot: <Screenshoot screenShoots={project.screenShoots} />,
   }
 
   return (

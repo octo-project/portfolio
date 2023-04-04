@@ -1,20 +1,30 @@
-import "./style.css"
-import { FC } from "react"
+import './style.css'
+import { FC } from 'react'
 
-interface technoCardProps{
-    text: string
-    width?: number
-    height?: number
+interface technoCardProps {
+  img: any
+  text: string
+  width?: number
+  height?: number
 }
 
 const TechnoCard: FC<technoCardProps> = (props) => {
-    const {text, width, height} = props;
+  const { text, width, height, img } = props
 
-    return (
-        <div className="cardTechno" style={{height, width}}>
-            {text}
-        </div>
-    )
+  const tempHeigth = (height && height - 25) || 400
+
+  return (
+    <div className="cardTechno" style={{ height, width }}>
+      {text}
+      {img && height && (
+        <img
+          src={img}
+          style={{ height: tempHeigth, width, paddingTop: 7 }}
+          alt={text}
+        />
+      )}
+    </div>
+  )
 }
 
-export default TechnoCard;
+export default TechnoCard
