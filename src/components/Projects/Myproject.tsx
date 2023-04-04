@@ -1,12 +1,15 @@
 import './style.css'
-import React, { FC } from 'react'
-import { Link, useParams } from 'react-router-dom'
+import { FC } from 'react'
+import { Link, useLocation, useParams } from 'react-router-dom'
 import ProjectLists from './ProjectLists/ProjectLists'
 import ProjectDetails from './ProjectDetail/ProjectDetail'
 
 const MyProject: FC = () => {
   const params = useParams()
+  const location = useLocation()
   const search = new URLSearchParams(params)
+
+  console.log('location : ', location.state)
 
   const projectName = search.get('name') || null
 
@@ -15,13 +18,17 @@ const MyProject: FC = () => {
       <h3 className="containerProjectTitle">
         <Link to="/" style={{ textDecoration: 'none' }}>
           PROJECTS
-        </Link>{' '}
+        </Link>
         {projectName && (
           <span style={{ fontWeight: 'bold' }}>{`/ ${projectName}`}</span>
         )}
       </h3>
 
-      {!projectName ? <ProjectLists /> : <ProjectDetails />}
+      {!projectName ? (
+        <ProjectLists />
+      ) : (
+        <ProjectDetails project={location.state} />
+      )}
     </div>
   )
 }
