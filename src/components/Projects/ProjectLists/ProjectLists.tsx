@@ -2,7 +2,11 @@ import { Link } from 'react-router-dom'
 import casque from '../../../assets/casque.jpg'
 import todoApp from '../../../assets/TodoApp/logo.png'
 import orderEase from '../../../assets/OrderEase/logo.png'
+import orderEaseError from '../../../assets/OrderEase/Error.png'
 import gestionFond from '../../../assets/GestionDeFond/logo.jpg'
+import orderEaseFacture from '../../../assets/OrderEase/Facture.png'
+import orderEaseConfirmation from '../../../assets/OrderEase/Confirmation.png'
+import orderEaseDetailsPlats from '../../../assets/OrderEase/DetailsPlats.png'
 
 const Projects = [
   {
@@ -21,7 +25,7 @@ const Projects = [
       functionnalities: ['Mutli Language', 'Toogle themes', 'Audio Player'],
       technos: ['React', 'NodeJs', 'GraphQL', 'Apollo', 'Prisma', 'Typescript'],
     },
-    screenShot: [],
+    screenShoots: [],
   },
   {
     logo: orderEase,
@@ -38,7 +42,12 @@ const Projects = [
       functionnalities: ['Mutli Language', 'Toogle themes', 'Audio Player'],
       technos: ['React', 'NodeJs', 'GraphQL', 'Apollo', 'Prisma', 'Typescript'],
     },
-    screenShot: [],
+    screenShoots: [
+      { label: 'Erreur', image: orderEaseError },
+      { label: 'Facture', image: orderEaseFacture },
+      { label: 'Confirmation', image: orderEaseConfirmation },
+      { label: 'Details Plats', image: orderEaseDetailsPlats },
+    ],
   },
   {
     logo: gestionFond,
@@ -57,7 +66,7 @@ const Projects = [
       functionnalities: ['Mutli Language', 'Toogle themes', 'Audio Player'],
       technos: ['React', 'NodeJs', 'GraphQL', 'Typescript'],
     },
-    screenShot: [],
+    screenShoots: [],
   },
   {
     logo: todoApp,
@@ -75,7 +84,7 @@ const Projects = [
       functionnalities: ['Mutli Language', 'Toogle themes', 'Audio Player'],
       technos: ['React', 'NodeJs', 'GraphQL', 'Apollo', 'Prisma', 'Typescript'],
     },
-    screenShot: [],
+    screenShoots: [],
   },
 ]
 

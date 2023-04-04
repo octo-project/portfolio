@@ -29,7 +29,7 @@ const About: FC<AboutProps> = (props) => {
       <h5>Technos : </h5>
       <div className="technoGrid">
         {about.technos.map((techno: any) => {
-          return <TechnoCard text={techno} />
+          return <TechnoCard text={techno} img={null} />
         })}
       </div>
     </div>
