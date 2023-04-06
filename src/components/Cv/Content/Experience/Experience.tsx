@@ -137,9 +137,7 @@ const Experience: FC = () => {
           </div>
           <div>
             <span className="experience-card-subtitle">Technos:</span>
-            <p>
-              Python, Java, ReactJs, Typescript, PostGreSQL, Facebook SDK, …
-            </p>
+            <p>React, Typescript</p>
           </div>
         </div>
       </div>
