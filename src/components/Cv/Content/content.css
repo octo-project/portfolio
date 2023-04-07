@@ -1,3 +1,44 @@
+.calque {
+  background: red;
+  width: 100%;
+  height: 100%;
+}
+.passion-logo {
+  width: 250px;
+}
+.logo-gaming {
+  margin-left: 145px;
+}
+.logo-musique {
+  margin-left: 53px;
+}
+.game-icon {
+  width: 98px;
+}
+.pubg-icon {
+  width: 109px;
+}
+.fifa-icon {
+  width: 110px;
+  margin-left: 8px;
+}
+.passion-detail {
+  opacity: 0;
+  height: 367px;
+  display: flex;
+  color: black;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: color 1s ease, transform 0.5s ease, opacity 1.5s ease;
+}
+.game-card:hover .passion-detail {
+  opacity: 1;
+  color: black;
+  transform: translateX(55px);
+}
+.game-card:hover _ .Toto {
+  color: yellow;
+}
 .center-text {
   text-align: center;
 }
