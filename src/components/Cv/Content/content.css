@@ -1,3 +1,6 @@
+.spotify-icon {
+  width: 170px;
+}
 .calque {
   background: red;
   width: 100%;
@@ -10,7 +13,10 @@
   margin-left: 145px;
 }
 .logo-musique {
-  margin-left: 53px;
+  margin-left: 193px;
+}
+.logo-techno {
+  margin-left: 195px;
 }
 .game-icon {
   width: 98px;
@@ -36,8 +42,15 @@
   color: black;
   transform: translateX(55px);
 }
-.game-card:hover _ .Toto {
-  color: yellow;
+.musique-card:hover .passion-detail {
+  opacity: 1;
+  color: black;
+  transform: translateX(65px);
+}
+.technologie-card:hover .passion-detail {
+  opacity: 1;
+  color: black;
+  transform: translateX(65px);
 }
 .center-text {
   text-align: center;
