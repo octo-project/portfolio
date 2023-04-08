@@ -1,20 +1,26 @@
 import './header.css'
-import React, { FC, useContext } from 'react'
+import React, { FC, useContext, useRef } from 'react'
 import { CvContext } from '../../../provider/CvProvider/CvProvider'
 import { CV_TAB, SET_CURRENT_TAB } from '../../../reducer/CvReducer/CvReducer'
 import MyCvPicture from '../../../assets/Portfolio Design V2/Assets/Cv_picture.jpg'
 
-const Header: FC = (props) => {
-  const { dispatchCvState } = useContext(CvContext)
+interface HeaderProps {
+  passionRef: React.MutableRefObject<null>
+  diplomeRef: React.MutableRefObject<null>
+  parcourRef: React.MutableRefObject<null>
+  experienceRef: React.MutableRefObject<null>
+}
 
-  const handleSetCurrentTab = (
-    event: React.MouseEvent<HTMLDivElement, MouseEvent>,
-    tab: CV_TAB,
-  ) => {
-    dispatchCvState({
-      type: SET_CURRENT_TAB,
-      value: tab,
-    })
+const Header: FC<HeaderProps> = (props) => {
+  const { diplomeRef, experienceRef, parcourRef, passionRef, children } = props
+
+  const handleMenuClick = (ref: any) => {
+    if (ref && ref.current) {
+      console.log('ref exist')
+      ref.current.scrollIntoView({ behavior: 'smooth' })
+    } else {
+      console.log("ref doesn't exist")
+    }
   }
 
   return (
@@ -34,25 +40,25 @@ const Header: FC = (props) => {
         <div className="cvMenu">
           <div
             className="btnCustom"
-            onClick={(event) => handleSetCurrentTab(event, 'Dîplome')}
+            onClick={() => handleMenuClick(diplomeRef)}
           >
             Dîplomes/Certifications
           </div>
           <div
             className="btnCustom"
-            onClick={(event) => handleSetCurrentTab(event, 'Parcour')}
+            onClick={() => handleMenuClick(parcourRef)}
           >
             Parcours
           </div>
           <div
             className="btnCustom"
-            onClick={(event) => handleSetCurrentTab(event, 'Experience')}
+            onClick={() => handleMenuClick(experienceRef)}
           >
             Expériences
           </div>
           <div
             className="btnCustom"
-            onClick={(event) => handleSetCurrentTab(event, 'Passion')}
+            onClick={() => handleMenuClick(passionRef)}
           >
             Passions
           </div>

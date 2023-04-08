@@ -10,7 +10,13 @@ import Musique from '../../../../assets/musique.png'
 import Manette from '../../../../assets/manette.png'
 import Spotify from '../../../../assets/spotify.png'
 
-const Passion: FC = () => {
+interface PassionProps {
+  refer: React.MutableRefObject<null>
+}
+
+const Passion: FC<PassionProps> = (props) => {
+  const { refer } = props
+
   const gamingData = [
     {
       img: Dota,
@@ -56,7 +62,7 @@ const Passion: FC = () => {
   ]
 
   return (
-    <div className="content">
+    <section className="content content-passion" ref={refer}>
       <h3>Passions</h3>
       <div className="passion-content">
         <div className="passion-item game-card">
@@ -66,9 +72,9 @@ const Passion: FC = () => {
             alt="manette"
           />
           <div className="passion-detail">
-            {gamingData.map((game) => {
+            {gamingData.map((game, index) => {
               return (
-                <a href={game.url} target="blank">
+                <a href={game.url} key={index} target="blank">
                   <img src={game.img} className="game-icon" alt={game.name} />
                 </a>
               )
@@ -82,9 +88,9 @@ const Passion: FC = () => {
             className="passion-logo logo-musique"
           />
           <div className="passion-detail">
-            {musicData.map((music) => {
+            {musicData.map((music, index) => {
               return (
-                <a href={music.url} target="blank">
+                <a href={music.url} key={index} target="blank">
                   <img
                     src={music.img}
                     alt={music.name}
@@ -103,9 +109,9 @@ const Passion: FC = () => {
             className="logo-techno"
           />
           <div className="passion-detail">
-            {technoData.map((techno) => {
+            {technoData.map((techno, index) => {
               return (
-                <a href={techno.url} target="blank">
+                <a href={techno.url} key={index} target="blank">
                   <img
                     src={techno.img}
                     className="spotify-icon"
@@ -117,7 +123,7 @@ const Passion: FC = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   )
 }
 

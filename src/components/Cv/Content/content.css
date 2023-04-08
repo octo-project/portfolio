@@ -63,7 +63,7 @@
 .rounded {
   color: #000;
   width: 250px;
-  padding: 54px;
+  padding: 28px;
   border-radius: 6px;
   background: aliceblue;
 }
@@ -125,8 +125,11 @@ h3 {
   flex-direction: row;
   justify-content: space-around;
 }
+.content-passion {
+  padding-bottom: 169px !important;
+}
 .content {
-  padding: 65px;
+  padding: 0px 65px 0px;
 }
 .contentContainer {
   color: #000;
