@@ -4,18 +4,24 @@ import Diplome from './Diplome/Diplome'
 import Parcour from './Parcour/Parcour'
 import Passion from './Passion/Passion'
 import Experience from './Experience/Experience'
-import { CV_TAB } from '../../../reducer/CvReducer/CvReducer'
 import { CvContext } from '../../../provider/CvProvider/CvProvider'
 
-const Content: FC = () => {
-  const { currentTab } = useContext(CvContext)
+interface ContentProps {
+  passionRef: React.MutableRefObject<null>
+  diplomeRef: React.MutableRefObject<null>
+  parcourRef: React.MutableRefObject<null>
+  experienceRef: React.MutableRefObject<null>
+}
+
+const Content: FC<ContentProps> = (props) => {
+  const { diplomeRef, experienceRef, parcourRef, passionRef, children } = props
 
   return (
     <div id="slideshow-container">
-      <Diplome />
-      <Parcour />
-      <Experience />
-      <Passion />
+      <Diplome refer={diplomeRef} />
+      <Parcour refer={parcourRef} />
+      <Experience refer={experienceRef} />
+      <Passion refer={passionRef} />
 
       <div className="footerc">&#169; TSIALONINA Heriniaina Mathieu 2023</div>
     </div>

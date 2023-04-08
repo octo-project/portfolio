@@ -1,8 +1,13 @@
 import React, { FC } from 'react'
 
-const Experience: FC = () => {
+interface ExperienceProps {
+  refer: React.MutableRefObject<null>
+}
+
+const Experience: FC<ExperienceProps> = (props) => {
+  const { refer } = props
   return (
-    <div className="content">
+    <section className="content" ref={refer}>
       <h3>Experiences & Projects</h3>
       <h4>Project professionel</h4>
       <div className="experience-card">
@@ -141,7 +146,7 @@ const Experience: FC = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   )
 }
 

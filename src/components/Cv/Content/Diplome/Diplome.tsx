@@ -1,39 +1,36 @@
 import React, { FC } from 'react'
 
-const Diplome: FC = () => {
+interface DiplomeProps {
+  refer: React.MutableRefObject<null>
+}
+
+const Diplome: FC<DiplomeProps> = (props) => {
+  const { refer } = props
+
   return (
-    <div className="content">
+    <section className="content" ref={refer}>
       <h3>Dîplomes et certifications</h3>
       <ul>
         <li>
-          <h5>2019-2020</h5>
+          <h5>2013-2014</h5>
+          <p>Diplome de Baccalaureat serie D au Saint Michel Itaosy.</p>
+        </li>
+        <li>
+          <h5>2017-2018</h5>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam est
-            ullam ea quos distinctio veniam blanditiis consectetur earum,
-            exercitationem nesciunt nihil dicta animi libero laboriosam
-            accusantium fugit quis nulla aliquid?
+            Diplome de license en Informatique de Gestion et Genie Logiciel a
+            l'ISPM.
           </p>
         </li>
         <li>
-          <h5>2020-2022</h5>
+          <h5>2020-2021</h5>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam est
-            ullam ea quos distinctio veniam blanditiis consectetur earum,
-            exercitationem nesciunt nihil dicta animi libero laboriosam
-            accusantium fugit quis nulla aliquid?
-          </p>
-        </li>
-        <li>
-          <h5>2022-2023</h5>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam est
-            ullam ea quos distinctio veniam blanditiis consectetur earum,
-            exercitationem nesciunt nihil dicta animi libero laboriosam
-            accusantium fugit quis nulla aliquid?
+            Diplome de master en Informatique de Gestion et Genie Logiciel a
+            l'ISPM.
           </p>
         </li>
       </ul>
-    </div>
+    </section>
   )
 }
 
