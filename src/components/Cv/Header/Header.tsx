@@ -1,7 +1,5 @@
 import './header.css'
-import React, { FC, useContext, useRef } from 'react'
-import { CvContext } from '../../../provider/CvProvider/CvProvider'
-import { CV_TAB, SET_CURRENT_TAB } from '../../../reducer/CvReducer/CvReducer'
+import React, { FC } from 'react'
 import MyCvPicture from '../../../assets/Portfolio Design V2/Assets/Cv_picture.jpg'
 
 interface HeaderProps {
@@ -15,11 +13,10 @@ interface HeaderProps {
 const Header: FC<HeaderProps> = (props) => {
   const {
     diplomeRef,
-    experienceRef,
     parcourRef,
     passionRef,
+    experienceRef,
     qualityAndDefautRef,
-    children,
   } = props
 
   const handleMenuClick = (ref: any) => {
@@ -40,9 +37,11 @@ const Header: FC<HeaderProps> = (props) => {
         <div>
           <span>TSIALONINA Heriniaina Mathieu</span>
           <p>
-            Je suis passionnée par la technologie informatique que ce soit sur
-            le domaine du web, du mobile, et desktop; avec les technos les plus
-            récents.
+            En tant que développeur full-stack, je suis passionné par la
+            création de solutions technologiques innovantes pour répondre aux
+            besoins des clients et des utilisateurs finaux. Je suis expert dans
+            la conception, le développement et la maintenance de sites Web et
+            d'applications, du front-end au back-end.
           </p>
         </div>
         <div className="cvMenu">

@@ -1,7 +1,6 @@
 import './styles.css'
 import About from './About/About'
 import React, { FC, useState } from 'react'
-import casque from '../../../assets/casque.jpg'
 import Screenshoot from './ScreenShoot/ScreenShoot'
 
 type tabType = 'about' | 'screenshoot'

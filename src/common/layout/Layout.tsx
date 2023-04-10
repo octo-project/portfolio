@@ -59,7 +59,7 @@ const Layout: FC<layoutProps> = (props) => {
           <div className="tooltip">
             <span>TSIALONINA Heriniaina Mathieu</span>
             <span className="tooltiptext">
-              <img src={MyCvPicture} alt="Votre image" />
+              <img src={MyCvPicture} alt="Svg" />
               <span className="description">Dev Full Stack</span>
             </span>
           </div>

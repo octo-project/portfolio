@@ -24,8 +24,11 @@
 }
 
 .CvContent > div > p {
+  width: 45%;
   color: #000;
-  font-weight: 600;
+  font-weight: 300;
+  margin-right: 42px;
+  text-align: justify;
 }
 
 .cvMenu {
