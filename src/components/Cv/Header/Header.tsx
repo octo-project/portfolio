@@ -9,10 +9,18 @@ interface HeaderProps {
   diplomeRef: React.MutableRefObject<null>
   parcourRef: React.MutableRefObject<null>
   experienceRef: React.MutableRefObject<null>
+  qualityAndDefautRef: React.MutableRefObject<null>
 }
 
 const Header: FC<HeaderProps> = (props) => {
-  const { diplomeRef, experienceRef, parcourRef, passionRef, children } = props
+  const {
+    diplomeRef,
+    experienceRef,
+    parcourRef,
+    passionRef,
+    qualityAndDefautRef,
+    children,
+  } = props
 
   const handleMenuClick = (ref: any) => {
     if (ref && ref.current) {
@@ -55,6 +63,12 @@ const Header: FC<HeaderProps> = (props) => {
             onClick={() => handleMenuClick(experienceRef)}
           >
             Expériences
+          </div>
+          <div
+            className="btnCustom"
+            onClick={() => handleMenuClick(qualityAndDefautRef)}
+          >
+            Quality
           </div>
           <div
             className="btnCustom"

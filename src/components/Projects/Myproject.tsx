@@ -9,7 +9,6 @@ const MyProject: FC = () => {
   const location = useLocation()
   const search = new URLSearchParams(params)
 
-  console.log('location : ', location.state)
 
   const projectName = search.get('name') || null
 
