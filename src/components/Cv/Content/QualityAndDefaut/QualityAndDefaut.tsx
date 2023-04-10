@@ -11,24 +11,24 @@ const QualityAndDefaut: FC<QualityAndDefaultProps> = (props) => {
     <section className="content" ref={refer}>
       <h3>Quality</h3>
       <div className="qualityContainer">
-        <div>
+        <div className="qualityContent">
           <span className="qualitySubTitle">Quality</span>
           <div>
             <ul>
-              <li>
+              <li className="quality-item">
                 Passionné par la programmation et toujours en quête de nouvelles
                 connaissances et technologies pour améliorer mes compétences en
                 tant que développeur full-stack.
               </li>
-              <li>
+              <li className="quality-item">
                 Capacité à travailler de manière autonome ou en équipe pour
                 atteindre les objectifs de projet tout en respectant les délais.
               </li>
-              <li>
+              <li className="quality-item">
                 Souci du détail et de la qualité pour fournir un code efficace
                 et maintenable.
               </li>
-              <li>
+              <li className="quality-item">
                 Excellente communication et capacité à travailler avec des
                 équipes interdisciplinaires pour garantir la satisfaction des
                 clients et la livraison réussie des projets.
@@ -36,20 +36,20 @@ const QualityAndDefaut: FC<QualityAndDefaultProps> = (props) => {
             </ul>
           </div>
         </div>
-        <div>
+        <div className="defautContent">
           <span className="qualitySubTitle">Defaut</span>
           <div>
             <ul>
-              <li>
+              <li className="quality-item">
                 Parfois trop exigeant envers moi-même et envers les autres, ce
                 qui peut me pousser à vouloir perfectionner chaque petit détail.
               </li>
-              <li>
+              <li className="quality-item">
                 J'ai tendance à m'investir tellement dans mes projets que je
                 peux parfois oublier de prendre des pauses nécessaires pour
                 maintenir un équilibre vie professionnelle/vie privée.
               </li>
-              <li>
+              <li className="quality-item">
                 Parfois, j'ai besoin de plus de temps pour prendre des décisions
                 importantes, car je veux m'assurer d'avoir considéré toutes les
                 options et de faire le meilleur choix pour l'équipe et les

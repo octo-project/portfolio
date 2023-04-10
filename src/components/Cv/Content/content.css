@@ -1,21 +1,36 @@
+.qualityContent {
+  padding: 75px;
+  color: white;
+  margin-right: 5px;
+  background: #404040;
+  border-radius: 15em 4em;
+}
+.defautContent {
+  padding: 75px;
+  color: grey;
+  margin-left: 5px;
+  background: #f1f1f1;
+  border-radius: 4em 15em;
+}
 .spotify-icon {
   width: 170px;
 }
 .qualityContainer {
   display: flex;
   color: black;
+  padding-bottom: 25px;
   flex-direction: row;
   justify-content: space-around;
 }
 .qualitySubTitle {
-  text-align: center;
   width: 100%;
   display: block;
+  font-size: 35px;
+  text-align: center;
 }
-li {
-  margin: 52px;
-  height: 30px;
-  color: black;
+.quality-item {
+  margin-top: 52px;
+  font-size: 28px;
 }
 .calque {
   background: red;
