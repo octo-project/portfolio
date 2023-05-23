@@ -7,6 +7,17 @@ import gestionFond from '../../../assets/GestionDeFond/logo.jpg'
 import orderEaseFacture from '../../../assets/OrderEase/Facture.png'
 import orderEaseConfirmation from '../../../assets/OrderEase/Confirmation.png'
 import orderEaseDetailsPlats from '../../../assets/OrderEase/DetailsPlats.png'
+import BPLogo from '../../../assets/Buyer Persona/Logo-BP.png'
+import Welcome from '../../../assets/Buyer Persona/Welcome.png'
+import SuccessGenerate from '../../../assets/Buyer Persona/SuccessGenerate.png'
+import SuccessDownload from '../../../assets/Buyer Persona/SuccessDownload.png'
+import Setting from '../../../assets/Buyer Persona/Setting.png'
+import Loading from '../../../assets/Buyer Persona/Loading.png'
+import Generator from '../../../assets/Buyer Persona/Generator.png'
+import GeneratedFile from '../../../assets/Buyer Persona/generated-file.png'
+import FAQ from '../../../assets/Buyer Persona/FAQ.png'
+import Avis from '../../../assets/Buyer Persona/Avis.png'
+import About from '../../../assets/Buyer Persona/About.png'
 
 const Projects = [
   {
@@ -86,6 +97,37 @@ const Projects = [
     },
     screenShoots: [],
   },
+  {
+    logo: BPLogo,
+    logoSize: '90px',
+    background: '#22222f',
+    name: 'Buyer-persona',
+    link: '/project/buyer-persona-app',
+    about: {
+      demoUrl: 'https://podcast-app-web.com',
+      gitHubRepository: ' https://git-lab.com/hmathieutsialonina/podcast-app',
+      description: `This is project is made for testing chatGpt integration with a chrome add-on, the target is to create bayer personas in less click`,
+      functionnalities: [
+        'ChatGPT',
+        'Marketing cibling',
+        'Persona generator',
+        'chrome extension',
+      ],
+      technos: ['React', 'NodeJs', 'Express', 'Typescript'],
+    },
+    screenShoots: [
+      { label: 'Welcome', image: Welcome },
+      { label: 'SuccessGenerate', image: SuccessGenerate },
+      { label: 'SuccessDownload', image: SuccessDownload },
+      { label: 'Setting', image: Setting },
+      { label: 'Loading', image: Loading },
+      { label: 'Generator', image: Generator },
+      { label: 'GeneratedFile', image: GeneratedFile },
+      { label: 'FAQ', image: FAQ },
+      { label: 'Avis', image: Avis },
+      { label: 'About', image: About },
+    ],
+  },
 ]
 
 const ProjectLists = () => {
@@ -94,8 +136,24 @@ const ProjectLists = () => {
       {Projects.map((project, index) => {
         return (
           <Link to={{ pathname: project.link, state: project }} key={index}>
-            <div className="card">
-              <img src={project.logo} className="logo" alt="casque.jpg" />
+            <div
+              className="card"
+              style={
+                project?.background
+                  ? { background: project?.background, color: 'white' }
+                  : {}
+              }
+            >
+              <img
+                src={project.logo}
+                style={
+                  project?.logoSize
+                    ? { width: project.logoSize, height: project.logoSize }
+                    : {}
+                }
+                className="logo"
+                alt="casque.jpg"
+              />
               <span>{project.name}</span>
             </div>
           </Link>
