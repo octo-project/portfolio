@@ -44,6 +44,7 @@ h3 {
   display: flex;
   border-radius: 10px;
   align-items: center;
+  margin-bottom: 162px;
   flex-direction: column;
   justify-content: center;
   box-shadow: 0px 0px 4px -2px rgb(26, 37, 41);
