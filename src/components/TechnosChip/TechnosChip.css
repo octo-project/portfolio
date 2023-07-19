@@ -1,0 +1,18 @@
+.chip-card {
+  height: 28px;
+  width: 150px;
+  padding: 15px;
+  color: white;
+  overflow: hidden;
+  font-weight: bold;
+  border-radius: 5px;
+  background: #29293e;
+  border: 1px solid grey;
+}
+
+.react-logo {
+  position: relative;
+  height: 95px;
+  top: -43px;
+  left: 92px;
+}

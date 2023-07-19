@@ -1,4 +1,8 @@
 import React, { FC } from 'react'
+import MaterialUiChip from '../../../TechnosChip/MaterialUiChip'
+import NodeChip from '../../../TechnosChip/NodeChip'
+import ReactChip from '../../../TechnosChip/ReactChip'
+import TypescriptChip from '../../../TechnosChip/TypescriptChip'
 
 interface ExperienceProps {
   refer: React.MutableRefObject<null>
@@ -37,9 +41,9 @@ const Experience: FC<ExperienceProps> = (props) => {
           </div>
           <div>
             <span className="experience-card-subtitle">Technos:</span>
-            <p>
-              ReactJS, Typescript, NodeJS, MongoDB, Electron, Material Design.
-            </p>
+            <div className="technos-content">
+              <ReactChip /> <TypescriptChip /> <NodeChip /> <MaterialUiChip />
+            </div>
           </div>
         </div>
       </div>
@@ -56,7 +60,7 @@ const Experience: FC<ExperienceProps> = (props) => {
             <ol>
               <li>Creation de l'architecture projet.</li>
               <li>Mise en relation des appels typer de js vers c++.</li>
-              <li>Integration des interfaces depuis la maquette.</li>
+              <li>Integration des interfaces depuis la maquette XD.</li>
               <li>Ajout des fonctionnalites de base de l'application.</li>
             </ol>
           </div>
@@ -86,7 +90,8 @@ const Experience: FC<ExperienceProps> = (props) => {
                 anciennes.
               </li>
               <li>
-                Ajout d'un SSO pour la creation de compte et l'authentification.
+                Ajout d'un SSO pour la creation de compte et l'authentification
+                (la boite rose).
               </li>
             </ol>
           </div>
@@ -114,7 +119,7 @@ const Experience: FC<ExperienceProps> = (props) => {
               <li>Recuperation des coreItems depuis un dataLake.</li>
               <li>
                 Mise en place d'un cron en python pour la recuperation reguliere
-                de donnee.
+                des insights sur facebook .
               </li>
             </ol>
           </div>
