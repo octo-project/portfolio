@@ -156,8 +156,13 @@ h3 {
   flex-direction: row;
   justify-content: space-around;
 }
+.technos-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
 .content-passion {
-  padding-bottom: 169px !important;
+  padding-bottom: 154px !important;
 }
 .content {
   padding: 0px 65px 0px;
