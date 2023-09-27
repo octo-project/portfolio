@@ -41,8 +41,28 @@ const ProjectDetails: FC<ProjectDetailsProps> = (props) => {
             screenshoot
           </div>
         </div>
-        <div className="detailLogoContainer">
-          <img src={project.logo} className="detailLogo" alt="casque.jpg" />
+        <div className="detailLogoContainerx">
+          <div className="detailLogoContainer">
+            <img src={project.logo} className="detailLogo" alt="casque.jpg" />
+            <div className="info">
+              <h5>Authentification :</h5>
+              <div>
+                <table>
+                  <thead></thead>
+                  <tbody>
+                    <tr>
+                      <td className="columnTitle">user:</td>
+                      <td className="columnMdp">demoUser</td>
+                    </tr>
+                    <tr>
+                      <td className="columnTitle">password:</td>
+                      <td className="columnMdp">demoPassword</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
       {GET_CURRENT_TAB[tab]}
