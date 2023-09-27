@@ -21,10 +21,7 @@
   box-shadow: 0px 0px 4px -1px darkgrey;
 }
 
-.detailLogoContainer {
-  padding: 9px;
-  right: 327px;
-  position: absolute;
+.detailLogoContainerx {
   background: aliceblue;
 }
 
@@ -105,4 +102,24 @@ u:hover {
 
 .purpleBg {
   background-color: #6019a8;
+}
+
+.detailLogoContainer {
+  padding: 9px;
+  right: 327px;
+  position: fixed;
+  background: aliceblue;
+}
+
+.info {
+  padding: 12px;
+  background: white;
+}
+
+.columnMdp {
+  padding-left: 15px;
+}
+
+.columnTitle {
+  font-weight: 600;
 }
