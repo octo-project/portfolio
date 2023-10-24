@@ -5,7 +5,7 @@ const ReactChip = () => {
   return (
     <div className="chip-card">
       <span>React</span>
-      <img src={undefined} className="react-logo" alt="no-image" />
+      {/* <img src={undefined} className="react-logo" alt="no-image" /> */}
     </div>
   )
 }
