@@ -1,23 +1,23 @@
 import { Link } from 'react-router-dom'
 import casque from '../../../assets/casque.jpg'
 import todoApp from '../../../assets/TodoApp/logo.png'
-import orderEase from '../../../assets/OrderEase/logo.png'
-import orderEaseError from '../../../assets/OrderEase/Error.png'
-import gestionFond from '../../../assets/GestionDeFond/logo.jpg'
-import orderEaseFacture from '../../../assets/OrderEase/Facture.png'
-import orderEaseConfirmation from '../../../assets/OrderEase/Confirmation.png'
-import orderEaseDetailsPlats from '../../../assets/OrderEase/DetailsPlats.png'
-import BPLogo from '../../../assets/Buyer Persona/Logo-BP.png'
-import Welcome from '../../../assets/Buyer Persona/Welcome.png'
-import SuccessGenerate from '../../../assets/Buyer Persona/SuccessGenerate.png'
-import SuccessDownload from '../../../assets/Buyer Persona/SuccessDownload.png'
-import Setting from '../../../assets/Buyer Persona/Setting.png'
-import Loading from '../../../assets/Buyer Persona/Loading.png'
-import Generator from '../../../assets/Buyer Persona/Generator.png'
-import GeneratedFile from '../../../assets/Buyer Persona/generated-file.png'
 import FAQ from '../../../assets/Buyer Persona/FAQ.png'
 import Avis from '../../../assets/Buyer Persona/Avis.png'
+import orderEase from '../../../assets/OrderEase/logo.png'
 import About from '../../../assets/Buyer Persona/About.png'
+import BPLogo from '../../../assets/Buyer Persona/Logo-BP.png'
+import Welcome from '../../../assets/Buyer Persona/Welcome.png'
+import Setting from '../../../assets/Buyer Persona/Setting.png'
+import Loading from '../../../assets/Buyer Persona/Loading.png'
+import orderEaseError from '../../../assets/OrderEase/Error.png'
+import gestionFond from '../../../assets/GestionDeFond/logo.jpg'
+import Generator from '../../../assets/Buyer Persona/Generator.png'
+import orderEaseFacture from '../../../assets/OrderEase/Facture.png'
+import GeneratedFile from '../../../assets/Buyer Persona/generated-file.png'
+import orderEaseConfirmation from '../../../assets/OrderEase/Confirmation.png'
+import orderEaseDetailsPlats from '../../../assets/OrderEase/DetailsPlats.png'
+import SuccessGenerate from '../../../assets/Buyer Persona/SuccessGenerate.png'
+import SuccessDownload from '../../../assets/Buyer Persona/SuccessDownload.png'
 
 const Projects = [
   {
@@ -135,7 +135,6 @@ const ProjectLists = () => {
     <div className="projectCard">
       {Projects.map((project, index) => {
         return (
-          <Link to={{ pathname: project.link, state: project }} key={index}>
             <div
               className="card"
               style={
@@ -144,19 +143,20 @@ const ProjectLists = () => {
                   : {}
               }
             >
-              <img
-                src={project.logo}
-                style={
-                  project?.logoSize
-                    ? { width: project.logoSize, height: project.logoSize }
-                    : {}
-                }
-                className="logo"
-                alt="casque.jpg"
-              />
-              <span>{project.name}</span>
-            </div>
-          </Link>
+              <Link to={{ pathname: project.link, state: project }} key={index}>
+                  <img
+                    src={project.logo}
+                    style={
+                      project?.logoSize
+                        ? { width: project.logoSize, height: project.logoSize }
+                        : {}
+                    }
+                    className="logo"
+                    alt="casque.jpg"
+                  />
+                  <span>{project.name}</span>
+              </Link>
+          </div>
         )
       })}
     </div>
