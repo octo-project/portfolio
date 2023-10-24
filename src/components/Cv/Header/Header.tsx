@@ -1,6 +1,6 @@
 import './header.css'
 import React, { FC } from 'react'
-import MyCvPicture from '../../../assets/Portfolio Design V2/Assets/Cv_picture.jpg'
+// import MyCvPicture from '../../../assets/Portfolio Design V2/Assets/Cv_picture.jpg'
 
 interface HeaderProps {
   passionRef: React.MutableRefObject<null>
@@ -31,7 +31,7 @@ const Header: FC<HeaderProps> = (props) => {
   return (
     <div className="CvHeaderContainer">
       <div className="photoCv">
-        <img src={MyCvPicture} width={170} alt="no img" />
+        <img src={undefined} width={170} alt="no img" />
       </div>
       <div className="CvContent">
         <div>

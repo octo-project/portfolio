@@ -1,27 +1,28 @@
 import { Link } from 'react-router-dom'
-import casque from '../../../assets/casque.jpg'
-import todoApp from '../../../assets/TodoApp/logo.png'
-import FAQ from '../../../assets/Buyer Persona/FAQ.png'
-import Avis from '../../../assets/Buyer Persona/Avis.png'
-import orderEase from '../../../assets/OrderEase/logo.png'
-import About from '../../../assets/Buyer Persona/About.png'
-import BPLogo from '../../../assets/Buyer Persona/Logo-BP.png'
-import Welcome from '../../../assets/Buyer Persona/Welcome.png'
-import Setting from '../../../assets/Buyer Persona/Setting.png'
-import Loading from '../../../assets/Buyer Persona/Loading.png'
-import orderEaseError from '../../../assets/OrderEase/Error.png'
-import gestionFond from '../../../assets/GestionDeFond/logo.jpg'
-import Generator from '../../../assets/Buyer Persona/Generator.png'
-import orderEaseFacture from '../../../assets/OrderEase/Facture.png'
-import GeneratedFile from '../../../assets/Buyer Persona/generated-file.png'
-import orderEaseConfirmation from '../../../assets/OrderEase/Confirmation.png'
-import orderEaseDetailsPlats from '../../../assets/OrderEase/DetailsPlats.png'
-import SuccessGenerate from '../../../assets/Buyer Persona/SuccessGenerate.png'
-import SuccessDownload from '../../../assets/Buyer Persona/SuccessDownload.png'
+// import casque from '../../../assets/casque.jpg'
+// import todoApp from '../../../assets/TodoApp/logo.png'
+// import FAQ from '../../../assets/Buyer Persona/FAQ.png'
+// import Avis from '../../../assets/Buyer Persona/Avis.png'
+// import orderEase from '../../../assets/OrderEase/logo.png'
+// import About from '../../../assets/Buyer Persona/About.png'
+// import BPLogo from '../../../assets/Buyer Persona/Logo-BP.png'
+// import Welcome from '../../../assets/Buyer Persona/Welcome.png'
+// import Setting from '../../../assets/Buyer Persona/Setting.png'
+// import Loading from '../../../assets/Buyer Persona/Loading.png'
+// import orderEaseError from '../../../assets/OrderEase/Error.png'
+// import gestionFond from '../../../assets/GestionDeFond/logo.jpg'
+// import Generator from '../../../assets/Buyer Persona/Generator.png'
+// import orderEaseFacture from '../../../assets/OrderEase/Facture.png'
+// import GeneratedFile from '../../../assets/Buyer Persona/generated-file.png'
+// import orderEaseConfirmation from '../../../assets/OrderEase/Confirmation.png'
+// import orderEaseDetailsPlats from '../../../assets/OrderEase/DetailsPlats.png'
+// import SuccessGenerate from '../../../assets/Buyer Persona/SuccessGenerate.png'
+// import SuccessDownload from '../../../assets/Buyer Persona/SuccessDownload.png'
 
 const Projects = [
   {
-    logo: casque,
+    // logo: casque,
+    logo: undefined,
     name: 'Podcast-app',
     link: '/project/podcast-app',
     about: {
@@ -39,7 +40,8 @@ const Projects = [
     screenShoots: [],
   },
   {
-    logo: orderEase,
+    // logo: orderEase,
+    logo: undefined,
     name: 'Resto-app',
     link: '/project/resto-app',
     about: {
@@ -54,14 +56,27 @@ const Projects = [
       technos: ['React', 'NodeJs', 'GraphQL', 'Apollo', 'Prisma', 'Typescript'],
     },
     screenShoots: [
-      { label: 'Erreur', image: orderEaseError },
-      { label: 'Facture', image: orderEaseFacture },
-      { label: 'Confirmation', image: orderEaseConfirmation },
-      { label: 'Details Plats', image: orderEaseDetailsPlats },
+      { label: 'Erreur', 
+      // image: orderEaseError, 
+      image: undefined 
+    },
+      { label: 'Facture', 
+      // image: orderEaseFacture,
+      image: undefined,
+     },
+      { label: 'Confirmation', 
+      // image: orderEaseConfirmation,
+      image: undefined,
+     },
+      { label: 'Details Plats',
+      // image: orderEaseDetailsPlats,
+      image: undefined,
+     },
     ],
   },
   {
-    logo: gestionFond,
+    // logo: gestionFond,
+    logo: undefined,
     name: 'Gestion-fond',
     link: '/project/getsion-fond',
     about: {
@@ -80,7 +95,8 @@ const Projects = [
     screenShoots: [],
   },
   {
-    logo: todoApp,
+    logo: undefined,
+    // logo: todoApp,
     name: 'Todo-app',
     link: '/project/todo-app',
     about: {
@@ -98,7 +114,8 @@ const Projects = [
     screenShoots: [],
   },
   {
-    logo: BPLogo,
+    // logo: BPLogo,
+    logo: undefined,
     logoSize: '90px',
     background: '#22222f',
     name: 'Buyer-persona',
@@ -116,16 +133,41 @@ const Projects = [
       technos: ['React', 'NodeJs', 'Express', 'Typescript'],
     },
     screenShoots: [
-      { label: 'Welcome', image: Welcome },
-      { label: 'SuccessGenerate', image: SuccessGenerate },
-      { label: 'SuccessDownload', image: SuccessDownload },
-      { label: 'Setting', image: Setting },
-      { label: 'Loading', image: Loading },
-      { label: 'Generator', image: Generator },
-      { label: 'GeneratedFile', image: GeneratedFile },
-      { label: 'FAQ', image: FAQ },
-      { label: 'Avis', image: Avis },
-      { label: 'About', image: About },
+      { label: 'Welcome', 
+      // image: Welcome,
+      image: undefined,
+     },
+      { label: 'SuccessGenerate', 
+      image: undefined,
+      // image: SuccessGenerate
+     },
+      { label: 'SuccessDownload', 
+      // image: SuccessDownload, 
+      image: undefined, },
+      { label: 'Setting', 
+      // image: Setting,
+       image: undefined,  },
+      { label: 'Loading', 
+      // image: Loading,
+      image: undefined,  
+     },
+      { label: 'Generator', 
+      // image: Generator, 
+      image: undefined,  
+    },
+      { label: 'GeneratedFile', 
+      // image: GeneratedFile, 
+      image: undefined,  },
+      { label: 'FAQ', 
+      // image: FAQ, 
+      image: undefined },
+      { label: 'Avis',
+      //  image: Avis, 
+      image: undefined },
+      { label: 'About', 
+      // image: About,
+      image: undefined
+    },
     ],
   },
 ]

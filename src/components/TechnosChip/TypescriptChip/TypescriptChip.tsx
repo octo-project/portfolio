@@ -1,10 +1,10 @@
 import '../TechnosChip.css'
-import Ts from '../../../assets/techsLogo/ts.png'
+// import Ts from '../../../../public/assets/techsLogo/ts.png'
 
 const TypescriptChip = () => {
   return (
     <div>
-      <img src={Ts} className="react-logo" alt="" />
+      <img src={undefined} className="react-logo" alt="" />
     </div>
   )
 }
