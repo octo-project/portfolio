@@ -1,7 +1,7 @@
 import React, { FC } from 'react'
-import MaterialUiChip from '../../../TechnosChip/MaterialUiChip'
 import NodeChip from '../../../TechnosChip/NodeChip'
 import ReactChip from '../../../TechnosChip/ReactChip'
+import MaterialUiChip from '../../../TechnosChip/MaterialUiChip'
 import TypescriptChip from '../../../TechnosChip/TypescriptChip'
 
 interface ExperienceProps {
