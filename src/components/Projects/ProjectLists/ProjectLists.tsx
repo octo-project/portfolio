@@ -95,8 +95,8 @@ const Projects = [
     screenShoots: [],
   },
   {
-    logo: undefined,
-    // logo: todoApp,
+    // logo: undefined,
+    logo: todoApp,
     name: 'Todo-app',
     link: '/project/todo-app',
     about: {
@@ -114,8 +114,8 @@ const Projects = [
     screenShoots: [],
   },
   {
-    // logo: BPLogo,
-    logo: undefined,
+    logo: BPLogo,
+    // logo: undefined,
     logoSize: '90px',
     background: '#22222f',
     name: 'Buyer-persona',
