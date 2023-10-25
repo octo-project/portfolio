@@ -2,10 +2,10 @@ import './style.css'
 import { FC, useState } from 'react'
 import { Link } from 'react-router-dom'
 import Contact from '../contact/Contact'
-// import MyCvPicture from '/assets/capture.png'
-// import FbIcon from '/assets/Portfolio Design V2/Assets/Fb.png'
-// import GoogleIcon from '/assets/Portfolio Design V2/Assets/Google.png'
-// import LinkedInIcon from '/assets/Portfolio Design V2/Assets/linkedin.png'
+import MyCvPicture from '../../assets/capture.png'
+import FbIcon from '../../assets/Portfolio Design V2/Assets/Fb.png'
+import GoogleIcon from '../../assets/Portfolio Design V2/Assets/Google.png'
+import LinkedInIcon from '../../assets/Portfolio Design V2/Assets/linkedin.png'
 
 interface layoutProps {
   children: any
@@ -44,17 +44,17 @@ const Layout: FC<layoutProps> = (props: { children: any }) => {
             <span className="menuTitle"> Contacts</span>
             <div>
               <Contact 
-                icon={undefined} 
-                // icon={FbIcon} 
+                // icon={undefined} 
+                icon={FbIcon} 
                 contact="TSIALONINA Heriniaina Mathieu" />
               <Contact
-                icon={undefined}
-                // icon={GoogleIcon}
+                // icon={undefined}
+                icon={GoogleIcon}
                 contact="hmathieutsialonina@gmail.com"
               />
               <Contact
-                icon={undefined}
-                // icon={LinkedInIcon}
+                // icon={undefined}
+                icon={LinkedInIcon}
                 contact="TSIALONINA Heriniaina Mathieu"
               />
             </div>
@@ -64,8 +64,8 @@ const Layout: FC<layoutProps> = (props: { children: any }) => {
           <div className="tooltip">
             <span>TSIALONINA Heriniaina Mathieu</span>
             <span className="tooltiptext">
-              {/* <img src={MyCvPicture} alt="Svg" /> */}
-              <img src={undefined} alt="Svg" />
+              <img src={MyCvPicture} alt="Svg" />
+              {/* <img src={undefined} alt="Svg" /> */}
               <span className="description">Dev Full Stack</span>
             </span>
           </div>
