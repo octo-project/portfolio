@@ -1,23 +1,23 @@
 import { Link } from 'react-router-dom'
 import casque from '../../../assets/casque.jpg'
-// import todoApp from '../../../assets/TodoApp/logo.png'
-// import FAQ from '../../../assets/Buyer Persona/FAQ.png'
-// import Avis from '../../../assets/Buyer Persona/Avis.png'
-// import orderEase from '../../../assets/OrderEase/logo.png'
-// import About from '../../../assets/Buyer Persona/About.png'
-// import BPLogo from '../../../assets/Buyer Persona/Logo-BP.png'
-// import Welcome from '../../../assets/Buyer Persona/Welcome.png'
-// import Setting from '../../../assets/Buyer Persona/Setting.png'
-// import Loading from '../../../assets/Buyer Persona/Loading.png'
-// import orderEaseError from '../../../assets/OrderEase/Error.png'
-// import gestionFond from '../../../assets/GestionDeFond/logo.jpg'
-// import Generator from '../../../assets/Buyer Persona/Generator.png'
-// import orderEaseFacture from '../../../assets/OrderEase/Facture.png'
-// import GeneratedFile from '../../../assets/Buyer Persona/generated-file.png'
-// import orderEaseConfirmation from '../../../assets/OrderEase/Confirmation.png'
-// import orderEaseDetailsPlats from '../../../assets/OrderEase/DetailsPlats.png'
-// import SuccessGenerate from '../../../assets/Buyer Persona/SuccessGenerate.png'
-// import SuccessDownload from '../../../assets/Buyer Persona/SuccessDownload.png'
+import todoApp from '../../../assets/TodoApp/logo.png'
+import FAQ from '../../../assets/Buyer Persona/FAQ.png'
+import Avis from '../../../assets/Buyer Persona/Avis.png'
+import orderEase from '../../../assets/OrderEase/logo.png'
+import About from '../../../assets/Buyer Persona/About.png'
+import BPLogo from '../../../assets/Buyer Persona/Logo-BP.png'
+import Welcome from '../../../assets/Buyer Persona/Welcome.png'
+import Setting from '../../../assets/Buyer Persona/Setting.png'
+import Loading from '../../../assets/Buyer Persona/Loading.png'
+import orderEaseError from '../../../assets/OrderEase/Error.png'
+import gestionFond from '../../../assets/GestionDeFond/logo.jpg'
+import Generator from '../../../assets/Buyer Persona/Generator.png'
+import orderEaseFacture from '../../../assets/OrderEase/Facture.png'
+import GeneratedFile from '../../../assets/Buyer Persona/generated-file.png'
+import orderEaseConfirmation from '../../../assets/OrderEase/Confirmation.png'
+import orderEaseDetailsPlats from '../../../assets/OrderEase/DetailsPlats.png'
+import SuccessGenerate from '../../../assets/Buyer Persona/SuccessGenerate.png'
+import SuccessDownload from '../../../assets/Buyer Persona/SuccessDownload.png'
 
 const Projects = [
   {
@@ -40,8 +40,8 @@ const Projects = [
     screenShoots: [],
   },
   {
-    // logo: orderEase,
-    logo: undefined,
+    logo: orderEase,
+    // logo: undefined,
     name: 'Resto-app',
     link: '/project/resto-app',
     about: {
@@ -75,8 +75,8 @@ const Projects = [
     ],
   },
   {
-    // logo: gestionFond,
-    logo: undefined,
+    logo: gestionFond,
+    // logo: undefined,
     name: 'Gestion-fond',
     link: '/project/getsion-fond',
     about: {
