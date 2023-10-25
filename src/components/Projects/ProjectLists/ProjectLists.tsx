@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-// import casque from '../../../assets/casque.jpg'
+import casque from '../../../assets/casque.jpg'
 // import todoApp from '../../../assets/TodoApp/logo.png'
 // import FAQ from '../../../assets/Buyer Persona/FAQ.png'
 // import Avis from '../../../assets/Buyer Persona/Avis.png'
@@ -21,8 +21,8 @@ import { Link } from 'react-router-dom'
 
 const Projects = [
   {
-    // logo: casque,
-    logo: undefined,
+    logo: casque,
+    // logo: undefined,
     name: 'Podcast-app',
     link: '/project/podcast-app',
     about: {
