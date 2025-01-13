@@ -3,6 +3,10 @@ import { FC, useState } from 'react'
 import { Link } from 'react-router-dom'
 import Contact from '../contact/Contact'
 import MyCvPicture from '../../assets/capture.png'
+import reactLogo from '../../assets/techsLogo/react.png'
+import pythonLogo from '../../assets/techsLogo/python.png'
+import laravelLogo from '../../assets/techsLogo/laravel.png'
+import nestJSLogo from '../../assets/techsLogo/nestJs.png'
 import FbIcon from '../../assets/Portfolio Design V2/Assets/Fb.png'
 import GoogleIcon from '../../assets/Portfolio Design V2/Assets/Google.png'
 import LinkedInIcon from '../../assets/Portfolio Design V2/Assets/linkedin.png'
@@ -24,13 +28,19 @@ const Layout: FC<layoutProps> = (props: { children: any }) => {
       <div className={isActive ? 'navigation active' : 'navigation'}>
         <div className="header-title">
           <div className="tooltip">
-            <span>TSIALONINA Heriniaina Mathieu</span>
+            <span style={{cursor: 'pointer'}}>TSIALONINA Heriniaina Mathieu</span>
             <span className="tooltiptext">
               <img src={MyCvPicture} alt="Svg" />
               {/* <img src={undefined} alt="Svg" /> */}
               <div className='tooltipDescription'>
                 <span className="description">Dev Full Stack</span>
                 <span>Code l'avenir, des pixels au back-end 🚀</span>
+                <div>
+                  <img src={reactLogo} style={{width: 34, height: 29}} alt="react" />
+                  <img src={laravelLogo} style={{width: 29, height: 29}} alt="react" />
+                  <img src={pythonLogo} style={{width: 29, height: 29}} alt="react" />
+                  <img src={nestJSLogo} style={{width: 29, height: 29}} alt="react" />
+                </div>
               </div>
             </span>
           </div>
