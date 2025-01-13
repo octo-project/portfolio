@@ -28,7 +28,10 @@ const Layout: FC<layoutProps> = (props: { children: any }) => {
             <span className="tooltiptext">
               <img src={MyCvPicture} alt="Svg" />
               {/* <img src={undefined} alt="Svg" /> */}
-              <span className="description">Dev Full Stack</span>
+              <div className='tooltipDescription'>
+                <span className="description">Dev Full Stack</span>
+                <span>Code l'avenir, des pixels au back-end 🚀</span>
+              </div>
             </span>
           </div>
         </div>
