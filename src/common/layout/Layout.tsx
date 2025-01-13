@@ -3,6 +3,10 @@ import { FC, useState } from 'react'
 import { Link } from 'react-router-dom'
 import Contact from '../contact/Contact'
 import MyCvPicture from '../../assets/capture.png'
+import reactLogo from '../../assets/techsLogo/react.png'
+import pythonLogo from '../../assets/techsLogo/python.png'
+import laravelLogo from '../../assets/techsLogo/laravel.png'
+import nestJSLogo from '../../assets/techsLogo/nestJs.png'
 import FbIcon from '../../assets/Portfolio Design V2/Assets/Fb.png'
 import GoogleIcon from '../../assets/Portfolio Design V2/Assets/Google.png'
 import LinkedInIcon from '../../assets/Portfolio Design V2/Assets/linkedin.png'
@@ -22,8 +26,24 @@ const Layout: FC<layoutProps> = (props: { children: any }) => {
   return (
     <div className="container">
       <div className={isActive ? 'navigation active' : 'navigation'}>
-        <div>
-          <h4>TSIALONINA Heriniaina Mathieu</h4>
+        <div className="header-title">
+          <div className="tooltip">
+            <span style={{cursor: 'pointer'}}>TSIALONINA Heriniaina Mathieu</span>
+            <span className="tooltiptext">
+              <img src={MyCvPicture} alt="Svg" />
+              {/* <img src={undefined} alt="Svg" /> */}
+              <div className='tooltipDescription'>
+                <span className="description">Dev Full Stack</span>
+                <span>Code l'avenir, des pixels au back-end 🚀</span>
+                <div>
+                  <img src={reactLogo} style={{width: 34, height: 29}} alt="react" />
+                  <img src={laravelLogo} style={{width: 29, height: 29}} alt="react" />
+                  <img src={pythonLogo} style={{width: 29, height: 29}} alt="react" />
+                  <img src={nestJSLogo} style={{width: 29, height: 29}} alt="react" />
+                </div>
+              </div>
+            </span>
+          </div>
         </div>
         <div className="menu">
           <Link to="/cv" style={{ textDecoration: 'none', flex: '0 1 100px' }}>
@@ -60,22 +80,12 @@ const Layout: FC<layoutProps> = (props: { children: any }) => {
             </div>
           </div>
         </div>
-        <div className="footer">
-          <div className="tooltip">
-            <span>TSIALONINA Heriniaina Mathieu</span>
-            <span className="tooltiptext">
-              <img src={MyCvPicture} alt="Svg" />
-              {/* <img src={undefined} alt="Svg" /> */}
-              <span className="description">Dev Full Stack</span>
-            </span>
-          </div>
-        </div>
       </div>
       <div className="root">
         <div
-          className={isActive ? 'hamburger-menu active' : 'hamburger-menu'}
           id="menu-button"
           onClick={toggleClass}
+          className={isActive ? 'hamburger-menu active' : 'hamburger-menu'}
         >
           <div className="bar"></div>
           <div className="bar"></div>

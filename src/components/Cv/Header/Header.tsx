@@ -21,7 +21,6 @@ const Header: FC<HeaderProps> = (props) => {
 
   const handleMenuClick = (ref: any) => {
     if (ref && ref.current) {
-      console.log('ref exist')
       ref.current.scrollIntoView({ behavior: 'smooth' })
     } else {
       console.log("ref doesn't exist")
@@ -31,7 +30,7 @@ const Header: FC<HeaderProps> = (props) => {
   return (
     <div className="CvHeaderContainer">
       <div className="photoCv">
-        <img src={MyCvPicture} width={170} alt="no img" />
+        <img src={MyCvPicture} style={{zIndex:'-1 !important'}} width={100} alt="no img" />
       </div>
       <div className="CvContent">
         <div>
