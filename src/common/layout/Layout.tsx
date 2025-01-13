@@ -22,8 +22,15 @@ const Layout: FC<layoutProps> = (props: { children: any }) => {
   return (
     <div className="container">
       <div className={isActive ? 'navigation active' : 'navigation'}>
-        <div>
-          <h4>TSIALONINA Heriniaina Mathieu</h4>
+        <div className="header-title">
+          <div className="tooltip">
+            <span>TSIALONINA Heriniaina Mathieu</span>
+            <span className="tooltiptext">
+              <img src={MyCvPicture} alt="Svg" />
+              {/* <img src={undefined} alt="Svg" /> */}
+              <span className="description">Dev Full Stack</span>
+            </span>
+          </div>
         </div>
         <div className="menu">
           <Link to="/cv" style={{ textDecoration: 'none', flex: '0 1 100px' }}>
@@ -60,22 +67,12 @@ const Layout: FC<layoutProps> = (props: { children: any }) => {
             </div>
           </div>
         </div>
-        <div className="footer">
-          <div className="tooltip">
-            <span>TSIALONINA Heriniaina Mathieu</span>
-            <span className="tooltiptext">
-              <img src={MyCvPicture} alt="Svg" />
-              {/* <img src={undefined} alt="Svg" /> */}
-              <span className="description">Dev Full Stack</span>
-            </span>
-          </div>
-        </div>
       </div>
       <div className="root">
         <div
-          className={isActive ? 'hamburger-menu active' : 'hamburger-menu'}
           id="menu-button"
           onClick={toggleClass}
+          className={isActive ? 'hamburger-menu active' : 'hamburger-menu'}
         >
           <div className="bar"></div>
           <div className="bar"></div>

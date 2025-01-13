@@ -1,9 +1,9 @@
 .cvContainer {
   height: 93vh;
-  z-index: 300;
   display: flex;
   margin-top: -29px;
   position: relative;
+  z-index: 5 !important;
   flex-direction: column;
 }
 

@@ -127,7 +127,7 @@ p {
 }
 h3 {
   color: black;
-  font-size: 38px;
+  font-size: 23px;
   letter-spacing: 8px;
 }
 .game-card {
@@ -225,7 +225,8 @@ h3 {
   display: flex;
   justify-content: center;
   margin-top: 10px;
-  z-index: 9999;
+  z-index: 400;
+  /* z-index: 9999; */
   position: relative;
 }
 

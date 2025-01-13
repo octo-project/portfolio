@@ -15,7 +15,7 @@ const MyProject: FC = () => {
   return (
     <div className="containerProject">
       <h3 className="containerProjectTitle">
-        <Link to="/" style={{ textDecoration: 'none' }}>
+        <Link to="/" style={{ textDecoration: 'none', fontSize: 18 }}>
           PROJECTS
         </Link>
         {projectName && (
