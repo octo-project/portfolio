@@ -19,7 +19,7 @@ const MyProject: FC = () => {
           PROJECTS
         </Link>
         {projectName && (
-          <span style={{ fontWeight: 'bold' }}>{`/ ${projectName}`}</span>
+          <span style={{ fontWeight: 'normal', letterSpacing: '2px' }}>{`/ ${projectName}`}</span>
         )}
       </h3>
 

@@ -1,4 +1,4 @@
-import React, { FC } from 'react'
+import { FC } from 'react'
 import TechnoCard from '../../../../common/cards/technoCard/TechnoCard'
 
 interface AboutProps {
@@ -9,14 +9,20 @@ const About: FC<AboutProps> = (props) => {
   const { about } = props
   return (
     <div className="projectDetails">
-      <h5>
-        Demo : <u>{about.demoUrl}</u>
-      </h5>
-      <h5>
-        Repository : <u>{about.gitHubRepository}</u>
-      </h5>
+      <div style={{display: 'flex'}}>
+        <h5>
+          <u>
+            <a href={about.demoUrl} target='_blank'>See demo</a>
+          </u>
+        </h5>
+        <h5>
+          <u>
+            <a href={about.gitHubRepository} target='_blank'>Repository</a>
+          </u>
+        </h5>
+      </div>
       <h5>Application descriptions : </h5>
-      <p style={{ maxWidth: '67%', textAlign: 'justify' }}>
+      <p style={{ maxWidth: '67%', marginLeft: '9px', fontSize:12, textAlign: 'justify' }}>
         {about.description}
       </p>
       <h5>Animation : All animation is made with after effect and lottie</h5>

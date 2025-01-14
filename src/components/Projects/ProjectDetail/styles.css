@@ -1,5 +1,5 @@
 .detailsTitles {
-  width: 220px;
+  /* width: 220px; */
   display: flex;
   flex-direction: row;
 }
@@ -13,8 +13,8 @@
 }
 
 .btnDetails {
-  width: 100px;
-  padding: 10px;
+  width: 120px;
+  padding: 4px;
   margin-right: 12px;
   text-align: center;
   border-radius: 15px;
@@ -24,13 +24,14 @@
 
 .detailLogoContainerx {
   top: 0;
-  right: 0;
+  right: 25px;
   position: absolute;
   background: aliceblue;
 }
 
 .detailLogo {
-  width: 227px;
+  width: 127px;
+  margin: auto;
 }
 
 .btnCustom {
@@ -52,13 +53,15 @@
 }
 
 .projectDetails {
-  height: 82vh;
+  height: 72vh;
   overflow: auto;
   margin-top: 12px;
+  /* margin-bottom: 225px; */
   padding: 0px 22px 22px 0px;
 }
 
 h5 {
+  margin: 8px;
   color: #006bd5;
   letter-spacing: 0.7px;
 }
@@ -82,9 +85,12 @@ u:hover {
 
 .functionnalityCard {
   margin: 8px;
+  width: 140px;
   padding: 7px;
+  display: flex;
   color: #fff;
   border-radius: 15px;
+  justify-content: center;
   box-shadow: 0px 0px 4px -2px black;
 }
 
