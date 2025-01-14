@@ -25,17 +25,17 @@ const ProjectDetails: FC<ProjectDetailsProps> = (props) => {
   }
 
   return (
-    <div style={{ paddingLeft: '80px' }}>
+    <div style={{ paddingLeft: '20px' }}>
       <div className="detailsTitlesContainer">
         <div className="detailsTitles">
           <div
-            className="btnDetails"
+            className="btnDetails animate"
             onClick={(event) => handleSelectTab(event, 'about')}
           >
             about
           </div>
           <div
-            className="btnDetails"
+            className="btnDetails animate"
             onClick={(event) => handleSelectTab(event, 'screenshoot')}
           >
             screenshoot
@@ -57,6 +57,12 @@ const ProjectDetails: FC<ProjectDetailsProps> = (props) => {
                     <tr>
                       <td className="columnTitle">password:</td>
                       <td className="columnMdp">demoPassword</td>
+                    </tr>
+                    <tr>
+                      <td className="columnTitle">url:</td>
+                      <td className="columnMdp">
+                        <a href="https://asdasdasd.xyz" target='_blank'>https://asdasdasd.xyz</a>
+                      </td>
                     </tr>
                   </tbody>
                 </table>

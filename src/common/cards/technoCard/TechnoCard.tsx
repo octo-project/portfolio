@@ -14,7 +14,7 @@ const TechnoCard: FC<technoCardProps> = (props) => {
   const tempHeigth = (height && height - 25) || 400
 
   return (
-    <div className="cardTechno" style={{ height, width }}>
+    <div className="cardTechno animate" style={{ height, width }}>
       {text}
       {img && height && (
         <img

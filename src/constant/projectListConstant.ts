@@ -26,7 +26,7 @@ export const Projects = [
       logoSize: '50px',
       link: '/project/podcast-app',
       about: {
-        demoUrl: 'https://podcast-app-web.com',
+        demoUrl: 'https://youtube/asdas6a5465/podcast-app-web',
         gitHubRepository: ' https://git-lab.com/hmathieutsialonina/podcast-app',
         description: `L'application mobile de podcast est conçue pour permettre aux utilisateurs de découvrir, écouter et suivre facilement leurs émissions de podcast préférées. Elle propose une grande variété de podcasts dans différentes catégories, telles que l'actualité, la culture, la science, la technologie et bien plus encore.
         Les utilisateurs peuvent parcourir les émissions de podcast les plus populaires, découvrir de nouveaux contenus en fonction de leurs intérêts et marquer leurs épisodes préférés pour une écoute ultérieure. L'application propose également des fonctionnalités de recherche avancées pour aider les utilisateurs à trouver des émissions de podcast spécifiques, en fonction de leur titre, de leur sujet ou de leur animateur.
@@ -46,7 +46,7 @@ export const Projects = [
       logoSize: '50px',
       link: '/project/resto-app',
       about: {
-        demoUrl: 'https://podcast-app-web.com',
+        demoUrl: 'https://youtube/asdas6a5465/podcast-app-web',
         gitHubRepository: ' https://git-lab.com/hmathieutsialonina/podcast-app',
         description: `L'application est une plateforme de commande de repas en ligne qui permet aux utilisateurs de consulter les menus des restaurants locaux et de passer des commandes depuis leur téléphone portable. L'application est facile à utiliser et permet aux clients de parcourir les menus, de sélectionner les plats qu'ils souhaitent commander, d'ajouter des instructions spéciales et de passer leur commande en quelques clics.
         L'une des fonctionnalités clés de l'application est le paiement mobile, qui permet aux utilisateurs de payer leurs commandes directement à partir de leur téléphone portable. Les utilisateurs peuvent enregistrer leurs informations de paiement dans l'application pour un processus de commande plus rapide et plus facile.
@@ -82,7 +82,7 @@ export const Projects = [
       logoSize: '50px',
       link: '/project/getsion-fond',
       about: {
-        demoUrl: 'https://podcast-app-web.com',
+        demoUrl: 'https://youtube/asdas6a5465/podcast-app-web',
         gitHubRepository: ' https://git-lab.com/hmathieutsialonina/podcast-app',
         description: `L'application mobile de gestion de fonds permet aux utilisateurs de suivre leurs finances personnelles, de gérer leur budget et d'investir dans différents types de fonds d'investissement.
         Les utilisateurs peuvent facilement connecter leurs comptes bancaires et cartes de crédit pour suivre leurs dépenses et leurs revenus en temps réel. L'application offre des fonctionnalités de catégorisation des dépenses pour aider les utilisateurs à mieux comprendre leurs habitudes de dépenses et à établir des budgets réalistes.
@@ -103,7 +103,7 @@ export const Projects = [
       logoSize: '50px',
       link: '/project/todo-app',
       about: {
-        demoUrl: 'https://podcast-app-web.com',
+        demoUrl: 'https://youtube/asdas6a5465/podcast-app-web',
         gitHubRepository: ' https://git-lab.com/hmathieutsialonina/podcast-app',
         description: `L'application mobile Todo est un outil de gestion de tâches simple et efficace qui permet aux utilisateurs de créer, organiser et suivre leur liste de tâches quotidiennes.
         Les utilisateurs peuvent facilement ajouter des tâches à leur liste, les organiser par priorité et suivre leur progression en temps réel. L'application propose des fonctionnalités de rappel pour aider les utilisateurs à ne pas oublier les tâches importantes et des options de répétition pour les tâches récurrentes.
@@ -125,7 +125,7 @@ export const Projects = [
       name: 'Buyer',
       link: '/project/buyer-persona-app',
       about: {
-        demoUrl: 'https://podcast-app-web.com',
+        demoUrl: 'https://youtube/asdas6a5465/podcast-app-web',
         gitHubRepository: ' https://git-lab.com/hmathieutsialonina/podcast-app',
         description: `This is project is made for testing chatGpt integration with a chrome add-on, the target is to create bayer personas in less click`,
         functionnalities: [

@@ -58,6 +58,14 @@ a {
   transform: scale(0.95);
 }
 
+.animate {
+  transition: transform 200ms ease-in-out;
+}
+
+.animate:hover {
+  transform: scale(0.95);
+}
+
 .card-link {
   display: flex;
   text-align: center;
