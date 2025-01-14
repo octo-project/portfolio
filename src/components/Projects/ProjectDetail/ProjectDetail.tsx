@@ -61,7 +61,7 @@ const ProjectDetails: FC<ProjectDetailsProps> = (props) => {
                     <tr>
                       <td className="columnTitle">url:</td>
                       <td className="columnMdp">
-                        <a href="https://asdasdasd.xyz" target='_blank' rel='noopener'>https://asdasdasd.xyz</a>
+                        <a href="https://asdasdasd.xyz" target='_blank' rel='noopener noreferrer'>https://asdasdasd.xyz</a>
                       </td>
                     </tr>
                   </tbody>
