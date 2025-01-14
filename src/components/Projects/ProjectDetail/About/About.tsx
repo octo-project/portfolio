@@ -12,12 +12,12 @@ const About: FC<AboutProps> = (props) => {
       <div style={{display: 'flex'}}>
         <h5>
           <u>
-            <a href={about.demoUrl} target='_blank' rel='noopener'>See demo</a>
+            <a href={about.demoUrl} target='_blank' rel='noopener noreferrer'>See demo</a>
           </u>
         </h5>
         <h5>
           <u>
-            <a href={about.gitHubRepository} target='_blank' rel='noopener'>Repository</a>
+            <a href={about.gitHubRepository} target='_blank' rel='noopener noreferrer'>Repository</a>
           </u>
         </h5>
       </div>
