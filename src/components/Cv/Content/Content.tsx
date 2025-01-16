@@ -1,10 +1,10 @@
 import './content.css'
 import { FC } from 'react'
-import Diplome from './Diplome/Diplome'
+// import Diplome from './Diplome/Diplome'
 import Parcour from './Parcour/Parcour'
-import Passion from './Passion/Passion'
+// import Passion from './Passion/Passion'
 import Experience from './Experience/Experience'
-import QualityAndDefaut from './QualityAndDefaut/QualityAndDefaut'
+// import QualityAndDefaut from './QualityAndDefaut/QualityAndDefaut'
 
 interface ContentProps {
   passionRef: React.MutableRefObject<null>
@@ -16,11 +16,11 @@ interface ContentProps {
 
 const Content: FC<ContentProps> = (props) => {
   const {
-    diplomeRef,
+    // diplomeRef,
     parcourRef,
-    passionRef,
+    // passionRef,
     experienceRef,
-    qualityAndDefautRef,
+    // qualityAndDefautRef,
   } = props
 
   return (
