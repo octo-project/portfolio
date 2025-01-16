@@ -1,9 +1,11 @@
 .chip-card {
-  height: 28px;
-  width: 150px;
+  height: 20px;
+  width: 100px;
   padding: 15px;
   color: white;
+  cursor: pointer;
   overflow: hidden;
+  margin-right: 5px;
   font-weight: bold;
   border-radius: 5px;
   background: #29293e;
@@ -11,8 +13,41 @@
 }
 
 .react-logo {
-  position: relative;
-  height: 95px;
   top: -43px;
-  left: 92px;
+  left: 52px;
+  height: 95px;
+  position: relative;
+}
+
+.ts-logo{
+  top: -27px;
+  left: -16px;
+  height: 71px;
+  width: 133px;
+  position: relative;
+}
+
+.white-bg{
+  background: white;
+}
+
+.node-logo{
+  top: -9px;
+  left: -7px;
+  height: 33px;
+  position: relative;
+}
+
+.mui-logo{
+  top: -27px;
+  left: -18px;
+  height: 78px;
+  position: relative;
+}
+
+.ant-logo{
+  top: -43px;
+  left: -6px;
+  height: 108px;
+  position: relative;
 }

@@ -3,6 +3,8 @@ import NodeChip from '../../../TechnosChip/NodeChip'
 import ReactChip from '../../../TechnosChip/ReactChip'
 import MaterialUiChip from '../../../TechnosChip/MaterialUiChip'
 import TypescriptChip from '../../../TechnosChip/TypescriptChip'
+import AntDesignChip from '../../../TechnosChip/AntDesignChip'
+import D3Chip from '../../../TechnosChip/D3Chip'
 
 interface ExperienceProps {
   refer: React.MutableRefObject<null>
@@ -17,43 +19,46 @@ const Experience: FC<ExperienceProps> = (props) => {
       <div className="experience-card">
         <span className="experience-card-title">Konsistent :</span>
         <div>
-          <p>
+          <p className='project-description'>
             C'est un extension chrome, similaire a grammarly, il est utilisé
-            pour assurer la communication <br /> entre personnel dans plusieurs
+            pour assurer la communication  entre personnel dans plusieurs
             organisations. Pour éviter les harcèlements sexuel,
-            <br /> le harcèlement moral, l’exclusion. Il est disponible sur la
+            le harcèlement moral, l’exclusion. Il est disponible sur la
             plateforme web et desktop.
           </p>
           <div>
             <span className="experience-card-subtitle">Missions :</span>
             <ol>
               <li>Correction des bugs critiques.</li>
-              <li>Ajout de nouvelle fonctionnalites.</li>
-              <li>Amelioration du qualite des codes de l'extension.</li>
+              <li>Ajout de nouvelle règles.</li>
+              <li>Amélioration du qualite des codes de l'extension.</li>
               <li>
-                Mise en place de fonction de cryptage asymetrique des donnees.
+                Mise en place de fonction de cryptage asymétrique des données.
               </li>
               <li>
-                Creation from scratch du projet en version desktop en utilisant
-                electron.
+                Création from scratch du projet en version desktop.
               </li>
             </ol>
           </div>
           <div>
             <span className="experience-card-subtitle">Technos:</span>
             <div className="technos-content">
-              <ReactChip /> <TypescriptChip /> <NodeChip /> <MaterialUiChip />
+              <ReactChip /> 
+              <TypescriptChip /> 
+              <NodeChip />
+              <MaterialUiChip /> 
             </div>
           </div>
         </div>
       </div>
+      
       <div className="experience-card">
         <span className="experience-card-title">Haptic Composer:</span>
         <div>
-          <p>
+          <p className='project-description'>
             C’est une application desktop pour faciliter la création de
-            matériaux haptique en seulement <br /> quelques cliques, a l'aide
-            des perceptions.
+            matériaux haptique en seulement quelques cliques, a l'aide
+            des perceptions (Actuellement racheter par razer).
           </p>
           <div>
             <span className="experience-card-subtitle">Missions :</span>
@@ -66,10 +71,17 @@ const Experience: FC<ExperienceProps> = (props) => {
           </div>
           <div>
             <span className="experience-card-subtitle">Technos:</span>
-            <p>ReactJS, D3Js, Typescript, C++, Ant Design, Electron.</p>
+            <div className="technos-content">
+              <ReactChip /> 
+              <TypescriptChip /> 
+              <AntDesignChip />
+              <D3Chip/>
+            </div>
+            {/* <p> D3Js, Typescript, C++, Ant Design, Electron.</p> */}
           </div>
         </div>
       </div>
+      {/*
       <div className="experience-card">
         <span className="experience-card-title">YOOMUM:</span>
         <div>
@@ -150,7 +162,7 @@ const Experience: FC<ExperienceProps> = (props) => {
             <p>React, Typescript</p>
           </div>
         </div>
-      </div>
+      </div> */}
     </section>
   )
 }

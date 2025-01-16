@@ -1,11 +1,14 @@
 import '../TechnosChip.css'
+import Link from '../../Link'
 import Mui from '../../../assets/techsLogo/mui.png'
 
 const MaterialUiChip = () => {
   return (
-    <div>
-      <img src={Mui} className="react-logo" alt="" />
-    </div>
+    <Link target={'https://mui.com/'}>
+      <div className="chip-card animate white-bg">
+        <img src={Mui} className="mui-logo" alt="" />
+      </div>
+    </Link>
   )
 }
 

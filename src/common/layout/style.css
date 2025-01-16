@@ -24,7 +24,7 @@ h4 {
   /* flex: 0 1 395px; */
   z-index: 20;
   left: -390px;
-  width: 390px;
+  width: 320px;
   height: 100%;
   position: fixed;
   transition: left 0.3s ease-in-out;
@@ -37,7 +37,7 @@ h4 {
 }
 
 .navigation.active ~ .root {
-  margin-left: 390px;
+  margin-left: 320px;
 }
 
 .root {
@@ -47,7 +47,7 @@ h4 {
   padding: 20px;
   position: relative;
   z-index: 5 !important;
-  margin: 28px 32px 16px 32px;
+  margin: 14px 16px 16px 15px;
   transition: margin-left 0.3s ease-in-out;
 }
 
@@ -258,27 +258,31 @@ h4 {
   top:0;
   left:0;
   width: 36px;
-  height: 20px;
+  height: 34px;
   display: flex;
-  cursor: pointer;
   cursor: pointer;
   position: absolute;
   align-items: center;
-  z-index: 2 !important;
+  z-index: 200 !important;
   flex-direction: column;
   justify-content: center;
 }
 
 .bar {
   width: 20px;
-  height: 4px;
+  height: 2px;
   margin: 3px;
   background-color: black;
   transition: transform 0.3s ease-in-out;
 }
 
 .hamburger-menu.active .bar:nth-child(1) {
-  transform: translateY(10px) rotate(46deg);
+  background-color: white;
+  transform: translateY(7px) rotate(46deg);
+}
+
+.hamburger-menu.active{
+  background-color: #9E9E9E;
 }
 
 .hamburger-menu.active .bar:nth-child(2) {
@@ -286,5 +290,6 @@ h4 {
 }
 
 .hamburger-menu.active .bar:nth-child(3) {
-  transform: translateY(-3px) rotate(-43deg);
+  background-color: white;
+  transform: translateY(-9px) rotate(-41deg);
 }
