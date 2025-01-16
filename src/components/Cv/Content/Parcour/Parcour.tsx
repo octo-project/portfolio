@@ -8,29 +8,31 @@ const Parcour: FC<ParcourProps> = (props) => {
   const { refer } = props
   return (
     <section className="content" ref={refer}>
-      <h3>Parcours</h3>
+      <h3>Parcours académique</h3>
       <div className="parcour-container">
         <div className="rounded">
-          <div>2011 - 2012</div>
-          <div>College</div>
-          <div>Sacre coeur Tsianaloka</div>
+          <div className='italic'>2011 - 2012</div>
+          <div className='degrees'>CEPE </div>
+          <div>Au Collège Sacré coeur Tulear</div>
         </div>
         <div className="rounded">
-          <div>2013 - 2014</div>
-          <div>Baccalaureat serie D</div>
-          <div>St Michel Itaosy</div>
+          <div className='italic'>2013 - 2014</div>
+          <div className='degrees'>Baccalauréat Scientifique</div>
+          <div>Au Lycée St Michel Itaosy</div>
         </div>
         <div className="rounded">
-          <div>2017 - 2018</div>
-          <div>License en IGGLIA</div>
-          <div>ISPM</div>
-          <div>Chrysalide Madagascar</div>
+          <div className='italic'>2017 - 2018</div>
+          <div className='degrees'>Licence en Informatique</div>
+          <div>
+            <a href="https://ispm-edu.com/index.php" target='_blank' rel='noopener noreferrer'>à L'ISPM</a>
+          </div>
         </div>
         <div className="rounded">
-          <div>2020 - 2021</div>
-          <div>Master en IGGLIA</div>
-          <div>ISPM</div>
-          <div>Hairun Technology</div>
+          <div className='italic'>2020 - 2021</div>
+          <div className='degrees'>Master en Informatique</div>
+          <div>
+            <a href="https://ispm-edu.com/index.php" target='_blank' rel='noopener noreferrer'>à L'ISPM</a>
+          </div>
         </div>
       </div>
     </section>

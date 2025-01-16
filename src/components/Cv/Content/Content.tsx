@@ -25,11 +25,11 @@ const Content: FC<ContentProps> = (props) => {
 
   return (
     <div id="slideshow-container">
-      <Diplome refer={diplomeRef} />
       <Parcour refer={parcourRef} />
       <Experience refer={experienceRef} />
+      {/* <Diplome refer={diplomeRef} />
       <QualityAndDefaut refer={qualityAndDefautRef} />
-      <Passion refer={passionRef} />
+      <Passion refer={passionRef} /> */}
 
       <div className="footerc">&#169; TSIALONINA Heriniaina Mathieu 2023</div>
     </div>
