@@ -1,14 +1,8 @@
 import React, { FC } from 'react'
 import Yoomum from './projects/Yoomum/Yoomum'
-import D3Chip from '../../../TechnosChip/D3Chip'
-import NodeChip from '../../../TechnosChip/NodeChip'
-import ReactChip from '../../../TechnosChip/ReactChip'
-import Konsistent from './projects/Konsistent/Konsistent'
-import AntDesignChip from '../../../TechnosChip/AntDesignChip'
-import MaterialUiChip from '../../../TechnosChip/MaterialUiChip'
-import TypescriptChip from '../../../TechnosChip/TypescriptChip'
-import HapticComposer from './projects/HapticComposer/HapticComposer'
 import Markaiter from './projects/Markaiter/Markaiter'
+import Konsistent from './projects/Konsistent/Konsistent'
+import HapticComposer from './projects/HapticComposer/HapticComposer'
 
 interface ExperienceProps {
   refer: React.MutableRefObject<null>

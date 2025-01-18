@@ -1,7 +1,7 @@
 import './content.css'
 import { FC } from 'react'
 import Parcour from './Parcour/Parcour'
-import Diplome from './Diplome/Diplome'
+// import Diplome from './Diplome/Diplome'
 // import Passion from './Passion/Passion'
 import Experience from './Experience/Experience'
 import QualityAndDefaut from './QualityAndDefaut/QualityAndDefaut'
@@ -16,8 +16,8 @@ interface ContentProps {
 
 const Content: FC<ContentProps> = (props) => {
   const {
-    diplomeRef,
     parcourRef,
+    // diplomeRef,
     // passionRef,
     experienceRef,
     qualityAndDefautRef,

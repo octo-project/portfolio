@@ -11,7 +11,7 @@ const HapticComposer = () => {
         <div className="experience-card">
           <div className="experience-card-header-container">
             <Link target={"https://www.interhaptics.com/tech/haptic-composer"} >
-              <img src={InterhapticsLogo} className="esn-interhaptics-logo"/>
+              <img src={InterhapticsLogo} className="esn-interhaptics-logo" alt="interhaptics"/>
             </Link>
             <span className="experience-card-title">Haptic Composer:</span>
           </div>
