@@ -15,7 +15,7 @@ const QualityAndDefaut: FC<QualityAndDefaultProps> = (props) => {
           <span className="qualitySubTitle">Quality</span>
           <div>
             <ul>
-              <li className="quality-item">
+              <li className="quality-item ">
                 Passionné par la programmation et toujours en quête de nouvelles
                 connaissances et technologies pour améliorer mes compétences en
                 tant que développeur full-stack.

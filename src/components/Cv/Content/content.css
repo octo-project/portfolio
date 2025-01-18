@@ -1,16 +1,16 @@
 .qualityContent {
-  padding: 75px;
+  padding: 25px;
   color: white;
   margin-right: 5px;
   background: #404040;
-  border-radius: 15em 4em;
+  border-radius: 4em;
 }
 .defautContent {
-  padding: 75px;
+  padding: 25px;
   color: grey;
   margin-left: 5px;
   background: #f1f1f1;
-  border-radius: 4em 15em;
+  border-radius: 4em;
 }
 .spotify-icon {
   width: 170px;
@@ -30,7 +30,7 @@
 }
 .quality-item {
   margin-top: 52px;
-  font-size: 28px;
+  font-size: 18px;
 }
 .calque {
   background: red;
@@ -134,6 +134,22 @@ p {
   margin: 25px 0px;
   border: 1px solid black;
 }
+.experience-card-header-container{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.esn-logo{
+  width: 50px;
+}
+.esn-interhaptics-logo{
+  width: 40px;
+}
+.esn-yoomum-logo{
+  width: 40px;
+  margin-right: 5px;
+}
+
 h3 {
   color: black;
   font-size: 20px;
@@ -168,6 +184,7 @@ h3 {
 .technos-content {
   display: flex;
   margin-top: 5px;
+  flex-flow: wrap;
   flex-direction: row;
   /* justify-content: space-around; */
 }
