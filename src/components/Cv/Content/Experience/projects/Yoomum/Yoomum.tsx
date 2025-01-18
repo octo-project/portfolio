@@ -13,7 +13,7 @@ const Yoomum = () => {
         <div className="experience-card">
         <div className="experience-card-header-container">
             <Link target={"https://www.yoomum.com/"}>
-              <img src={YoomumLogo} className="esn-yoomum-logo"/>
+              <img src={YoomumLogo} className="esn-yoomum-logo" alt="yoomum"/>
             </Link>
             <span className="experience-card-title">YOOMUM:</span>
           </div>
