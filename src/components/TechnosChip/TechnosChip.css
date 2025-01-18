@@ -5,6 +5,7 @@
   color: white;
   cursor: pointer;
   overflow: hidden;
+  margin-top: 5px;
   margin-right: 5px;
   font-weight: bold;
   border-radius: 5px;
@@ -45,9 +46,88 @@
   position: relative;
 }
 
+.logo-black-blue{
+  color: #366eff;
+}
+
+.custom{
+  top: 16px;
+  left: 36px;
+  font-size: 12px;
+  position: absolute;
+}
+
+.flex{
+  display: flex;
+  position: relative;
+}
+
+.fb-sdk-logo{
+  top: -5px;
+  left: -20px;
+  height: 30px;
+  position: relative;
+}
+
+.firebase-logo{
+  top: -29px;
+  left: -33px;
+  height: 74px;
+  position: relative;
+}
+
+.firebase-auth-logo{
+  top: -29px;
+  left: -26px;
+  height: 83px;
+  position: relative;
+}
+
+.firebase-dl-logo{
+  top: -12px;
+  left: -12px;
+  height: 43px;
+  position: relative;
+}
+
+.prisma-logo{
+  top: -21px;
+  left: -7px;
+  height: 60px;
+  position: relative;
+}
+
+.graphql-logo{
+  top: -14px;
+  left: -6px;
+  height: 49px;
+  position: relative;
+}
+
 .ant-logo{
   top: -43px;
   left: -6px;
   height: 108px;
+  position: relative;
+}
+
+.symfony-logo{
+  top: -37px;
+  left: -19px;
+  height: 93px;
+  position: relative;
+}
+
+.python-logo{
+  top: -4px;
+  left: -10px;
+  height: 35px;
+  position: relative;
+}
+
+.api-platform-logo{
+  top: -25px;
+  left: -14px;
+  height: 69px;
   position: relative;
 }
