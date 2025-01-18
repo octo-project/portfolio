@@ -7,7 +7,7 @@ const Markaiter = () => {
         <div className="experience-card">
             <div className="experience-card-header-container">
                 <Link target={"https://www.markaiter.com/"} >
-                    <img src={MarkaiterLogo} className="esn-yoomum-logo"/>
+                    <img src={MarkaiterLogo} className="esn-yoomum-logo" alt="markaiter"/>
                 </Link>
                 <span className="experience-card-title">Markaiter:</span>
             </div>

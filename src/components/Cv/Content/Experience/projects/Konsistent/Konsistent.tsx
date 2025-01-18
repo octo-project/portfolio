@@ -9,7 +9,7 @@ const Konsistent = () => {
     return (
         <div className="experience-card">
           <div className="experience-card-header-container">
-            <img src={KonsistentLogo} className="esn-logo"/>
+            <img src={KonsistentLogo} className="esn-logo" alt="konsistent"/>
             <span className="experience-card-title">Konsistent :</span>
           </div>
           <div>
