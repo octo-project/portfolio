@@ -12,9 +12,7 @@
   background: #f1f1f1;
   border-radius: 4em;
 }
-.spotify-icon {
-  width: 170px;
-}
+
 .qualityContainer {
   display: flex;
   color: black;
@@ -38,50 +36,64 @@
   height: 100%;
 }
 .passion-logo {
-  width: 250px;
+  width: 80px;
+  position: absolute;
 }
-.logo-gaming {
+/* .logo-gaming {
   margin-left: 145px;
 }
 .logo-musique {
   margin-left: 193px;
 }
+ */
+
 .logo-techno {
-  margin-left: 195px;
+  position: absolute;
+  /* margin-left: 195px; */
 }
+
 .game-icon {
+  width: 58px;
+}
+.spotify-icon {
   width: 98px;
 }
 .pubg-icon {
   width: 109px;
 }
+
 .fifa-icon {
   width: 110px;
   margin-left: 8px;
 }
+
 .passion-detail {
+  z-index: 20;
   opacity: 0;
-  height: 367px;
-  display: flex;
   color: black;
-  flex-direction: column;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
   justify-content: space-between;
-  transition: color 1s ease, transform 0.5s ease, opacity 1.5s ease;
+  transition: color 1s ease, transform 0.5s ease, opacity 0.5s ease;
 }
+
 .game-card:hover .passion-detail {
   opacity: 1;
   color: black;
-  transform: translateX(55px);
+  transform: translateY(115px);
 }
+
 .musique-card:hover .passion-detail {
   opacity: 1;
   color: black;
-  transform: translateX(65px);
+  transform: translateY(100px);
 }
+
 .technologie-card:hover .passion-detail {
   opacity: 1;
   color: black;
-  transform: translateX(65px);
+  transform: translateY(115px);
 }
 .center-text {
   text-align: center;
@@ -89,7 +101,7 @@
 .footerc {
   color: black;
   text-align: center;
-  padding-bottom: 77px;
+  padding-bottom: 8px;
 }
 .rounded {
   color: #000;
@@ -164,20 +176,23 @@ h3 {
 .technologie-card {
   background: #66635e;
 }
+
 .passion-item {
+  z-index: 150;
+  width: 180px;
   display: flex;
-  width: 380px;
   color: #000;
-  height: 450px;
+  height: 150px;
   font-size: 18px;
   font-weight: 400;
+  position: relative;
   border-radius: 7px;
   align-items: center;
   justify-content: center;
 }
 .passion-content {
   display: flex;
-  margin-top: 142px;
+  /* margin-top: 142px; */
   flex-direction: row;
   justify-content: space-around;
 }
@@ -189,7 +204,7 @@ h3 {
   /* justify-content: space-around; */
 }
 .content-passion {
-  padding-bottom: 154px !important;
+  padding-bottom: 64px !important;
 }
 .content {
   padding: 0px 25px 0px;

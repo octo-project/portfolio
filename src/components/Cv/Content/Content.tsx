@@ -1,8 +1,8 @@
 import './content.css'
 import { FC } from 'react'
 import Parcour from './Parcour/Parcour'
+import Passion from './Passion/Passion'
 // import Diplome from './Diplome/Diplome'
-// import Passion from './Passion/Passion'
 import Experience from './Experience/Experience'
 import QualityAndDefaut from './QualityAndDefaut/QualityAndDefaut'
 
@@ -18,7 +18,7 @@ const Content: FC<ContentProps> = (props) => {
   const {
     parcourRef,
     // diplomeRef,
-    // passionRef,
+    passionRef,
     experienceRef,
     qualityAndDefautRef,
   } = props
@@ -28,10 +28,10 @@ const Content: FC<ContentProps> = (props) => {
       <Parcour refer={parcourRef} />
       <Experience refer={experienceRef} />
       <QualityAndDefaut refer={qualityAndDefautRef} />
+      <Passion refer={passionRef} /> 
 
       {/* 
         <Diplome refer={diplomeRef} />
-        <Passion refer={passionRef} /> 
       */}
       <div className="footerc">&#169; TSIALONINA Heriniaina Mathieu 2023</div>
     </div>
