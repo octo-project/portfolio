@@ -4,7 +4,6 @@ import Pubg from '../../../../../assets/pubg.png'
 import Fifa from '../../../../../assets/fifa.png'
 import Futura from '../../../../../assets/futura.svg'
 import Deezer from '../../../../../assets/deezer.png'
-import Musique from '../../../../../assets/musique.png'
 import Spotify from '../../../../../assets/spotify.png'
 
 export const gamingData = [
