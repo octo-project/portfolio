@@ -72,7 +72,8 @@
   opacity: 0;
   color: black;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  align-items: center;
   justify-content: space-between;
   transition: color 1s ease, transform 0.5s ease, opacity 0.5s ease;
 }
@@ -80,19 +81,19 @@
 .game-card:hover .passion-detail {
   opacity: 1;
   color: black;
-  transform: translateX(125px);
+  transform: translateY(115px);
 }
 
 .musique-card:hover .passion-detail {
   opacity: 1;
   color: black;
-  transform: translateX(145px);
+  transform: translateY(100px);
 }
 
 .technologie-card:hover .passion-detail {
   opacity: 1;
   color: black;
-  transform: translateX(145px);
+  transform: translateY(115px);
 }
 .center-text {
   text-align: center;
