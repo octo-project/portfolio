@@ -24,7 +24,7 @@ const Passion: FC<PassionProps> = (props) => {
           <div className="passion-detail">
             {gamingData.map((game, index) => {
               return (
-                <a href={game.url} key={index} target="blank">
+                <a href={game.url} key={index} target="_blank" rel='noopener noreferrer'>
                   <img src={game.img} className="game-icon" alt={game.name} />
                 </a>
               )
@@ -40,7 +40,7 @@ const Passion: FC<PassionProps> = (props) => {
           <div className="passion-detail">
             {musicData.map((music, index) => {
               return (
-                <a href={music.url} key={index} target="blank">
+                <a href={music.url} key={index} target="_blank" rel='noopener noreferrer'>
                   <img
                     src={music.img}
                     alt={music.name}
@@ -61,7 +61,7 @@ const Passion: FC<PassionProps> = (props) => {
           <div className="passion-detail">
             {technoData.map((techno, index) => {
               return (
-                <a href={techno.url} key={index} target="blank">
+                <a href={techno.url} key={index} target="_blank" rel='noopener noreferrer'>
                   <img
                     src={techno.img}
                     className="spotify-icon"
