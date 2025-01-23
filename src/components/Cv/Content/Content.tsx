@@ -4,6 +4,7 @@ import Parcour from './Parcour/Parcour'
 import Passion from './Passion/Passion'
 // import Diplome from './Diplome/Diplome'
 import Experience from './Experience/Experience'
+import Adom from './Experience/projects/Adom/Adom'
 import QualityAndDefaut from './QualityAndDefaut/QualityAndDefaut'
 
 interface ContentProps {
@@ -29,7 +30,7 @@ const Content: FC<ContentProps> = (props) => {
       <Experience refer={experienceRef} />
       <QualityAndDefaut refer={qualityAndDefautRef} />
       <Passion refer={passionRef} /> 
-
+      
       {/* 
         <Diplome refer={diplomeRef} />
       */}

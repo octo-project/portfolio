@@ -1,5 +1,9 @@
 import React, { FC } from 'react'
+import Adom from './projects/Adom/Adom'
+import Itts from './projects/Itts/Itts'
+import FourMp from './projects/4MP/4Mp'
 import Yoomum from './projects/Yoomum/Yoomum'
+import Lappsys from './projects/Lappsys/Lappsys'
 import Markaiter from './projects/Markaiter/Markaiter'
 import Konsistent from './projects/Konsistent/Konsistent'
 import HapticComposer from './projects/HapticComposer/HapticComposer'
@@ -19,7 +23,13 @@ const Experience: FC<ExperienceProps> = (props) => {
       <HapticComposer/>
       <Yoomum/>
       <Markaiter/>
-
+      <Adom/>
+      <Lappsys/>
+      <Itts/>
+      <FourMp/>
+      {/* Easy chain */}
+      {/* Leviathan loi en vigeur  Angular */}
+      
       {/*  
       <h4>Project personnel</h4>
       <div className="experience-card">

@@ -20,6 +20,27 @@
   position: relative;
 }
 
+.electron-logo {
+  top: -25px;
+  left: -9px;
+  height: 68px;
+  position: relative;
+}
+
+.gatsby-logo {
+  top: -21px;
+  left: -21px;
+  height: 59px;
+  position: relative;
+}
+
+.Minio-logo{
+  top: -13px;
+  left: -7px;
+  height: 47px;
+  position: relative;
+}
+
 .ts-logo{
   top: -27px;
   left: -16px;

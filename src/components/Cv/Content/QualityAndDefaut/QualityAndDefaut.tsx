@@ -40,16 +40,16 @@ const QualityAndDefaut: FC<QualityAndDefaultProps> = (props) => {
           <span className="qualitySubTitle">Defaut</span>
           <div>
             <ul>
-              <li className="quality-item">
+              <li className="defaut-item">
                 Parfois trop exigeant envers moi-même et envers les autres, ce
                 qui peut me pousser à vouloir perfectionner chaque petit détail.
               </li>
-              <li className="quality-item">
+              <li className="defaut-item">
                 J'ai tendance à m'investir tellement dans mes projets que je
                 peux parfois oublier de prendre des pauses nécessaires pour
                 maintenir un équilibre vie professionnelle/vie privée.
               </li>
-              <li className="quality-item">
+              <li className="defaut-item">
                 Parfois, j'ai besoin de plus de temps pour prendre des décisions
                 importantes, car je veux m'assurer d'avoir considéré toutes les
                 options et de faire le meilleur choix pour l'équipe et les
