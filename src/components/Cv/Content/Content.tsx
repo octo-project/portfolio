@@ -29,7 +29,7 @@ const Content: FC<ContentProps> = (props) => {
       <Experience refer={experienceRef} />
       <QualityAndDefaut refer={qualityAndDefautRef} />
       <Passion refer={passionRef} /> 
-
+      
       {/* 
         <Diplome refer={diplomeRef} />
       */}

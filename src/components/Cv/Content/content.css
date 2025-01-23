@@ -29,6 +29,12 @@
 .quality-item {
   margin-top: 52px;
   font-size: 18px;
+  color: white;
+}
+.defaut-item{
+  font-size: 18px;
+  margin-top: 52px;
+  color: #808080;
 }
 .calque {
   background: red;
@@ -128,6 +134,9 @@
 ol > li {
   color: #000;
 }
+ul > li {
+  color: #000;
+}
 .experience-card-subtitle {
   color: #29293E;
   font-weight: 500;
@@ -140,6 +149,7 @@ p {
   color: #29293E;
   font-size: 23px;
   font-weight: bold;
+  margin-left: 3px;
 }
 .experience-card {
   padding: 25px;
@@ -156,6 +166,9 @@ p {
 }
 .esn-interhaptics-logo{
   width: 40px;
+}
+.esn-neoptim-logo{
+  width: 33px;
 }
 .esn-yoomum-logo{
   width: 40px;
