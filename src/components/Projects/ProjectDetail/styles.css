@@ -24,8 +24,9 @@
 
 .detailLogoContainerx {
   top: 0;
-  right: 25px;
+  right: 15px;
   position: absolute;
+  visibility: hidden;
   background: aliceblue;
 }
 
@@ -106,6 +107,13 @@ u:hover {
   grid-row-gap: 35px;
   grid-column-gap: 35px;
   grid-template-columns: repeat(4, calc(20% - 0.5em));
+}
+
+.screenShootWeb{
+  width: 700px;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
 }
 
 .greenBg {

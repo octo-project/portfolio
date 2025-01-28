@@ -4,18 +4,21 @@ import { FC } from 'react'
 interface technoCardProps {
   img: any
   text: string
-  width?: number
+  width?: string
   height?: number
+  isForWeb?: boolean
 }
 
 const TechnoCard: FC<technoCardProps> = (props) => {
-  const { text, width, height, img } = props
+  const { text, width, height, img, isForWeb } = props
 
   const tempHeigth = (height && height - 25) || 400
 
   return (
-    <div className="cardTechno animate" style={{ height, width }}>
-      {text}
+    <div className={`cardTechno animate`} style={{ height }}>
+      {isForWeb && (
+        {text}
+      )}
       {img && height && (
         <img
           src={img}
