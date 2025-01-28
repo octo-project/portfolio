@@ -20,6 +20,13 @@
   position: relative;
 }
 
+.react-native-logo {
+  top: -9px;
+  left: -14px;
+  height: 39px;
+  position: relative;
+}
+
 .electron-logo {
   top: -25px;
   left: -9px;
@@ -135,6 +142,13 @@
 .symfony-logo{
   top: -37px;
   left: -19px;
+  height: 93px;
+  position: relative;
+}
+
+.laravel-logo{
+  top: -37px;
+  left: -34px;
   height: 93px;
   position: relative;
 }

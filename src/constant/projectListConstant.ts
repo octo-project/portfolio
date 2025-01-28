@@ -1,4 +1,5 @@
 import casque from '../assets/casque.jpg'
+import vatsy from '../assets/vatsy_icon.png'
 import todoApp from '../assets/TodoApp/logo.png'
 import FAQ from '../assets/Buyer Persona/FAQ.png'
 import Avis from '../assets/Buyer Persona/Avis.png'
@@ -19,6 +20,31 @@ import SuccessGenerate from '../assets/Buyer Persona/SuccessGenerate.png'
 import SuccessDownload from '../assets/Buyer Persona/SuccessDownload.png'
 
 export const Projects = [
+    {
+      logo: vatsy,
+      // logo: undefined,
+      name: 'Vatsy',
+      logoSize: '50px',
+      link: '/project/podcast-app',
+      about: {
+        demoUrl: 'https://youtube/asdas6a5465/podcast-app-web',
+        gitHubRepository: ' https://git-lab.com/hmathieutsialonina/podcast-app',
+        description: `
+          1- Conception et développement d'une application de gestion de restaurant avec Tauri, React et SQlite
+          2- Mise en œuvre d'une interface utilisateur ergonomique et responsive pour la prise de commandes et la gestion des paiements.
+          3- Intégration d'une imprimante thermique de 58 mm avec la bibliothèque escpos-rs pour l'impression des additions.
+          4- Configuration et optimisation des paramètres d'impression thermique pour un rendu fiable et rapide.
+          5- Tests et débogage pour garantir une expérience utilisateur fluide en conditions réelles.
+          6- Développement de modules pour la gestion des stocks, des menus et des commandes en temps réel.
+          7- Implémentation de fonctionnalités pour l'historique des transactions et les rapports de vente journaliers.
+          8- Rédaction de documentation technique pour faciliter la maintenance et les évolutions futures de l'application.
+          9- Mise en place d’un support technique pour les utilisateurs finaux.
+        `,
+        functionnalities: ['Mutli Language', 'Toogle themes', 'Audio Player'],
+        technos: ['React', 'NodeJs', 'GraphQL', 'Apollo', 'Prisma', 'Typescript'],
+      },
+      screenShoots: [],
+    },
     {
       logo: casque,
       // logo: undefined,

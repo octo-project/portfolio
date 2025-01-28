@@ -45,13 +45,25 @@
   width: 80px;
   position: absolute;
 }
-/* .logo-gaming {
-  margin-left: 145px;
+
+.project-perso {
+  width: 120px;
+  margin: auto;
+  padding: 5px;
+  margin-top: 26px;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;
+  border: 1px solid grey;
 }
-.logo-musique {
-  margin-left: 193px;
+
+.project-perso:hover{
+  border: 1px solid rgb(82, 85, 231);
 }
- */
+
+.project-perso:hover a{
+  color: rgb(82, 85, 231) !important;
+}
 
 .logo-techno {
   position: absolute;

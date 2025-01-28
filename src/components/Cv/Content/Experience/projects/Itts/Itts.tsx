@@ -1,4 +1,4 @@
-import Gatsby from "../../../../../TechnosChip/Gatsby"
+import LaravelChip from "../../../../../TechnosChip/LaravelChip"
 
 const Itts = () => {
     return (
@@ -11,20 +11,22 @@ const Itts = () => {
       </div>
       <div>
         <p className='project-description'>
-          C’est une application web dedier au livraison de marchandise durant
-          la periode de confinement (covid 19).
+          Une application web pour les familles, amies ayant besoin d'organiser leur voyage.
+          depuis la selection de l'endroit, l'hotel, jusaqu'au payement.
         </p>
         <div>
           <span className="experience-card-subtitle">Missions :</span>
           <ol>
-            <li>Dynamisation des formulaires d'achat et de livraison </li>
-            <li>Correction de la responsive design </li>
+            <li>Mettre en place le service de payement stripe</li>
+            <li>Envoie automatique d'email (inscription, confirmation de payement, newsLetter)</li>
+            <li>Mise en œuvre d'une interface utilisateur ergonomique et responsive pour la reservation et la gestion des paiements.</li>
+            <li>Conception du model conceptuel de donnee</li>
           </ol>
         </div>
         <div>
           <span className="experience-card-subtitle">Technos:</span>
           <div className="technos-content">
-            <Gatsby /> 
+            <LaravelChip /> 
           </div>
         </div>
       </div>

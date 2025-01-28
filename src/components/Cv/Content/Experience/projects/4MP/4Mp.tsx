@@ -1,4 +1,5 @@
-import Gatsby from "../../../../../TechnosChip/Gatsby"
+import ReactNativeChip from "../../../../../TechnosChip/ReactNativeChip"
+import { GraphqlChip, PrismaChip, ReactChip } from "../../../../../TechnosChip"
 
 const FourMp = () => {
     return (
@@ -12,19 +13,27 @@ const FourMp = () => {
       <div>
         <p className='project-description'>
           Chain for wallet une application se basant sur la bloc chain.
-          pour effectuer des transition.
+          pour effectuer des transition sur COIN, CCOIN et CCOIN.
         </p>
         <div>
           <span className="experience-card-subtitle">Missions :</span>
           <ol>
-            <li>Dynamisation des formulaires d'achat et de livraison </li>
-            <li>Correction de la responsive design </li>
+            <li>Correction des retours :</li>
+            <ul>
+              <li>Mise en place du custom identifiant pour le login </li>
+              <li>Correction sur les modification en temps reel</li>
+              <li>Fix bug sur le balance </li>
+              <li>Creation de la page FAQ </li>
+            </ul>
           </ol>
         </div>
         <div>
           <span className="experience-card-subtitle">Technos:</span>
           <div className="technos-content">
-            <Gatsby /> 
+            <ReactChip />
+            <GraphqlChip/>
+            <ReactNativeChip/>
+            <PrismaChip/>
           </div>
         </div>
       </div>
