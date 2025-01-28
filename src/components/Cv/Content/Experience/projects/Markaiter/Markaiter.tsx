@@ -19,13 +19,15 @@ const Markaiter = () => {
             <div>
                 <span className="experience-card-subtitle">Missions :</span>
                 <ol>
-                <li>Ajout des fonctionnalite.</li>
-                <li>Creation du modele conceptuel de donnees.</li>
-                <li>Recuperation des coreItems depuis un dataLake.</li>
-                <li>
-                    Mise en place d'un cron en python pour la recuperation reguliere
-                    des insights sur facebook .
-                </li>
+                    <li>Ajout des fonctionnalite.</li>
+                    <li>Creation du modele conceptuel de donnees.</li>
+                    <li>Recuperation des coreItems depuis un dataLake.</li>
+                    <li>creation et dynamisation des pages inscription et authentification</li>
+                    <li>creation et dynamisation du page inscription et authentification</li>
+                    <li>
+                        Mise en place d'un cron en python pour la recuperation reguliere
+                        des insights sur facebook .
+                    </li>
                 </ol>
             </div>
             <div>
