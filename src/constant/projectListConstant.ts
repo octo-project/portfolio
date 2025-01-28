@@ -18,6 +18,20 @@ import orderEaseConfirmation from '../assets/OrderEase/Confirmation.png'
 import orderEaseDetailsPlats from '../assets/OrderEase/DetailsPlats.png'
 import SuccessGenerate from '../assets/Buyer Persona/SuccessGenerate.png'
 import SuccessDownload from '../assets/Buyer Persona/SuccessDownload.png'
+//
+import vatsy_page_1 from '../assets/Vatsy/page_1.png';
+import vatsy_addition from '../assets/Vatsy/addition.png';
+import vatsy_liste_soupe from '../assets/Vatsy/liste_soupe.png';
+import vatsy_date_filter from '../assets/Vatsy/date_filter.png';
+import vatsy_see_invoice from '../assets/Vatsy/see_invoice.png';
+import vatsy_table_filter from '../assets/Vatsy/table_filter.png';
+import vatsy_ask_password from '../assets/Vatsy/ask_password.png';
+import vatsy_bol_renverser from '../assets/Vatsy/bol_renverser.png';
+import vatsy_purchase_filter from '../assets/Vatsy/purchase_filter.png';
+import vatsy_selection_quantity from '../assets/Vatsy/selection_quantity.png';
+import vatsy_category_de_depense from '../assets/Vatsy/category_de_depense.png';
+import vatsy_historique_de_vente from '../assets/Vatsy/historique_de_vente.png';
+import vatsy_historique_de_depense from '../assets/Vatsy/historique_de_depense.png';
 
 export const Projects = [
     {
@@ -25,25 +39,80 @@ export const Projects = [
       // logo: undefined,
       name: 'Vatsy',
       logoSize: '50px',
-      link: '/project/podcast-app',
+      link: '/project/vatsy',
       about: {
         demoUrl: 'https://youtube/asdas6a5465/podcast-app-web',
         gitHubRepository: ' https://git-lab.com/hmathieutsialonina/podcast-app',
-        description: `
-          1- Conception et développement d'une application de gestion de restaurant avec Tauri, React et SQlite
-          2- Mise en œuvre d'une interface utilisateur ergonomique et responsive pour la prise de commandes et la gestion des paiements.
-          3- Intégration d'une imprimante thermique de 58 mm avec la bibliothèque escpos-rs pour l'impression des additions.
-          4- Configuration et optimisation des paramètres d'impression thermique pour un rendu fiable et rapide.
-          5- Tests et débogage pour garantir une expérience utilisateur fluide en conditions réelles.
-          6- Développement de modules pour la gestion des stocks, des menus et des commandes en temps réel.
-          7- Implémentation de fonctionnalités pour l'historique des transactions et les rapports de vente journaliers.
-          8- Rédaction de documentation technique pour faciliter la maintenance et les évolutions futures de l'application.
-          9- Mise en place d’un support technique pour les utilisateurs finaux.
-        `,
+        description: `Simple description`,
+        missions: [
+          "Conception et développement d'une application de gestion de restaurant avec Tauri, React et SQlite.",
+          "Mise en œuvre d'une interface utilisateur ergonomique et responsive pour la prise de commandes et la gestion des paiements.",
+          "Intégration d'une imprimante thermique de 58 mm avec la bibliothèque escpos-rs pour l'impression des additions.",
+          "Configuration et optimisation des paramètres d'impression thermique pour un rendu fiable et rapide.",
+          "Tests et débogage pour garantir une expérience utilisateur fluide en conditions réelles.",
+          "Développement de modules pour la gestion des stocks, des menus et des commandes en temps réel.",
+          "Implémentation de fonctionnalités pour l'historique des transactions et les rapports de vente journaliers.",
+          "Rédaction de documentation technique pour faciliter la maintenance et les évolutions futures de l'application.",
+          "Mise en place d’un support technique pour les utilisateurs finaux."
+        ],
         functionnalities: ['Mutli Language', 'Toogle themes', 'Audio Player'],
         technos: ['React', 'NodeJs', 'GraphQL', 'Apollo', 'Prisma', 'Typescript'],
       },
-      screenShoots: [],
+      screenShootType: 'web',
+      screenShoots: [
+        { 
+          label: 'First page', 
+          image: vatsy_page_1, 
+        },
+        { 
+          label: 'Addition', 
+          image: vatsy_addition,
+        },
+        { 
+          label: 'Bol renverser', 
+          image: vatsy_bol_renverser,
+        },
+        { 
+          label: 'Liste soupr', 
+          image: vatsy_liste_soupe,
+        },
+        { 
+          label: 'Category de depense', 
+          image: vatsy_category_de_depense,
+        },
+        { 
+          label: 'Historique de vente', 
+          image: vatsy_historique_de_vente,
+        },
+        { 
+          label: 'Historique de depense', 
+          image: vatsy_historique_de_depense,
+        },
+        { 
+          label: 'Ask password', 
+          image: vatsy_ask_password,
+        },
+        { 
+          label: 'Selection quantity', 
+          image: vatsy_selection_quantity,
+        },
+        { 
+          label: 'Date filter', 
+          image: vatsy_date_filter,
+        },
+        { 
+          label: 'Purchase filter', 
+          image: vatsy_purchase_filter,
+        },
+        { 
+          label: 'Table filter', 
+          image: vatsy_table_filter,
+        },
+        {
+          label: "See invoice",
+          image:vatsy_see_invoice,
+        }
+      ],
     },
     {
       logo: casque,
@@ -64,6 +133,7 @@ export const Projects = [
         technos: ['React', 'NodeJs', 'GraphQL', 'Apollo', 'Prisma', 'Typescript'],
       },
       screenShoots: [],
+      screenShootType: 'mobile',
     },
     {
       logo: orderEase,
@@ -82,6 +152,7 @@ export const Projects = [
         functionnalities: ['Mutli Language', 'Toogle themes', 'Audio Player'],
         technos: ['React', 'NodeJs', 'GraphQL', 'Apollo', 'Prisma', 'Typescript'],
       },
+      screenShootType: 'mobile',
       screenShoots: [
         { label: 'Erreur', 
         image: orderEaseError, 
@@ -120,6 +191,7 @@ export const Projects = [
         functionnalities: ['Mutli Language', 'Toogle themes', 'Audio Player'],
         technos: ['React', 'NodeJs', 'GraphQL', 'Typescript'],
       },
+      screenShootType: 'web',
       screenShoots: [],
     },
     {
@@ -140,6 +212,7 @@ export const Projects = [
         functionnalities: ['Mutli Language', 'Toogle themes', 'Audio Player'],
         technos: ['React', 'NodeJs', 'GraphQL', 'Apollo', 'Prisma', 'Typescript'],
       },
+      screenShootType: 'mobile',
       screenShoots: [],
     },
     {
@@ -162,6 +235,7 @@ export const Projects = [
         ],
         technos: ['React', 'NodeJs', 'Express', 'Typescript'],
       },
+      screenShootType: 'mobile',
       screenShoots: [
         { label: 'Welcome', 
         image: Welcome,

@@ -2,7 +2,7 @@ import { FC } from 'react'
 import TechnoCard from '../../../../common/cards/technoCard/TechnoCard'
 
 interface AboutProps {
-  about: any
+  about: any;
 }
 
 const About: FC<AboutProps> = (props) => {
@@ -25,6 +25,14 @@ const About: FC<AboutProps> = (props) => {
       <p style={{ maxWidth: '67%', marginLeft: '9px', fontSize:12, textAlign: 'justify' }}>
         {about.description}
       </p>
+      <h5>Taches : </h5>
+      <ul>
+        {(about?.missions || []).map((mission: any, index: number) => {
+          return (
+            <li>{mission}</li>           
+          )
+        })}
+      </ul>
       <h5>Animation : All animation is made with after effect and lottie</h5>
       <h5>
         Functionnality :
