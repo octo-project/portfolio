@@ -1,6 +1,7 @@
 export {default as ReactChip} from './ReactChip'
 export {default as PrismaChip} from './PrismaChip'
 export {default as PythonChip} from './PythonChip'
+export {default as LaravelChip} from './LaravelChip'
 export {default as GraphqlChip} from './GraphqlChip'
 export {default as MaterialUiChip} from './MaterialUiChip'
 export {default as FacebookSDKChip} from './FacebookSDKChip'
