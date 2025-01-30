@@ -3,6 +3,7 @@ import Adom from './projects/Adom/Adom'
 import Itts from './projects/Itts/Itts'
 import FourMp from './projects/4MP/4Mp'
 import { Link } from 'react-router-dom'
+import OSAW from './projects/OSAW/OSAW'
 import Yoomum from './projects/Yoomum/Yoomum'
 import Lappsys from './projects/Lappsys/Lappsys'
 import Markaiter from './projects/Markaiter/Markaiter'
@@ -24,10 +25,11 @@ const Experience: FC<ExperienceProps> = (props) => {
       <HapticComposer/>
       <Yoomum/>
       <Markaiter/>
+      <FourMp/>
       <Adom/>
       <Lappsys/>
       <Itts/>
-      <FourMp/>
+      <OSAW/>
 
       <h4>Project personel</h4>
       <div className="project-perso animate">
