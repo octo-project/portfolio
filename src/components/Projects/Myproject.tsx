@@ -28,7 +28,7 @@ const MyProject: FC = () => {
             
             <span style={{ fontWeight: 'normal', letterSpacing: '2px' }}>
               / 
-              {logo && (<img src={logo}/>)}
+              {logo && (<img src={logo} alt="project"/>)}
               {` ${projectName}`}
             </span>
           </>
