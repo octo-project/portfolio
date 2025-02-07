@@ -2,6 +2,7 @@ import './styles.css'
 import About from './About/About'
 import React, { FC, useState } from 'react'
 import Screenshoot from './ScreenShoot/ScreenShoot'
+import { useLocalFormatHook } from '../../../common/hooks/localFormatHook'
 
 type tabType = 'about' | 'screenshoot'
 interface ProjectDetailsProps {
@@ -11,6 +12,7 @@ interface ProjectDetailsProps {
 const ProjectDetails: FC<ProjectDetailsProps> = (props) => {
   const { project } = props
   const [tab, setTab] = useState<tabType>('about')
+  const {formatText} = useLocalFormatHook()
 
   const handleSelectTab = (
     event: React.MouseEvent<HTMLDivElement, MouseEvent>,
@@ -32,13 +34,13 @@ const ProjectDetails: FC<ProjectDetailsProps> = (props) => {
             className="btnDetails animate"
             onClick={(event) => handleSelectTab(event, 'about')}
           >
-            About
+            {formatText("about")}
           </div>
           <div
             className="btnDetails animate"
             onClick={(event) => handleSelectTab(event, 'screenshoot')}
           >
-            Screenshoot
+            {formatText("screenshoot")}
           </div>
         </div>
         <div className="detailLogoContainerx">

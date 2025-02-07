@@ -1,5 +1,6 @@
 import './header.css'
 import React, { FC } from 'react'
+import { useLocalFormatHook } from '../../../common/hooks/localFormatHook'
 import MyCvPicture from '../../../assets/Portfolio Design V2/Assets/Cv_picture.jpg'
 
 interface HeaderProps {
@@ -18,6 +19,7 @@ const Header: FC<HeaderProps> = (props) => {
     experienceRef,
     qualityAndDefautRef,
   } = props
+  const {formatText} = useLocalFormatHook()
 
   const handleMenuClick = (ref: any) => {
     if (ref && ref.current) {
@@ -37,11 +39,7 @@ const Header: FC<HeaderProps> = (props) => {
           <div>
             <span style={{fontSize: '20px'}}>TSIALONINA Heriniaina Mathieu</span>
             <p style={{fontSize: '16px'}}>
-              En tant que développeur full-stack, je suis passionné par la
-              création de solutions technologiques innovantes pour répondre aux
-              besoins des clients et des utilisateurs finaux. Je suis expert dans
-              la conception, le développement et la maintenance de sites Web et
-              d'applications, du front-end au back-end.
+              {formatText("cvDescription")}
             </p>
           </div>
         </div>
@@ -51,31 +49,36 @@ const Header: FC<HeaderProps> = (props) => {
             className="btnCustom btnCertifications animate"
             onClick={() => handleMenuClick(diplomeRef)}
           >
-            Dîplomes/Certifications
+            {/* Dîplomes/Certifications */}
+            {formatText("diplomas")}
           </div>
           <div
             className="btnCustom animate"
             onClick={() => handleMenuClick(parcourRef)}
           >
-            Parcours
+            {/* Parcours */}
+            {formatText("parcour")}
           </div>
           <div
             className="btnCustom animate"
             onClick={() => handleMenuClick(experienceRef)}
           >
-            Expériences
+            {/* Expériences */}
+            {formatText("experience")}
           </div>
           <div
             className="btnCustom animate"
             onClick={() => handleMenuClick(qualityAndDefautRef)}
           >
-            Quality
+            {/* Quality */}
+            {formatText("quality")}
           </div>
           <div
             className="btnCustom animate"
             onClick={() => handleMenuClick(passionRef)}
           >
-            Passions
+            {/* Passions */}
+            {formatText("passion")}
           </div>
       </div>
     </div>

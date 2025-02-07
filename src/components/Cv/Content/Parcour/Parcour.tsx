@@ -1,4 +1,5 @@
 import { FC } from 'react'
+import { useLocalFormatHook } from '../../../../common/hooks/localFormatHook'
 
 interface ParcourProps {
   refer: React.MutableRefObject<null>
@@ -6,9 +7,11 @@ interface ParcourProps {
 
 const Parcour: FC<ParcourProps> = (props) => {
   const { refer } = props
+  const {formatText} = useLocalFormatHook()
+  
   return (
     <section className="content" ref={refer}>
-      <h3>Parcours académique</h3>
+      <h3>{formatText("academicCarrer")}</h3>
       <div className="parcour-container">
         <div className="rounded">
           <div className='italic'>2011 - 2012</div>

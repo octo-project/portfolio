@@ -1,4 +1,17 @@
 {
+    "about": "About",
+    "quality": "Quality",
     "greeting": "Hello!",
-    "description": "This is a simple React-Intl example."
+    "diplomas": "Dîplomes",
+    "passion": "Passions",
+    "parcour": "Education",
+    "projects": "Projects",
+    "experience":"Experiences",
+    "myProjects": "My projects",
+    "screenshoot": "Screenshoot",
+    "academicCarrer": "Academic career",
+    "professionalProjects": "Professional project",
+    "experienceAndProjects": "Experiences & Projects",
+    "description": "This is a simple React-Intl example.",
+    "cvDescription": "As a full-stack developer, I am passionate about creation of innovative technological solutions to meet the needs of customers and end users. I am an expert in the design, development and maintenance of websites and applications, from front-end to back-end."
 }

@@ -9,6 +9,7 @@ import Lappsys from './projects/Lappsys/Lappsys'
 import Markaiter from './projects/Markaiter/Markaiter'
 import Konsistent from './projects/Konsistent/Konsistent'
 import HapticComposer from './projects/HapticComposer/HapticComposer'
+import { useLocalFormatHook } from '../../../../common/hooks/localFormatHook'
 
 interface ExperienceProps {
   refer: React.MutableRefObject<null>
@@ -16,10 +17,12 @@ interface ExperienceProps {
 
 const Experience: FC<ExperienceProps> = (props) => {
   const { refer } = props
+  const {formatText} = useLocalFormatHook()
+  
   return (
     <section className="content" ref={refer}>
-      <h3>Experiences & Projects</h3>
-      <h4>Project professionel</h4>
+      <h3>{formatText("experienceAndProjects")}</h3>
+      <h4>{formatText("professionalProjects")}</h4>
       
       <Konsistent/>
       <HapticComposer/>
