@@ -5,6 +5,7 @@ import Screenshoot from './ScreenShoot/ScreenShoot'
 import { useLocalFormatHook } from '../../../common/hooks/localFormatHook'
 
 type tabType = 'about' | 'screenshoot'
+
 interface ProjectDetailsProps {
   project: any
 }

@@ -1,7 +1,9 @@
 import { Link } from 'react-router-dom'
-import { Projects } from '../../../constant/projectListConstant'
+import { useProjectConstant } from '../../../constant/projectListConstant'
 
 const ProjectLists = () => {
+  const {Projects} = useProjectConstant()
+  
   return (
     <div className="projectCard">
       {Projects.map((project, index) => {
