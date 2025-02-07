@@ -2,16 +2,24 @@
     "about": "About",
     "quality": "Quality",
     "greeting": "Hello!",
+    "tech": "Tech Stack",
+    "seeDemo": "See demo",
     "diplomas": "Dîplomes",
     "passion": "Passions",
     "parcour": "Education",
     "projects": "Projects",
+    "missions": "Missions",
+    "repository": "Repository",
     "experience":"Experiences",
     "myProjects": "My projects",
+    "whatItDoes": "App Overview",
     "screenshoot": "Screenshoot",
+    "Functionnality": "Functionnality",
     "academicCarrer": "Academic career",
     "professionalProjects": "Professional project",
     "experienceAndProjects": "Experiences & Projects",
     "description": "This is a simple React-Intl example.",
-    "cvDescription": "As a full-stack developer, I am passionate about creation of innovative technological solutions to meet the needs of customers and end users. I am an expert in the design, development and maintenance of websites and applications, from front-end to back-end."
+    "cvDescription": "As a full-stack developer, I am passionate about creation of innovative technological solutions to meet the needs of customers and end users. I am an expert in the design, development and maintenance of websites and applications, from front-end to back-end.",
+    
+    "projectVatsyOverview": "This app is designed to make restaurant management effortless and efficient. With its user-friendly and intuitive interface, staff can easily take orders, manage payments, and streamline everyday operations—all from one platform. The app ensures a smooth and fast service, allowing restaurants to focus on what matters most: providing a great dining experience. The app’s simple and reliable features help staff stay organized with real-time order tracking, stock management, and quick access to sales reports. It even keeps a clear transaction history, making financial tracking a breeze. Whether you're in a busy rush or need a quick update, everything is just a few taps away. With a focus on ease of use, this app is perfect for restaurants looking to enhance productivity and improve service quality. Plus, with built-in support and clear instructions, you can always count on assistance whenever you need it."
 }

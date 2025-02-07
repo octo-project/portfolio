@@ -5,13 +5,21 @@
     "passion": "Passions",
     "diplomas": "Diplomas",
     "parcour": "Parcours",
-    "experience":"Expériences",
     "greeting": "Bonjour!",
+    "missions": "Missions",
+    "seeDemo": "Voir la démo",
+    "experience":"Expériences",
+    "repository": "Dépôt GitHub",
     "myProjects": "Mes projects",
     "screenshoot": "Capture d'écran",
+    "tech": "Technologies utilisées",
+    "Functionnality": "Fonctionnalité",
     "academicCarrer": "Parcours académique",
+    "whatItDoes": "Présentation de l'application",
     "professionalProjects": "Projet professionel",
     "experienceAndProjects": "Expériences & Projets",
     "description": "C'est un exemple simple de React-Intl.",
-    "cvDescription":"En tant que développeur full-stack, je suis passionné par la création de solutions technologiques innovantes pour répondre aux besoins des clients et des utilisateurs finaux. Je suis expert dans la conception, le développement et la maintenance de sites Web et d'applications, du front-end au back-end."
+    "cvDescription":"En tant que développeur full-stack, je suis passionné par la création de solutions technologiques innovantes pour répondre aux besoins des clients et des utilisateurs finaux. Je suis expert dans la conception, le développement et la maintenance de sites Web et d'applications, du front-end au back-end.",
+
+    "projectVatsyOverview": "Cette application a été conçue pour rendre la gestion des restaurants simple et efficace. Grâce à son interface intuitive et facile à utiliser, le personnel peut facilement prendre les commandes, gérer les paiements et organiser les opérations quotidiennes, le tout sur une seule plateforme. L'application garantit un service fluide et rapide, permettant ainsi aux restaurants de se concentrer sur l'essentiel : offrir une expérience client exceptionnelle. Ses fonctionnalités simples et fiables permettent au personnel de rester organisé, avec un suivi des commandes en temps réel, la gestion des stocks et un accès rapide aux rapports de vente. Elle garde également un historique clair des transactions, simplifiant la gestion financière. Que ce soit lors d'une période de forte affluence ou pour une mise à jour rapide, tout est à portée de main en quelques clics. Avec un accent mis sur la facilité d'utilisation, cette application est idéale pour les restaurants cherchant à améliorer leur productivité et la qualité de leur service. De plus, avec un support intégré et des instructions claires, vous pouvez toujours compter sur une assistance en cas de besoin."
 }

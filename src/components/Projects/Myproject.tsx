@@ -2,13 +2,14 @@ import './style.css'
 import { FC } from 'react'
 import ProjectLists from './ProjectLists/ProjectLists'
 import ProjectDetails from './ProjectDetail/ProjectDetail'
-import { Projects } from '../../constant/projectListConstant'
 import { Link, useLocation, useParams } from 'react-router-dom'
 import { useLocalFormatHook } from '../../common/hooks/localFormatHook'
+import { useProjectConstant } from '../../constant/projectListConstant'
 
 const MyProject: FC = () => {
   const params = useParams()
   const location = useLocation()
+  const {Projects} = useProjectConstant()
   const search = new URLSearchParams(params)
   const {formatText} = useLocalFormatHook()
   const projectName = search.get('name') || null
