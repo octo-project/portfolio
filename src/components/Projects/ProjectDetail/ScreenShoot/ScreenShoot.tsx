@@ -22,11 +22,7 @@ const Screenshoot: FC<ScreenShootProps> = (props) => {
           const customWidth = item?.large ? "w-auto" : "w-[200px]"
           return (
             <TechnoCard
-              height={400}
-              img={item.image}
               text={item.label}
-              width={customWidth}
-              isForWeb={isForWeb}
             />
           )
         })}

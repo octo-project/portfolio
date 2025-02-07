@@ -32,13 +32,13 @@ const ProjectDetails: FC<ProjectDetailsProps> = (props) => {
             className="btnDetails animate"
             onClick={(event) => handleSelectTab(event, 'about')}
           >
-            about
+            About
           </div>
           <div
             className="btnDetails animate"
             onClick={(event) => handleSelectTab(event, 'screenshoot')}
           >
-            screenshoot
+            Screenshoot
           </div>
         </div>
         <div className="detailLogoContainerx">

@@ -1,8 +1,9 @@
 import './style.css'
 import { FC } from 'react'
-import { Link, useLocation, useParams } from 'react-router-dom'
 import ProjectLists from './ProjectLists/ProjectLists'
 import ProjectDetails from './ProjectDetail/ProjectDetail'
+import { Projects } from '../../constant/projectListConstant'
+import { Link, useLocation, useParams } from 'react-router-dom'
 
 const MyProject: FC = () => {
   const params = useParams()
@@ -12,6 +13,10 @@ const MyProject: FC = () => {
 
   const projectName = search.get('name') || null
 
+  const logo = Projects.find(el => el.name.toLowerCase() === projectName?.toLowerCase())?.logo;
+
+  console.log("logo : ", logo);
+
   return (
     <div className="containerProject">
       <h3 className="containerProjectTitle">
@@ -19,7 +24,14 @@ const MyProject: FC = () => {
           PROJECTS
         </Link>
         {projectName && (
-          <span style={{ fontWeight: 'normal', letterSpacing: '2px' }}>{`/ ${projectName}`}</span>
+          <>
+            
+            <span style={{ fontWeight: 'normal', letterSpacing: '2px' }}>
+              / 
+              {logo && (<img src={logo}/>)}
+              {` ${projectName}`}
+            </span>
+          </>
         )}
       </h3>
 

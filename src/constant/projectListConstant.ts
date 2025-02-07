@@ -55,9 +55,10 @@ export const Projects = [
           "Rédaction de documentation technique pour faciliter la maintenance et les évolutions futures de l'application.",
           "Mise en place d’un support technique pour les utilisateurs finaux."
         ],
-        functionnalities: ['Mutli Language', 'Toogle themes', 'Audio Player'],
-        technos: ['React', 'NodeJs', 'GraphQL', 'Apollo', 'Prisma', 'Typescript'],
+        functionnalities: ['Invoice printing', 'Order Management', 'Transaction History', 'Search'],
+        technos: ['React', 'Tailwind', 'Rust', 'Tauri', 'Typescript'],
       },
+      //'Apollo',
       screenShootType: 'web',
       screenShoots: [
         { 
@@ -114,27 +115,27 @@ export const Projects = [
         }
       ],
     },
-    {
-      logo: casque,
-      // logo: undefined,
-      name: 'Podcast-app',
-      logoSize: '50px',
-      link: '/project/podcast-app',
-      about: {
-        demoUrl: 'https://youtube/asdas6a5465/podcast-app-web',
-        gitHubRepository: ' https://git-lab.com/hmathieutsialonina/podcast-app',
-        description: `L'application mobile de podcast est conçue pour permettre aux utilisateurs de découvrir, écouter et suivre facilement leurs émissions de podcast préférées. Elle propose une grande variété de podcasts dans différentes catégories, telles que l'actualité, la culture, la science, la technologie et bien plus encore.
-        Les utilisateurs peuvent parcourir les émissions de podcast les plus populaires, découvrir de nouveaux contenus en fonction de leurs intérêts et marquer leurs épisodes préférés pour une écoute ultérieure. L'application propose également des fonctionnalités de recherche avancées pour aider les utilisateurs à trouver des émissions de podcast spécifiques, en fonction de leur titre, de leur sujet ou de leur animateur.
-        L'application de podcast fournit une expérience d'écoute de haute qualité, avec des options de lecture en continu ou de téléchargement pour une écoute hors ligne. Elle est également équipée de fonctionnalités de personnalisation qui permettent aux utilisateurs de modifier la vitesse de lecture, de créer des listes de lecture personnalisées et de recevoir des recommandations en fonction de leurs habitudes d'écoute.
-        Enfin, l'application offre une fonctionnalité de synchronisation multi-appareils pour permettre aux utilisateurs de reprendre leur écoute sur différents appareils, sans avoir à chercher ou à reprendre leur position de lecture.
-        Dans l'ensemble, cette application mobile de podcast offre une expérience d'écoute conviviale, avec une grande variété de contenus à découvrir et des fonctionnalités de personnalisation pour s'adapter aux préférences de chaque utilisateur.`,
-        animation: 'All animation is made with after effect and lottie',
-        functionnalities: ['Mutli Language', 'Toogle themes', 'Audio Player'],
-        technos: ['React', 'NodeJs', 'GraphQL', 'Apollo', 'Prisma', 'Typescript'],
-      },
-      screenShoots: [],
-      screenShootType: 'mobile',
-    },
+    // {
+    //   logo: casque,
+    //   // logo: undefined,
+    //   name: 'Podcast-app',
+    //   logoSize: '50px',
+    //   link: '/project/podcast-app',
+    //   about: {
+    //     demoUrl: 'https://youtube/asdas6a5465/podcast-app-web',
+    //     gitHubRepository: ' https://git-lab.com/hmathieutsialonina/podcast-app',
+    //     description: `L'application mobile de podcast est conçue pour permettre aux utilisateurs de découvrir, écouter et suivre facilement leurs émissions de podcast préférées. Elle propose une grande variété de podcasts dans différentes catégories, telles que l'actualité, la culture, la science, la technologie et bien plus encore.
+    //     Les utilisateurs peuvent parcourir les émissions de podcast les plus populaires, découvrir de nouveaux contenus en fonction de leurs intérêts et marquer leurs épisodes préférés pour une écoute ultérieure. L'application propose également des fonctionnalités de recherche avancées pour aider les utilisateurs à trouver des émissions de podcast spécifiques, en fonction de leur titre, de leur sujet ou de leur animateur.
+    //     L'application de podcast fournit une expérience d'écoute de haute qualité, avec des options de lecture en continu ou de téléchargement pour une écoute hors ligne. Elle est également équipée de fonctionnalités de personnalisation qui permettent aux utilisateurs de modifier la vitesse de lecture, de créer des listes de lecture personnalisées et de recevoir des recommandations en fonction de leurs habitudes d'écoute.
+    //     Enfin, l'application offre une fonctionnalité de synchronisation multi-appareils pour permettre aux utilisateurs de reprendre leur écoute sur différents appareils, sans avoir à chercher ou à reprendre leur position de lecture.
+    //     Dans l'ensemble, cette application mobile de podcast offre une expérience d'écoute conviviale, avec une grande variété de contenus à découvrir et des fonctionnalités de personnalisation pour s'adapter aux préférences de chaque utilisateur.`,
+    //     animation: 'All animation is made with after effect and lottie',
+    //     functionnalities: ['Mutli Language', 'Toogle themes', 'Audio Player'],
+    //     technos: ['React', 'NodeJs', 'GraphQL', 'Apollo', 'Prisma', 'Typescript'],
+    //   },
+    //   screenShoots: [],
+    //   screenShootType: 'mobile',
+    // },
     {
       logo: orderEase,
       // logo: undefined,
@@ -150,7 +151,7 @@ export const Projects = [
         L'application est conçue pour être conviviale et intuitive, avec une interface utilisateur attrayante et facile à naviguer. Elle est également dotée de fonctionnalités de filtrage pour aider les utilisateurs à trouver rapidement les plats qu'ils recherchent, en fonction de leur type de cuisine préféré, de leur prix ou de leur disponibilité.
         Dans l'ensemble, cette application permet aux utilisateurs de commander des plats en ligne et de payer facilement avec leur téléphone portable, offrant une expérience de commande rapide et pratique pour les clients et une source de revenus supplémentaire pour les restaurants locaux.`,
         functionnalities: ['Mutli Language', 'Toogle themes', 'Audio Player'],
-        technos: ['React', 'NodeJs', 'GraphQL', 'Apollo', 'Prisma', 'Typescript'],
+        technos: ['ReactNative', 'tailwind'],
       },
       screenShootType: 'mobile',
       screenShoots: [
