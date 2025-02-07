@@ -10,12 +10,9 @@ const MyProject: FC = () => {
   const location = useLocation()
   const search = new URLSearchParams(params)
 
-
   const projectName = search.get('name') || null
 
   const logo = Projects.find(el => el.name.toLowerCase() === projectName?.toLowerCase())?.logo;
-
-  console.log("logo : ", logo);
 
   return (
     <div className="containerProject">
@@ -25,7 +22,6 @@ const MyProject: FC = () => {
         </Link>
         {projectName && (
           <>
-            
             <span style={{ fontWeight: 'normal', letterSpacing: '2px' }}>
               / 
               {logo && (<img src={logo} alt="project"/>)}
