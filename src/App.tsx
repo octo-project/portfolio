@@ -1,13 +1,9 @@
 import Cv from "./components/Cv";
+import { store} from './redux/store';
 import Provider from "./provider/index";
-import { useSelector } from 'react-redux';
-import { createIntl } from '@formatjs/intl';
 import Project from "./components/Projects";
-import {RootState, store} from './redux/store';
 import Contact from "./components/Contact/Contact";
 import Container from "./common/container/Container";
-import fr_locale from './common/formatJs/fr/fr.json';
-import en_locale from './common/formatJs/en/en.json';
 import {Provider as ReduxProvider} from 'react-redux';
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 import LocaleFormater from "./common/LocaleFormater/LocaleFormater";
