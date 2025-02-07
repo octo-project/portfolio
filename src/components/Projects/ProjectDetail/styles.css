@@ -89,7 +89,7 @@ u:hover {
 .technoGrid {
   display: flex;
   margin-left: 9px;
-  justify-content: start;
+  justify-content: flex-start;
   /* display: grid;
   grid-row-gap: 2px;
   grid-column-gap: 35px;
