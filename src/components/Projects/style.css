@@ -1,5 +1,7 @@
 .containerProjectTitle {
+  display: flex;
   padding-left: 25px;
+  align-items: baseline;
   color: #29293e !important;
 }
 .containerProject {
@@ -26,6 +28,7 @@ a {
 .projectCard {
   display: flex;
   flex-wrap: wrap;
+  margin: 0px 27px;
   flex-direction: row;
   justify-content: space-between;
   /* grid-row-gap: 2;

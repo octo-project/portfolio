@@ -293,3 +293,30 @@ h4 {
   background-color: white;
   transform: translateY(-9px) rotate(-41deg);
 }
+
+.local-btn{
+  top: 39px;
+  left: 4px;
+  display: flex;
+  position: absolute;
+  flex-direction: column;
+}
+
+.local-btn > * + * {
+  margin-top: 0.2rem;
+}
+
+.btn-local-style {
+  border: none;
+  height: 25px;
+  cursor: pointer;
+  background: transparent;
+  transition: color 0.3s ease;
+}
+
+.btn-local-style.active {
+  color: blue;
+  background: #f0f0f0;
+}
+
+

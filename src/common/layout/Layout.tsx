@@ -2,11 +2,15 @@ import './style.css'
 import { FC, useState } from 'react'
 import { Link } from 'react-router-dom'
 import Contact from '../contact/Contact'
+import { RootState } from '../../redux/store'
 import MyCvPicture from '../../assets/capture.png'
+import {  useDispatch, useSelector } from "react-redux"
+import { setLocale } from '../../redux/slice/app-slice'
 import reactLogo from '../../assets/techsLogo/react.png'
 import pythonLogo from '../../assets/techsLogo/python.png'
-import laravelLogo from '../../assets/techsLogo/laravel.png'
 import nestJSLogo from '../../assets/techsLogo/nestJs.png'
+import laravelLogo from '../../assets/techsLogo/laravel.png'
+import { useLocalFormatHook } from '../hooks/localFormatHook'
 import FbIcon from '../../assets/Portfolio Design V2/Assets/Fb.png'
 import GoogleIcon from '../../assets/Portfolio Design V2/Assets/Google.png'
 import LinkedInIcon from '../../assets/Portfolio Design V2/Assets/linkedin.png'
@@ -17,10 +21,17 @@ interface layoutProps {
 
 const Layout: FC<layoutProps> = (props: { children: any }) => {
   const { children } = props
+  const dispatch = useDispatch()
   const [isActive, setActive] = useState(false)
+  const locale = useSelector((state: RootState) => state.app.locale);
+  const {formatText} = useLocalFormatHook()
 
   const toggleClass = () => {
     setActive(!isActive)
+  }
+
+  const changeLocal = (local: string) => {
+    dispatch(setLocale(local))
   }
 
   return (
@@ -55,7 +66,7 @@ const Layout: FC<layoutProps> = (props: { children: any }) => {
                 <span className="totalProjects">06</span>
                 <span className="subTitleProject">since 2021</span>
               </div>
-              Mes projects
+              {formatText("myProjects")}
             </div>
           </Link>
         </div>
@@ -90,6 +101,10 @@ const Layout: FC<layoutProps> = (props: { children: any }) => {
           <div className="bar"></div>
           <div className="bar"></div>
           <div className="bar"></div>
+        </div>
+        <div className='local-btn'>
+          <button className={`btn-local-style ${locale == "fr" ? "active" : ""}`} onClick={() => changeLocal('fr')}>fr</button>
+          <button className={`btn-local-style ${locale == "en" ? "active" : ""}`} onClick={() => changeLocal('en')}>en</button>
         </div>
         {children}
       </div>
