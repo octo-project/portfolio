@@ -10,7 +10,7 @@ const Screenshoot: FC<ScreenShootProps> = (props) => {
   
   const { screenShoots , screenShootType} = props
   const containerClass = screenShootType === 'Mobile' ? 'screenShootMobile' : 'screenShootWeb'
-  const isForWeb = screenShootType === 'Web'
+  // const isForWeb = screenShootType === 'Web'
 
   return (
     <div className="projectDetails">
@@ -19,14 +19,10 @@ const Screenshoot: FC<ScreenShootProps> = (props) => {
       </h5>
       <div className={containerClass}>
         {screenShoots.map((item) => {
-          const customWidth = item?.large ? "w-auto" : "w-[200px]"
+          // const customWidth = item?.large ? "w-auto" : "w-[200px]"
           return (
             <TechnoCard
-              height={400}
-              img={item.image}
               text={item.label}
-              width={customWidth}
-              isForWeb={isForWeb}
             />
           )
         })}

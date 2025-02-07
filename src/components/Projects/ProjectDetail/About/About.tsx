@@ -29,21 +29,26 @@ const About: FC<AboutProps> = (props) => {
       <ul>
         {(about?.missions || []).map((mission: any, index: number) => {
           return (
-            <li>{mission}</li>           
+            <li key={index}>{mission}</li>           
           )
         })}
       </ul>
-      <h5>Animation : All animation is made with after effect and lottie</h5>
+      <h5>Animation :</h5>
+      <div className="technoGrid">
+        All animation is made with after effect and lottie
+      </div>
       <h5>
         Functionnality :
-        {about.functionnalities.map((item: any) => {
-          return <span className="functionnalityCard purpleBg">{item}</span>
-        })}
       </h5>
+      <div className="technoGrid">
+        {about.functionnalities.map((item: any, index: number) => {
+          return <span className="functionnalityCard purpleBg animate" key={index}>{item}</span>
+        })}
+      </div>
       <h5>Technos : </h5>
       <div className="technoGrid">
-        {about.technos.map((techno: any) => {
-          return <TechnoCard text={techno} img={null} />
+        {about.technos.map((techno: any, index: number) => {
+          return <TechnoCard text={techno} key={index}/>
         })}
       </div>
     </div>
