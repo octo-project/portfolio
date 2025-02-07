@@ -1,4 +1,3 @@
-import casque from '../assets/casque.jpg'
 import vatsy from '../assets/vatsy_icon.png'
 import todoApp from '../assets/TodoApp/logo.png'
 import FAQ from '../assets/Buyer Persona/FAQ.png'
