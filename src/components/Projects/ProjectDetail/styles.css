@@ -74,7 +74,14 @@
 h5 {
   margin: 8px;
   color: #006bd5;
+  font-size: 17px;
   letter-spacing: 0.7px;
+}
+
+.spkear-medium{
+  opacity: 0.8;
+  cursor: pointer;
+  margin-right: 2px;
 }
 
 p {
@@ -102,7 +109,9 @@ u:hover {
   display: flex;
   color: #fff;
   cursor: default;
+  font-size: 16px;
   margin-right: 8px;
+  text-align: center;
   border-radius: 5px;
   justify-content: center;
   box-shadow: 0px 0px 4px -2px black;
