@@ -26,7 +26,6 @@ import vatsy_see_invoice from '../assets/Vatsy/see_invoice.png';
 import vatsy_table_filter from '../assets/Vatsy/table_filter.png';
 import vatsy_ask_password from '../assets/Vatsy/ask_password.png';
 import vatsy_bol_renverser from '../assets/Vatsy/bol_renverser.png';
-import { useLocalFormatHook } from '../common/hooks/localFormatHook';
 import vatsy_purchase_filter from '../assets/Vatsy/purchase_filter.png';
 import vatsy_selection_quantity from '../assets/Vatsy/selection_quantity.png';
 import vatsy_category_de_depense from '../assets/Vatsy/category_de_depense.png';
@@ -34,7 +33,6 @@ import vatsy_historique_de_vente from '../assets/Vatsy/historique_de_vente.png';
 import vatsy_historique_de_depense from '../assets/Vatsy/historique_de_depense.png';
 
 export const useProjectConstant = () => {
-  const {formatText} = useLocalFormatHook()
 
   const Projects = [
     {

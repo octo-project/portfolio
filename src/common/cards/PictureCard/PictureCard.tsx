@@ -8,7 +8,7 @@ type PictureCardProps = {
 }
 
 const PictureCard: FC<PictureCardProps> = (props) => {
-    const {image, label, handleSeePicture} = props;
+    const {image, handleSeePicture} = props;
 
     return (
         <img src={image} onClick={() => handleSeePicture(image)} className="picture-card-img animate-up" alt="recovering" />
