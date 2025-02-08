@@ -3,8 +3,10 @@ import ReactChip from "../../../../../TechnosChip/ReactChip"
 import MaterialUiChip from "../../../../../TechnosChip/MaterialUiChip"
 import TypescriptChip from "../../../../../TechnosChip/TypescriptChip"
 import KonsistentLogo from "../../../../../../assets/EsnLogo/konsistent.png"
+import { useLocalFormatHook } from "../../../../../../common/hooks/localFormatHook"
 
 const Konsistent = () => {
+    const {formatText} = useLocalFormatHook()
     
     return (
         <div className="experience-card">
@@ -14,24 +16,16 @@ const Konsistent = () => {
           </div>
           <div>
             <p className='project-description'>
-              C'est un extension chrome, similaire a grammarly, il est utilisé
-              pour assurer la communication  entre personnel dans plusieurs
-              organisations. Pour éviter les harcèlements sexuel,
-              le harcèlement moral, l’exclusion. Il est disponible sur la
-              plateforme web et desktop.
+              {formatText("projectKonsistentOverview")}
             </p>
             <div>
               <span className="experience-card-subtitle">Missions :</span>
               <ol>
-                <li>Correction des bugs critiques.</li>
-                <li>Ajout de nouvelle règles.</li>
-                <li>Amélioration du qualite des codes de l'extension.</li>
-                <li>
-                  Mise en place de fonction de cryptage asymétrique des données.
-                </li>
-                <li>
-                  Création from scratch du projet en version desktop.
-                </li>
+                <li>{formatText("projectKonsistentMission1")}</li>
+                <li>{formatText("projectKonsistentMission2")}</li>
+                <li>{formatText("projectKonsistentMission3")}</li>
+                <li>{formatText("projectKonsistentMission4")}</li>
+                <li>{formatText("projectKonsistentMission5")}</li>
               </ol>
             </div>
             <div>
