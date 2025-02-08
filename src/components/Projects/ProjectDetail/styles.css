@@ -126,10 +126,11 @@ u:hover {
 }
 
 .screenShootWeb{
-  width: 700px;
   padding: 15px;
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 .greenBg {

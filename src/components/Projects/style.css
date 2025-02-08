@@ -65,8 +65,17 @@ a {
   transition: transform 200ms ease-in-out;
 }
 
+.animate-up {
+  cursor: pointer;
+  transition: transform 200ms ease-in-out;
+}
+
 .animate:hover {
   transform: scale(0.95);
+}
+
+.animate-up:hover {
+  transform: scale(1.1);
 }
 
 .card-link {

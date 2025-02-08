@@ -1,5 +1,6 @@
-import { FC } from 'react'
-import TechnoCard from '../../../../common/cards/technoCard/TechnoCard'
+import { FC, useState } from 'react'
+import { PictureModal } from '../../../Modal';
+import PictureCard from '../../../../common/cards/PictureCard/PictureCard';
 
 interface ScreenShootProps {
   screenShoots: any[];
@@ -7,26 +8,48 @@ interface ScreenShootProps {
 }
 
 const Screenshoot: FC<ScreenShootProps> = (props) => {
+  const [openPictureModal, setOpenPictureModal] = useState<boolean>(false);
+  const [selectedPicture, setSelectedPicture] = useState<string|null>(null);
   
   const { screenShoots , screenShootType} = props
   const containerClass = screenShootType === 'Mobile' ? 'screenShootMobile' : 'screenShootWeb'
-  // const isForWeb = screenShootType === 'Web'
+
+  const handleSeePicture = (picture: string) => {
+    setSelectedPicture(picture)
+    setOpenPictureModal(true)
+  }
+
+  const handleCloseModalPicture = () => setOpenPictureModal(false)
+
+  const moveImage = (direction: string) => {
+    if (selectedPicture) {
+      const indexOfPicture = screenShoots.findIndex(el => el.image === selectedPicture);
+      const maxIndex = screenShoots.length - 1;
+      
+      const newIndex = direction === 'right' 
+        ? indexOfPicture + 1
+        : indexOfPicture - 1;
+  
+      const correctIndex = newIndex < 0 ? maxIndex : (newIndex > maxIndex ? 0 : newIndex);
+  
+      setSelectedPicture(screenShoots[correctIndex].image);
+    }
+  };
 
   return (
     <div className="projectDetails">
-      <h5>
-        Demo : <u>https://podcast-app-web.com</u>
-      </h5>
       <div className={containerClass}>
         {screenShoots.map((item) => {
-          // const customWidth = item?.large ? "w-auto" : "w-[200px]"
           return (
-            <TechnoCard
-              text={item.label}
-            />
+            <PictureCard image={item.image} label={item.label} handleSeePicture={handleSeePicture}/>
           )
         })}
       </div>
+      {
+        openPictureModal && selectedPicture  && (
+          <PictureModal moovImage={moveImage} picture={selectedPicture} closeModal={handleCloseModalPicture}/>
+        )
+      }
     </div>
   )
 }
