@@ -21,5 +21,20 @@
     "description": "C'est un exemple simple de React-Intl.",
     "cvDescription":"En tant que développeur full-stack, je suis passionné par la création de solutions technologiques innovantes pour répondre aux besoins des clients et des utilisateurs finaux. Je suis expert dans la conception, le développement et la maintenance de sites Web et d'applications, du front-end au back-end.",
 
-    "projectVatsyOverview": "Cette application a été conçue pour rendre la gestion des restaurants simple et efficace. Grâce à son interface intuitive et facile à utiliser, le personnel peut facilement prendre les commandes, gérer les paiements et organiser les opérations quotidiennes, le tout sur une seule plateforme. L'application garantit un service fluide et rapide, permettant ainsi aux restaurants de se concentrer sur l'essentiel : offrir une expérience client exceptionnelle. Ses fonctionnalités simples et fiables permettent au personnel de rester organisé, avec un suivi des commandes en temps réel, la gestion des stocks et un accès rapide aux rapports de vente. Elle garde également un historique clair des transactions, simplifiant la gestion financière. Que ce soit lors d'une période de forte affluence ou pour une mise à jour rapide, tout est à portée de main en quelques clics. Avec un accent mis sur la facilité d'utilisation, cette application est idéale pour les restaurants cherchant à améliorer leur productivité et la qualité de leur service. De plus, avec un support intégré et des instructions claires, vous pouvez toujours compter sur une assistance en cas de besoin."
+    "projectVatsyOverview": "Cette application a été conçue pour rendre la gestion des restaurants simple et efficace. Grâce à son interface intuitive et facile à utiliser, le personnel peut facilement prendre les commandes, gérer les paiements et organiser les opérations quotidiennes, le tout sur une seule plateforme. L'application garantit un service fluide et rapide, permettant ainsi aux restaurants de se concentrer sur l'essentiel : offrir une expérience client exceptionnelle. Ses fonctionnalités simples et fiables permettent au personnel de rester organisé, avec un suivi des commandes en temps réel, la gestion des stocks et un accès rapide aux rapports de vente. Elle garde également un historique clair des transactions, simplifiant la gestion financière. Que ce soit lors d'une période de forte affluence ou pour une mise à jour rapide, tout est à portée de main en quelques clics. Avec un accent mis sur la facilité d'utilisation, cette application est idéale pour les restaurants cherchant à améliorer leur productivité et la qualité de leur service. De plus, avec un support intégré et des instructions claires.",
+    "projectVatsyMission1": "Conception et développement d'une application de gestion de restaurant avec Tauri, React et SQlite",
+    "projectVatsyMission2": "Mise en œuvre d'une interface utilisateur ergonomique et responsive pour la prise de commandes et la gestion des paiements.",
+    "projectVatsyMission3": "Intégration d'une imprimante thermique de 58 mm avec la bibliothèque escpos-rs pour l'impression des additions.",
+    "projectVatsyMission4": "Configuration et optimisation des paramètres d'impression thermique pour un rendu fiable et rapide.",
+    "projectVatsyMission5": "Tests et débogage pour garantir une expérience utilisateur fluide en conditions réelles.",
+    "projectVatsyMission6": "Développement de modules pour la gestion des stocks, des menus et des commandes en temps réel.",
+    "projectVatsyMission7": "Implémentation de fonctionnalités pour l'historique des transactions et les rapports de vente journaliers.",
+    "projectVatsyMission8": "Rédaction de documentation technique pour faciliter la maintenance et les évolutions futures de l'application.",
+    "projectVatsyMission9": "Mise en place d’un support technique pour les utilisateurs finaux.",
+
+    "projectVatsyInvoicePrinting": "Impression de factures",
+    "projectVatsyOrderManagement": "Gestion des commandes",
+    "projectVatsyTransactionHistory": "Histoirique de transaction",
+    "projectVatsySearchEngine": "Moteur de recherche"
+
 }

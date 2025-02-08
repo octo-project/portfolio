@@ -26,7 +26,6 @@ import vatsy_see_invoice from '../assets/Vatsy/see_invoice.png';
 import vatsy_table_filter from '../assets/Vatsy/table_filter.png';
 import vatsy_ask_password from '../assets/Vatsy/ask_password.png';
 import vatsy_bol_renverser from '../assets/Vatsy/bol_renverser.png';
-import { useLocalFormatHook } from '../common/hooks/localFormatHook';
 import vatsy_purchase_filter from '../assets/Vatsy/purchase_filter.png';
 import vatsy_selection_quantity from '../assets/Vatsy/selection_quantity.png';
 import vatsy_category_de_depense from '../assets/Vatsy/category_de_depense.png';
@@ -34,7 +33,6 @@ import vatsy_historique_de_vente from '../assets/Vatsy/historique_de_vente.png';
 import vatsy_historique_de_depense from '../assets/Vatsy/historique_de_depense.png';
 
 export const useProjectConstant = () => {
-  const {formatText} = useLocalFormatHook()
 
   const Projects = [
     {
@@ -46,19 +44,19 @@ export const useProjectConstant = () => {
       about: {
         demoUrl: 'https://youtube/asdas6a5465/podcast-app-web',
         gitHubRepository: ' https://git-lab.com/hmathieutsialonina/podcast-app',
-        description: formatText("projectVatsyOverview"),
+        description: "projectVatsyOverview",
         missions: [
-          "Conception et développement d'une application de gestion de restaurant avec Tauri, React et SQlite.",
-          "Mise en œuvre d'une interface utilisateur ergonomique et responsive pour la prise de commandes et la gestion des paiements.",
-          "Intégration d'une imprimante thermique de 58 mm avec la bibliothèque escpos-rs pour l'impression des additions.",
-          "Configuration et optimisation des paramètres d'impression thermique pour un rendu fiable et rapide.",
-          "Tests et débogage pour garantir une expérience utilisateur fluide en conditions réelles.",
-          "Développement de modules pour la gestion des stocks, des menus et des commandes en temps réel.",
-          "Implémentation de fonctionnalités pour l'historique des transactions et les rapports de vente journaliers.",
-          "Rédaction de documentation technique pour faciliter la maintenance et les évolutions futures de l'application.",
-          "Mise en place d’un support technique pour les utilisateurs finaux."
+          "projectVatsyMission1",
+          "projectVatsyMission2",
+          "projectVatsyMission3",
+          "projectVatsyMission4",
+          "projectVatsyMission5",
+          "projectVatsyMission6",
+          "projectVatsyMission7",
+          "projectVatsyMission8",
+          "projectVatsyMission9",
         ],
-        functionnalities: ['Invoice printing', 'Order Management', 'Transaction History', 'Search'],
+        functionnalities: ['projectVatsyInvoicePrinting', 'projectVatsyOrderManagement', 'projectVatsyTransactionHistory', 'projectVatsySearchEngine'],
         technos: ['React', 'Tailwind', 'Rust', 'Tauri', 'Typescript'],
       },
       //'Apollo',
