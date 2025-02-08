@@ -308,7 +308,8 @@ h4 {
 
 .btn-local-style {
   border: none;
-  height: 25px;
+  height: 28px;
+  z-index: 500;
   cursor: pointer;
   background: transparent;
   transition: color 0.3s ease;
