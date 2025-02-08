@@ -35,6 +35,13 @@
     "projectVatsyInvoicePrinting": "Impression de factures",
     "projectVatsyOrderManagement": "Gestion des commandes",
     "projectVatsyTransactionHistory": "Histoirique de transaction",
-    "projectVatsySearchEngine": "Moteur de recherche"
+    "projectVatsySearchEngine": "Moteur de recherche",
+
+    "projectKonsistentOverview": "Il s'agit d'une extension Chrome, similaire à Grammarly, destinée à faciliter la communication entre les membres du personnel au sein de plusieurs organisations. Son objectif principal est de prévenir le harcèlement sexuel, le harcèlement moral, ainsi que l'exclusion au sein de l'entreprise. L'extension est disponible sur les plateformes web et desktop.",
+    "projectKonsistentMission1": "Ajout de nouvelle règle d'exclusion basées sur les horaires d'envoi de messages, afin d'éviter l'envoi de messages très tard ou très tôt, protégeant ainsi la vie privée des employés.",
+    "projectKonsistentMission2": "Mise en place d'une fonctionnalité de cryptage asymétrique des données afin de garantir la sécurité et la confidentialité des informations.",
+    "projectKonsistentMission3": "Conception et développement du projet en version desktop, visant à atteindre un large nombre d'utilisateurs.",
+    "projectKonsistentMission4": "Détection en temps réel des saisies utilisateur, garantissant des résultats précis et instantanés.",
+    "projectKonsistentMission5":"Ajout de Microsoft Outlook, Slack et Welcome to the Jungle comme canaux d'analyse dans l'extension Chrome, élargissant ainsi les canaux d'exécution pour toucher un plus grand nombre d'utilisateurs."
 
 }
