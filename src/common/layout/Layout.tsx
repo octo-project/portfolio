@@ -42,7 +42,7 @@ const Layout: FC<layoutProps> = (props: { children: any }) => {
             <span style={{cursor: 'pointer'}}>TSIALONINA Heriniaina Mathieu</span>
             <span className="tooltiptext">
               <img src={MyCvPicture} alt="Svg" />
-              {/* <img src={undefined} alt="Svg" /> */}
+              <div className='separator'></div>
               <div className='tooltipDescription'>
                 <span className="description">Dev Full Stack</span>
                 <span>Code l'avenir, des pixels au back-end 🚀</span>
