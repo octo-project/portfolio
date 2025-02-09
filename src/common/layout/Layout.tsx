@@ -2,7 +2,7 @@ import './style.css'
 import { Link } from 'react-router-dom'
 import Contact from '../contact/Contact'
 import { RootState } from '../../redux/store'
-import { FC, useEffect, useMemo, useState } from 'react'
+import { FC, useMemo, useState } from 'react'
 import MyCvPicture from '../../assets/capture.png'
 import {  useDispatch, useSelector } from "react-redux"
 import { setLocale } from '../../redux/slice/app-slice'
