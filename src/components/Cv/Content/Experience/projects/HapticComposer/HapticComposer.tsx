@@ -5,8 +5,11 @@ import ElectronChip from "../../../../../TechnosChip/ElectronChip"
 import AntDesignChip from "../../../../../TechnosChip/AntDesignChip"
 import TypescriptChip from "../../../../../TechnosChip/TypescriptChip"
 import InterhapticsLogo from "../../../../../../assets/EsnLogo/interhaptics.png"
+import { useLocalFormatHook } from "../../../../../../common/hooks/localFormatHook"
 
 const HapticComposer = () => {
+  const {formatText} = useLocalFormatHook()
+
   return (
     <div className="experience-card">
       <div className="experience-card-header-container">
@@ -17,17 +20,18 @@ const HapticComposer = () => {
       </div>
       <div>
         <p className='project-description'>
-          C’est une application desktop pour faciliter la création de
-          matériaux haptique en seulement quelques cliques, a l'aide
-          des perceptions (Actuellement racheter par razer).
+          {formatText("projectHapticOverview")}
         </p>
         <div>
           <span className="experience-card-subtitle">Missions :</span>
           <ol>
-            <li>Creation de l'architecture projet.</li>
-            <li>Mise en relation des appels typer de js vers c++.</li>
-            <li>Integration des interfaces depuis la maquette XD.</li>
-            <li>Ajout des fonctionnalites de base de l'application.</li>
+            <li>{formatText("projectHapticMission1")}</li>
+            <li>{formatText("projectHapticMission2")}</li>
+            <li>{formatText("projectHapticMission3")}</li>
+            <li>{formatText("projectHapticMission4")}</li>
+            <li>{formatText("projectHapticMission5")}</li>
+            <li>{formatText("projectHapticMission6")}</li>
+            <li>{formatText("projectHapticMission7")}</li>
           </ol>
         </div>
         <div>

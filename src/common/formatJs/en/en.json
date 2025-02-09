@@ -42,5 +42,15 @@
     "projectKonsistentMission2": "Implementation of an asymmetric data encryption feature to ensure the security and confidentiality of information.",
     "projectKonsistentMission3": "Design and development of the project in desktop version, aimed at reaching a large number of users.",
     "projectKonsistentMission4": "Real-time detection of user input, ensuring accurate and immediate results.",
-    "projectKonsistentMission5": "Adding Microsoft Outlook, Slack, and Welcome to the Jungle as analysis channels in the Chrome extension,expanding execution channels to reach a larger number of users."
+    "projectKonsistentMission5": "Adding Microsoft Outlook, Slack, and Welcome to the Jungle as analysis channels in the Chrome extension,expanding execution channels to reach a larger number of users.",
+
+    "projectHapticOverview": "This is an innovative desktop application designed to simplify the creation of haptic materials with just a few clicks. Featuring an intuitive interface, it allows users to manipulate and adjust key perceptions such as texture, vibration, and stiffness, providing an immersive and customizable experience. This groundbreaking solution, recently acquired by Razer, is aimed at developers and creators looking to integrate realistic haptic sensations into their products.",
+    "projectHapticMission1": "Developed the project's architecture using Electron and antd, ensuring a high-performance, responsive, and scalable interface",
+    "projectHapticMission2": "Integrated user interfaces based on Adobe XD mockups, meticulously adhering to design specifications and optimizing the user experience for smooth and intuitive navigation.",
+    "projectHapticMission3": "Wrote and executed Jest tests to ensure the proper functionality of DLL (Dynamic Link Libraries), ensuring code reliability, stability, and comprehensive coverage while quickly identifying potential issues.",
+    "projectHapticMission4": "Designed and developed the MainView for texture perception, acting as the core component and backbone of the interface, enabling interaction with various project functionalities while ensuring optimal performance and responsiveness.",
+    "projectHapticMission5": "Integrated the zoom feature into the MainView, allowing users to achieve greater precision when visualizing and adjusting melodies and notes, offering enhanced control and a better user experience.",
+    "projectHapticMission6": "Developed and implemented the drag-and-drop feature for placing predefined notes on the MainView, making it easier for users to organize and manipulate elements within the interface, while ensuring smooth and intuitive interactions.",
+    "projectHapticMission7": "Designed and developed essential features like Undo/Redo, Copy/Paste, Move Note, and Glue Note, enabling precise and efficient manipulation of elements via keyboard shortcuts, providing maximum flexibility for users in managing notes and project modifications. The integration of keyboard shortcuts ensures a fast and intuitive experience, reducing the time needed for element manipulation within the interface."
+
 }
