@@ -184,7 +184,7 @@ h4 {
     Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-.tooltip:hover .tooltiptext {
+ .tooltip:hover .tooltiptext {
   visibility: visible;
 }
 
