@@ -5,10 +5,11 @@ import YoomumLogo from "../../../../../../assets/EsnLogo/yoomum.png"
 import ApiPlatformeChip from "../../../../../TechnosChip/ApiPlatforme"
 import FirebaseDBChip from "../../../../../TechnosChip/FirebaseDBChip"
 import FirebaseAuthChip from "../../../../../TechnosChip/FirebaseAuthChip"
+import { useLocalFormatHook } from "../../../../../../common/hooks/localFormatHook"
 import FirebaseDynamicLinkChip from "../../../../../TechnosChip/FirebaseDynamicLinksChip"
 
 const Yoomum = () => {
-
+    const {formatText} = useLocalFormatHook()
     return (
         <div className="experience-card">
         <div className="experience-card-header-container">
@@ -19,34 +20,16 @@ const Yoomum = () => {
           </div>
         <div>
           <p className='project-description'>
-            Une application mobile disponible pour android et Ios, pour
-            regrouper les mamans et les aides a facilité leur grossesse,
-            a trouvé : des hôpitaux, des pharmacies, etc... et a cree des
-            evenements
-            par rapport à sa position.
+            {formatText("projectYoomumOverview")}
           </p>
           <div>
             <span className="experience-card-subtitle">Missions :</span>
             <ol>
-              <li>Remplacer une module Php deprecated par retrofit 2.</li>
-              <li>Corriger la lenteur des appels API vers le serveur.</li>
-              <li>
-                Verifier et ameliorer le bon fonctionnement des fonctionnalites
-                anciennes.
-              </li>
-              <li>
-                Ajout d'un SSO pour la creation de compte et l'authentification
-                (la boite rose).
-              </li>
+              <li>{formatText("projectYoomumMission1")}</li>
+              <li>{formatText("projectYoomumMission2")}</li>
+              <li>{formatText("projectYoomumMission3")}</li>
             </ol>
           </div>
-          {/* <div>
-            <span className="experience-card-subtitle">Technos:</span>
-            <p>
-              Symfony 4, API Plateforme, Firebase (Authentification, Real Time
-              Database, Dynamic Links), MySQL.
-            </p>
-          </div> */}
           <div>
             <span className="experience-card-subtitle">Technos:</span>
             <div className="technos-content">

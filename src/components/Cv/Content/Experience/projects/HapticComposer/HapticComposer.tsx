@@ -32,6 +32,7 @@ const HapticComposer = () => {
             <li>{formatText("projectHapticMission5")}</li>
             <li>{formatText("projectHapticMission6")}</li>
             <li>{formatText("projectHapticMission7")}</li>
+            <li>Optimisation des rendu D3</li>
           </ol>
         </div>
         <div>
