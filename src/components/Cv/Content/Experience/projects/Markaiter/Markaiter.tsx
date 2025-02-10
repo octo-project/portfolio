@@ -1,8 +1,11 @@
 import Link from "../../../../../Link"
 import MarkaiterLogo from "../../../../../../assets/EsnLogo/markaiter.png"
+import { useLocalFormatHook } from "../../../../../../common/hooks/localFormatHook"
 import { FacebookSDKChip, GraphqlChip, MaterialUiChip, PrismaChip, PythonChip, ReactChip } from "../../../../../TechnosChip"
 
 const Markaiter = () => {
+    const {formatText} = useLocalFormatHook()
+
     return (
         <div className="experience-card">
             <div className="experience-card-header-container">
@@ -13,21 +16,16 @@ const Markaiter = () => {
             </div>
             <div>
             <p className='project-description'>
-                Une application Web pour lancer des campagnes publicitaire
-                personnaliser sur les réseaux (Facebook, Gmail, Youtube, LinkedIn)
+               {formatText("projectMarketerOverview")}
             </p>
             <div>
                 <span className="experience-card-subtitle">Missions :</span>
                 <ol>
-                    <li>Ajout des fonctionnalite.</li>
-                    <li>Creation du modele conceptuel de donnees.</li>
-                    <li>Recuperation des coreItems depuis un dataLake.</li>
-                    <li>creation et dynamisation des pages inscription et authentification</li>
-                    <li>creation et dynamisation du page inscription et authentification</li>
-                    <li>
-                        Mise en place d'un cron en python pour la recuperation reguliere
-                        des insights sur facebook .
-                    </li>
+                    <li>{formatText("projectMarketerMission1")}</li>
+                    <li>{formatText("projectMarketerMission2")}</li>
+                    <li>{formatText("projectMarketerMission3")}</li>
+                    <li>{formatText("projectMarketerMission4")}</li>
+                    <li>{formatText("projectMarketerMission5")}</li>
                 </ol>
             </div>
             <div>

@@ -1,7 +1,9 @@
 import ReactNativeChip from "../../../../../TechnosChip/ReactNativeChip"
 import { GraphqlChip, PrismaChip, ReactChip } from "../../../../../TechnosChip"
+import { useLocalFormatHook } from "../../../../../../common/hooks/localFormatHook"
 
 const FourMp = () => {
+  const {formatText} = useLocalFormatHook()
     return (
       <div className="experience-card">
         <div className="experience-card-header-container">
@@ -12,18 +14,16 @@ const FourMp = () => {
         </div>
         <div>
           <p className='project-description'>
-            Chain for wallet une application se basant sur la bloc chain.
-            pour effectuer des transition sur COIN, CCOIN et CCOIN.
+            {formatText("project4MpOverview")}
           </p>
           <div>
             <span className="experience-card-subtitle">Missions :</span>
             <ol>
-              <li>Correction des retours :</li>
+              <li>{formatText("project4MpSubTitle")} :</li>
               <ul>
-                <li>Mise en place du custom identifiant pour le login </li>
-                <li>Correction sur les modification en temps reel</li>
-                <li>Fix bug sur le balance </li>
-                <li>Creation de la page FAQ </li>
+                <li>{formatText("project4MpMission1")}</li>
+                <li>{formatText("project4MpMission2")}</li>
+                <li>{formatText("project4MpMission3")}</li>
               </ul>
             </ol>
           </div>

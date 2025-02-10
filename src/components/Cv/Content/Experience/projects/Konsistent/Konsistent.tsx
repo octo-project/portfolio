@@ -26,6 +26,8 @@ const Konsistent = () => {
                 <li>{formatText("projectKonsistentMission3")}</li>
                 <li>{formatText("projectKonsistentMission4")}</li>
                 <li>{formatText("projectKonsistentMission5")}</li>
+                <li>
+                supervisé la qualité et la cohérence du code tout au long du processus de développement pour garantir la conformité aux normes de codage, optimiser les performances et assurer une maintenabilité à long terme</li>  
               </ol>
             </div>
             <div>

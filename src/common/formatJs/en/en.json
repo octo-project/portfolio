@@ -51,6 +51,29 @@
     "projectHapticMission4": "Designed and developed the MainView for texture perception, acting as the core component and backbone of the interface, enabling interaction with various project functionalities while ensuring optimal performance and responsiveness.",
     "projectHapticMission5": "Integrated the zoom feature into the MainView, allowing users to achieve greater precision when visualizing and adjusting melodies and notes, offering enhanced control and a better user experience.",
     "projectHapticMission6": "Developed and implemented the drag-and-drop feature for placing predefined notes on the MainView, making it easier for users to organize and manipulate elements within the interface, while ensuring smooth and intuitive interactions.",
-    "projectHapticMission7": "Designed and developed essential features like Undo/Redo, Copy/Paste, Move Note, and Glue Note, enabling precise and efficient manipulation of elements via keyboard shortcuts, providing maximum flexibility for users in managing notes and project modifications. The integration of keyboard shortcuts ensures a fast and intuitive experience, reducing the time needed for element manipulation within the interface."
+    "projectHapticMission7": "Designed and developed essential features like Undo/Redo, Copy/Paste, Move Note, and Glue Note, enabling precise and efficient manipulation of elements via keyboard shortcuts, providing maximum flexibility for users in managing notes and project modifications. The integration of keyboard shortcuts ensures a fast and intuitive experience, reducing the time needed for element manipulation within the interface.",
 
+    "projectYoomumOverview": "A mobile application available on Android and iOS, designed to support expectant mothers throughout their pregnancy journey. The app allows users to easily find healthcare facilities (hospitals, clinics, pharmacies, etc.) near their location. Additionally, it enables the creation and discovery of personalized events, promoting connections and well-being for mothers-to-be.",
+    "projectYoomumMission1": "Integration of retrofit 2 to replace an outdated PHP module, thereby optimizing API call management. This overhaul improved code performance and maintainability, while ensuring smoother and more efficient communication between the client and the server.",
+    "projectYoomumMission2": "Analysis and optimization of the proper functioning of existing features, identifying and addressing any issues while ensuring their long-term stability and efficiency.",
+    "projectYoomumMission3": "Implementation of a Single Sign-On (SSO) system for account creation and authentication, streamlining access to the application while ensuring a smooth and secure user experience.",
+
+    "projectMarketerOverview": "Development of a web application to launch personalized advertising campaigns on social networks (Facebook, Gmail, YouTube, LinkedIn), providing centralized and optimized ad management to effectively reach target audiences.",
+    "projectMarketerMission1": "Definition of the conceptual data model to ensure consistent data management, optimizing system scalability and performance.",
+    "projectMarketerMission2": "Creation and enhancement of the registration and authentication pages to improve user experience and simplify access to the application.",
+    "projectMarketerMission3": "Setup of a cron job for the regular retrieval of Facebook insights, automating data analysis.",
+    "projectMarketerMission4": "Use of corresponding SDKs on each channel to create targeted campaigns and ads, optimizing reach and ad effectiveness across different platforms.",
+    "projectMarketerMission5": "Definition of core items parameters for personas, such as demographics, interests, and behaviors, for precise and personalized persona targeting.",
+
+    "project4MpOverview": "Chain for Wallet is a blockchain-based application that enables secure transactions with the COIN, CCOIN, and CCOIN cryptocurrencies. It provides a reliable and transparent platform for managing digital assets, ensuring secure exchanges and an intuitive interface for users.",
+    "project4MpMission1":"Creation of the FAQ page to quickly answer frequently asked questions, reducing the need for direct support and making information more accessible.",
+    "project4MpMission2":"Fixing the bug related to balance display, ensuring correct and real-time updates of the user's financial information.",
+    "project4MpMission3":"Implementation of a custom identifier for login, allowing the user to sign in with a combination of letters and numbers instead of using their email and password.",
+    "project4MpSubTitle": "Feedback Corrections",
+
+    "projectAdomOverview": "A web application dedicated to the complete management of purchasing and delivering goods during the COVID-19 lockdown period, providing an efficient and secure solution to meet users' needs during this exceptional time.",
+    "projectAdmoMission1": "Modification of personal information to allow users to update their data easily and securely, thereby improving data accuracy and enhancing the user experience.",
+    "projectAdmoMission2": "Add, modify, delete, and view my delivery addresses, enabling flexible and personalized management of delivery information, ensuring a smooth and convenient user experience.",
+    "projectAdmoMission3": "Enhancement of the authentication page, order creation page, order confirmation page, order summary page, order list page, express delivery option, and payment page to improve interactivity and streamline the user experience at each stage of the process.",
+    "projectAdmoMission4": ""
 }
