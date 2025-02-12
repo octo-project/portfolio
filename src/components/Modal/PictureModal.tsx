@@ -4,12 +4,14 @@ import RightChevron from '../../assets/chevron-right.png'
 
 type PictureModalProps = {
     picture: string;
+    containerClass: string;
     closeModal: () => void; 
     moovImage: (direction: string) => void;
 }
 
 const PictureModal: FC<PictureModalProps> = (props) => {
-    const {closeModal, picture, moovImage} = props
+    const {closeModal, picture, moovImage, containerClass} = props
+
     return (
         <div className="modal-overlay">
             <div className="modal-content">
@@ -19,7 +21,7 @@ const PictureModal: FC<PictureModalProps> = (props) => {
                 <button className='left absolute-btn animate-up' onClick={() => moovImage("left")}>
                     <img src={RightChevron} width={50} style={{transform: "rotate(180deg)"}} alt="chevron" />
                 </button>
-                <img src={picture} className='big-img' alt="big-modal" />
+                <img src={picture} className={containerClass} alt="big-modal" />
                 <button className='picture-modal-close-btn animate-up' onClick={closeModal}>Close</button>
             </div>
         </div>

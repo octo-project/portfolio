@@ -12,7 +12,8 @@ const Screenshoot: FC<ScreenShootProps> = (props) => {
   const [selectedPicture, setSelectedPicture] = useState<string|null>(null);
   
   const { screenShoots , screenShootType} = props
-  const containerClass = screenShootType === 'Mobile' ? 'screenShootMobile' : 'screenShootWeb'
+  const containerClass = screenShootType === 'mobile' ? 'little-img' : 'big-img'
+  // const containerClass = screenShootType === 'Mobile' ? 'screenShootMobile' : 'screenShootWeb'
 
   const handleSeePicture = (picture: string) => {
     setSelectedPicture(picture)
@@ -38,16 +39,16 @@ const Screenshoot: FC<ScreenShootProps> = (props) => {
 
   return (
     <div className="projectDetails">
-      <div className={containerClass}>
-        {screenShoots.map((item) => {
+      <div className="screenShootWeb">
+        {screenShoots.map((item, index) => {
           return (
-            <PictureCard image={item.image} label={item.label} handleSeePicture={handleSeePicture}/>
+            <PictureCard key={index} image={item.image} label={item.label} handleSeePicture={handleSeePicture}/>
           )
         })}
       </div>
       {
         openPictureModal && selectedPicture  && (
-          <PictureModal moovImage={moveImage} picture={selectedPicture} closeModal={handleCloseModalPicture}/>
+          <PictureModal moovImage={moveImage} containerClass={containerClass} picture={selectedPicture} closeModal={handleCloseModalPicture}/>
         )
       }
     </div>

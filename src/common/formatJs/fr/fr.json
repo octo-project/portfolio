@@ -14,6 +14,10 @@
     "screenshoot": "Capture d'écran",
     "tech": "Technologies utilisées",
     "Functionnality": "Fonctionnalité",
+    "chatgpt": "ChatGpt",
+    "audienceTargeting": "Public cible",
+    "personaGenerator": "Persona Builder",
+    "chromeExtension": "Chrome Extension",
     "academicCarrer": "Parcours académique",
     "whatItDoes": "Présentation de l'application",
     "professionalProjects": "Projet professionel",
@@ -75,7 +79,10 @@
     "projectAdmoMission1": "Modification des informations personnelles pour permettre aux utilisateurs de mettre à jour leurs données de manière simple et sécurisée, améliorant ainsi l'exactitude des informations et l'expérience utilisateur.",
     "projectAdmoMission2": "Ajouter, modifier, supprimer et consulter mes adresses de livraison, permettant ainsi une gestion flexible et personnalisée des informations de livraison, et assurant une expérience utilisateur fluide et pratique.",
     "projectAdmoMission3": "Dynamisation des pages d'authentification, de création de commande, de confirmation de commande, de récapitulatif de commande, de liste de commande, du mode de livraison express et de paiement, afin d'améliorer l'interactivité et la fluidité de l'expérience utilisateur à chaque étape du parcours.",
-    "projectAdmoMission4": ""
+    
+    "projectBuyerPersonaOverview": "Ce projet est conçu pour tester l'intégration de ChatGPT avec une extension Chrome. L'objectif principal est de simplifier la création de personas, permettant aux utilisateurs de les générer avec moins de clics, améliorant ainsi l'efficacité et l'expérience utilisateur.",
+    "projectBuyerPersonaMission1": "L'intégration des écrans permettant de garantir une navigation fluide et intuitive pour l'utilisateur, assurant ainsi une expérience optimale et une adoption rapide de l'extension",
+    "projectBuyerPersonaMission2": "La mise en place du serveur Express permettant de centraliser les appels API et de garantir des réponses rapides et fiables, assurant une communication fluide entre l'extension et ChatGPT, ce qui optimise la performance du projet global."
 
 
 }

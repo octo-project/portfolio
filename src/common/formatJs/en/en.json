@@ -12,6 +12,10 @@
     "repository": "Repository",
     "experience":"Experiences",
     "myProjects": "My projects",
+    "chatgpt": "ChatGpt",
+    "audienceTargeting": "Audience Targeting",
+    "personaGenerator": "Persona Generator",
+    "chromeExtension": "Chrome Extension",
     "whatItDoes": "App Overview",
     "screenshoot": "Screenshoot",
     "Functionnality": "Functionnality",
@@ -75,5 +79,10 @@
     "projectAdmoMission1": "Modification of personal information to allow users to update their data easily and securely, thereby improving data accuracy and enhancing the user experience.",
     "projectAdmoMission2": "Add, modify, delete, and view my delivery addresses, enabling flexible and personalized management of delivery information, ensuring a smooth and convenient user experience.",
     "projectAdmoMission3": "Enhancement of the authentication page, order creation page, order confirmation page, order summary page, order list page, express delivery option, and payment page to improve interactivity and streamline the user experience at each stage of the process.",
-    "projectAdmoMission4": ""
+    
+    "projectBuyerPersonaOverview": "This project is designed to test the integration of ChatGPT with a Chrome extension. The primary goal is to streamline the creation of buyer personas, allowing users to generate them with fewer clicks, improving both efficiency and user experience.",
+    "projectBuyerPersonaMission1": "Integrating the screens ensures smooth and intuitive navigation for the user, delivering an optimal experience and enabling faster adoption of the extension.",
+    "projectBuyerPersonaMission2": "Setting up the Express server centralizes API calls and ensures fast, reliable responses, facilitating seamless communication between the extension and ChatGPT, ultimately enhancing the overall performance of the project."
+
+
 }
