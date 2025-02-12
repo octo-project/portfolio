@@ -1,6 +1,8 @@
+import { useLocalFormatHook } from "../../../../../../common/hooks/localFormatHook"
 import LaravelChip from "../../../../../TechnosChip/LaravelChip"
 
 const Itts = () => {
+    const {formatText} = useLocalFormatHook()
     return (
             <div className="experience-card">
       <div className="experience-card-header-container">
@@ -11,16 +13,15 @@ const Itts = () => {
       </div>
       <div>
         <p className='project-description'>
-          Une application web pour les familles, amies ayant besoin d'organiser leur voyage.
-          depuis la selection de l'endroit, l'hotel, jusaqu'au payement.
+          {formatText("projectIttsOverview")}
         </p>
         <div>
           <span className="experience-card-subtitle">Missions :</span>
           <ol>
-            <li>Mettre en place le service de payement stripe</li>
-            <li>Envoie automatique d'email (inscription, confirmation de payement, newsLetter)</li>
-            <li>Mise en œuvre d'une interface utilisateur ergonomique et responsive pour la reservation et la gestion des paiements.</li>
-            <li>Conception du model conceptuel de donnee</li>
+            <li>{formatText("projectIttsMission1")}</li>
+            <li>{formatText("projectIttsMission2")}</li>
+            <li>{formatText("projectIttsMission3")}</li>
+            <li>{formatText("projectIttsMission4")}</li>
           </ol>
         </div>
         <div>
