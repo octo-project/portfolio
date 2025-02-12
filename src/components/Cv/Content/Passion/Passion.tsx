@@ -3,6 +3,7 @@ import Techno from '../../../../assets/tech1.png'
 import Manette from '../../../../assets/manette.png'
 import Musique from '../../../../assets/musique.png'
 import { gamingData, musicData, technoData } from './constant/passion-constant'
+import { useLocalFormatHook } from '../../../../common/hooks/localFormatHook'
 
 interface PassionProps {
   refer: React.MutableRefObject<null>
@@ -10,10 +11,11 @@ interface PassionProps {
 
 const Passion: FC<PassionProps> = (props) => {
   const { refer } = props
+  const {formatText} = useLocalFormatHook()
 
   return (
     <section className="content content-passion" ref={refer}>
-      <h3>Passions</h3>
+      <h3>{formatText("interestAndPassionTitle")}</h3>
       <div className="passion-content">
         <div className="passion-item game-card">
           <img

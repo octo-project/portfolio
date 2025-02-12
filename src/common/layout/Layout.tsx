@@ -65,31 +65,28 @@ const Layout: FC<layoutProps> = (props: { children: any }) => {
           </Link>
           <Link to="/" style={{ textDecoration: 'none', flex: 1 }}>
             <div className="btn projectBtn">
-              <div className="statProject">
+              {/* <div className="statProject">
                 <span className="totalProjects">06</span>
                 <span className="subTitleProject">since 2021</span>
-              </div>
+              </div> */}
               {formatText("myProjects")}
             </div>
           </Link>
         </div>
         <div className="p10">
           <div className="contactBtn">
-            <span className="menuTitle"> Contacts</span>
-            <div>
+            <span className="menuTitle">{formatText("contact")}</span>
+            <div className='icon-container'>
               <Contact 
-                // icon={undefined} 
-                icon={FbIcon} 
-                contact="TSIALONINA Heriniaina Mathieu" />
+                icon={FbIcon}
+                link={'https://www.facebook.com/profile.php?id=100008382949411'} />
               <Contact
-                // icon={undefined}
                 icon={GoogleIcon}
-                contact="hmathieutsialonina@gmail.com"
+                link={'mailto:hmathieutsialonina@gmail.com'}
               />
               <Contact
-                // icon={undefined}
                 icon={LinkedInIcon}
-                contact="TSIALONINA Heriniaina Mathieu"
+                link={'https://www.linkedin.com/in/heriniaina-mathieu-tsialonina-79a724209/'}
               />
             </div>
           </div>

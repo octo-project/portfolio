@@ -1,3 +1,8 @@
+
+.icon-container{
+  display: flex;
+}
+
 .container {
   overflow: hidden;
   display: flex;
@@ -104,8 +109,9 @@ h4 {
   display: flex;
   margin-left: 4px;
   font-size: 20px;
+  align-items: center;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
   background: linear-gradient(
     90deg,
     rgb(41 11 159) 0%,
