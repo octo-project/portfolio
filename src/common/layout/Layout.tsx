@@ -1,8 +1,8 @@
 import './style.css'
+import { FC, useState } from 'react'
 import { Link } from 'react-router-dom'
 import Contact from '../contact/Contact'
 import { RootState } from '../../redux/store'
-import { FC, useMemo, useState } from 'react'
 import MyCvPicture from '../../assets/capture.png'
 import {  useDispatch, useSelector } from "react-redux"
 import { setLocale } from '../../redux/slice/app-slice'
@@ -22,24 +22,15 @@ interface layoutProps {
 const Layout: FC<layoutProps> = (props: { children: any }) => {
   const { children } = props
   const dispatch = useDispatch()
-
-  const localStorageValue = useMemo(() => {
-    const isActiveSaved = localStorage.getItem("IsActive")
-    if(!isActiveSaved){
-      localStorage.setItem("IsActive", 'false');
-      return false
-    }
-    return isActiveSaved
-  }, [])
-
-
-  const [isActive, setActive] = useState(localStorageValue)
-  const locale = useSelector((state: RootState) => state.app.locale);
   const {formatText} = useLocalFormatHook()
+  const locale = useSelector((state: RootState) => state.app.locale);
 
-  const toggleClass = () => {
-    localStorage.setItem("IsActive", `${!isActive}`);
+  const isActivex = localStorage.getItem("IsActive") === "true";
+  const [isActive, setActive] = useState(isActivex)
+
+  const toggleDrawer = () => {
     setActive(!isActive)
+    localStorage.setItem("IsActive", `${!isActive}`);
   }
 
   const changeLocal = (local: string) => {
@@ -107,7 +98,7 @@ const Layout: FC<layoutProps> = (props: { children: any }) => {
       <div className="root">
         <div
           id="menu-button"
-          onClick={toggleClass}
+          onClick={toggleDrawer}
           className={isActive ? 'hamburger-menu active' : 'hamburger-menu'}
         >
           <div className="bar"></div>

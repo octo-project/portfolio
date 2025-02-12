@@ -137,43 +137,43 @@ export const useProjectConstant = () => {
     //   screenShoots: [],
     //   screenShootType: 'mobile',
     // },
-    {
-      logo: orderEase,
-      // logo: undefined,
-      name: 'Resto-app',
-      logoSize: '50px',
-      link: '/project/resto-app',
-      about: {
-        demoUrl: 'https://youtube/asdas6a5465/podcast-app-web',
-        gitHubRepository: ' https://git-lab.com/hmathieutsialonina/podcast-app',
-        description: `L'application est une plateforme de commande de repas en ligne qui permet aux utilisateurs de consulter les menus des restaurants locaux et de passer des commandes depuis leur téléphone portable. L'application est facile à utiliser et permet aux clients de parcourir les menus, de sélectionner les plats qu'ils souhaitent commander, d'ajouter des instructions spéciales et de passer leur commande en quelques clics.
-        L'une des fonctionnalités clés de l'application est le paiement mobile, qui permet aux utilisateurs de payer leurs commandes directement à partir de leur téléphone portable. Les utilisateurs peuvent enregistrer leurs informations de paiement dans l'application pour un processus de commande plus rapide et plus facile.
-        L'application fournit également une fonctionnalité de suivi de commande en temps réel qui permet aux utilisateurs de suivre l'état de leur commande de la préparation à la livraison. Les utilisateurs reçoivent des notifications sur leur téléphone portable pour les tenir informés de l'avancement de leur commande.
-        L'application est conçue pour être conviviale et intuitive, avec une interface utilisateur attrayante et facile à naviguer. Elle est également dotée de fonctionnalités de filtrage pour aider les utilisateurs à trouver rapidement les plats qu'ils recherchent, en fonction de leur type de cuisine préféré, de leur prix ou de leur disponibilité.
-        Dans l'ensemble, cette application permet aux utilisateurs de commander des plats en ligne et de payer facilement avec leur téléphone portable, offrant une expérience de commande rapide et pratique pour les clients et une source de revenus supplémentaire pour les restaurants locaux.`,
-        functionnalities: ['Mutli Language', 'Toogle themes', 'Audio Player'],
-        technos: ['ReactNative', 'tailwind'],
-      },
-      screenShootType: 'mobile',
-      screenShoots: [
-        { label: 'Erreur', 
-        image: orderEaseError, 
-        // image: undefined 
-      },
-        { label: 'Facture', 
-        image: orderEaseFacture,
-        // image: undefined,
-       },
-        { label: 'Confirmation', 
-        image: orderEaseConfirmation,
-        // image: undefined,
-       },
-        { label: 'Details Plats',
-        image: orderEaseDetailsPlats,
-        // image: undefined,
-       },
-      ],
-    },
+    // {
+    //   logo: orderEase,
+    //   // logo: undefined,
+    //   name: 'Resto-app',
+    //   logoSize: '50px',
+    //   link: '/project/resto-app',
+    //   about: {
+    //     demoUrl: 'https://youtube/asdas6a5465/podcast-app-web',
+    //     gitHubRepository: ' https://git-lab.com/hmathieutsialonina/podcast-app',
+    //     description: `L'application est une plateforme de commande de repas en ligne qui permet aux utilisateurs de consulter les menus des restaurants locaux et de passer des commandes depuis leur téléphone portable. L'application est facile à utiliser et permet aux clients de parcourir les menus, de sélectionner les plats qu'ils souhaitent commander, d'ajouter des instructions spéciales et de passer leur commande en quelques clics.
+    //     L'une des fonctionnalités clés de l'application est le paiement mobile, qui permet aux utilisateurs de payer leurs commandes directement à partir de leur téléphone portable. Les utilisateurs peuvent enregistrer leurs informations de paiement dans l'application pour un processus de commande plus rapide et plus facile.
+    //     L'application fournit également une fonctionnalité de suivi de commande en temps réel qui permet aux utilisateurs de suivre l'état de leur commande de la préparation à la livraison. Les utilisateurs reçoivent des notifications sur leur téléphone portable pour les tenir informés de l'avancement de leur commande.
+    //     L'application est conçue pour être conviviale et intuitive, avec une interface utilisateur attrayante et facile à naviguer. Elle est également dotée de fonctionnalités de filtrage pour aider les utilisateurs à trouver rapidement les plats qu'ils recherchent, en fonction de leur type de cuisine préféré, de leur prix ou de leur disponibilité.
+    //     Dans l'ensemble, cette application permet aux utilisateurs de commander des plats en ligne et de payer facilement avec leur téléphone portable, offrant une expérience de commande rapide et pratique pour les clients et une source de revenus supplémentaire pour les restaurants locaux.`,
+    //     functionnalities: ['Mutli Language', 'Toogle themes', 'Audio Player'],
+    //     technos: ['ReactNative', 'tailwind'],
+    //   },
+    //   screenShootType: 'mobile',
+    //   screenShoots: [
+    //     { label: 'Erreur', 
+    //     image: orderEaseError, 
+    //     // image: undefined 
+    //   },
+    //     { label: 'Facture', 
+    //     image: orderEaseFacture,
+    //     // image: undefined,
+    //    },
+    //     { label: 'Confirmation', 
+    //     image: orderEaseConfirmation,
+    //     // image: undefined,
+    //    },
+    //     { label: 'Details Plats',
+    //     image: orderEaseDetailsPlats,
+    //     // image: undefined,
+    //    },
+    //   ],
+    // },
     {
       logo: gestionFond,
       // logo: undefined,
@@ -196,27 +196,27 @@ export const useProjectConstant = () => {
       screenShootType: 'web',
       screenShoots: [],
     },
-    {
-      // logo: undefined,
-      logo: todoApp,
-      name: 'Todo-app',
-      logoSize: '50px',
-      link: '/project/todo-app',
-      about: {
-        demoUrl: 'https://youtube/asdas6a5465/podcast-app-web',
-        gitHubRepository: ' https://git-lab.com/hmathieutsialonina/podcast-app',
-        description: `L'application mobile Todo est un outil de gestion de tâches simple et efficace qui permet aux utilisateurs de créer, organiser et suivre leur liste de tâches quotidiennes.
-        Les utilisateurs peuvent facilement ajouter des tâches à leur liste, les organiser par priorité et suivre leur progression en temps réel. L'application propose des fonctionnalités de rappel pour aider les utilisateurs à ne pas oublier les tâches importantes et des options de répétition pour les tâches récurrentes.
-        L'application Todo permet également aux utilisateurs de créer des projets et des listes de tâches pour différents domaines de leur vie, tels que le travail, la maison ou les loisirs. Les utilisateurs peuvent définir des objectifs, des échéances et des sous-tâches pour chaque projet et suivre leur progression de manière organisée.
-        En outre, l'application offre une fonctionnalité de partage de tâches, permettant aux utilisateurs de partager des tâches avec des amis, des collègues ou des membres de la famille et de collaborer en temps réel pour accomplir des projets communs.
-        Enfin, l'application Todo est conçue pour être simple et facile à utiliser, avec une interface conviviale et intuitive qui permet aux utilisateurs de se concentrer sur leurs tâches et de rester organisés.
-        Dans l'ensemble, cette application mobile Todo est un outil pratique pour aider les utilisateurs à gérer leur liste de tâches quotidiennes, à organiser des projets et à collaborer avec d'autres personnes pour accomplir des tâches plus importantes.`,
-        functionnalities: ['Mutli Language', 'Toogle themes', 'Audio Player'],
-        technos: ['React', 'NodeJs', 'GraphQL', 'Apollo', 'Prisma', 'Typescript'],
-      },
-      screenShootType: 'mobile',
-      screenShoots: [],
-    },
+    // {
+    //   // logo: undefined,
+    //   logo: todoApp,
+    //   name: 'Todo-app',
+    //   logoSize: '50px',
+    //   link: '/project/todo-app',
+    //   about: {
+    //     demoUrl: 'https://youtube/asdas6a5465/podcast-app-web',
+    //     gitHubRepository: ' https://git-lab.com/hmathieutsialonina/podcast-app',
+    //     description: `L'application mobile Todo est un outil de gestion de tâches simple et efficace qui permet aux utilisateurs de créer, organiser et suivre leur liste de tâches quotidiennes.
+    //     Les utilisateurs peuvent facilement ajouter des tâches à leur liste, les organiser par priorité et suivre leur progression en temps réel. L'application propose des fonctionnalités de rappel pour aider les utilisateurs à ne pas oublier les tâches importantes et des options de répétition pour les tâches récurrentes.
+    //     L'application Todo permet également aux utilisateurs de créer des projets et des listes de tâches pour différents domaines de leur vie, tels que le travail, la maison ou les loisirs. Les utilisateurs peuvent définir des objectifs, des échéances et des sous-tâches pour chaque projet et suivre leur progression de manière organisée.
+    //     En outre, l'application offre une fonctionnalité de partage de tâches, permettant aux utilisateurs de partager des tâches avec des amis, des collègues ou des membres de la famille et de collaborer en temps réel pour accomplir des projets communs.
+    //     Enfin, l'application Todo est conçue pour être simple et facile à utiliser, avec une interface conviviale et intuitive qui permet aux utilisateurs de se concentrer sur leurs tâches et de rester organisés.
+    //     Dans l'ensemble, cette application mobile Todo est un outil pratique pour aider les utilisateurs à gérer leur liste de tâches quotidiennes, à organiser des projets et à collaborer avec d'autres personnes pour accomplir des tâches plus importantes.`,
+    //     functionnalities: ['Mutli Language', 'Toogle themes', 'Audio Player'],
+    //     technos: ['React', 'NodeJs', 'GraphQL', 'Apollo', 'Prisma', 'Typescript'],
+    //   },
+    //   screenShootType: 'mobile',
+    //   screenShoots: [],
+    // },
     {
       logo: BPLogo,
       // logo: undefined,
@@ -228,12 +228,16 @@ export const useProjectConstant = () => {
       about: {
         demoUrl: 'https://youtube/asdas6a5465/podcast-app-web',
         gitHubRepository: ' https://git-lab.com/hmathieutsialonina/podcast-app',
-        description: `This is project is made for testing chatGpt integration with a chrome add-on, the target is to create bayer personas in less click`,
+        description: `projectBuyerPersonaOverview`,
+        missions:[
+          'projectBuyerPersonaMission1',
+          'projectBuyerPersonaMission2'
+        ],
         functionnalities: [
-          'ChatGPT',
-          'Marketing cibling',
-          'Persona generator',
-          'chrome extension',
+          'chatgpt',
+          'audienceTargeting',
+          'personaGenerator',
+          'chromeExtension',
         ],
         technos: ['React', 'NodeJs', 'Express', 'Typescript'],
       },
