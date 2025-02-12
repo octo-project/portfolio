@@ -82,7 +82,30 @@
     
     "projectBuyerPersonaOverview": "Ce projet est conçu pour tester l'intégration de ChatGPT avec une extension Chrome. L'objectif principal est de simplifier la création de personas, permettant aux utilisateurs de les générer avec moins de clics, améliorant ainsi l'efficacité et l'expérience utilisateur.",
     "projectBuyerPersonaMission1": "L'intégration des écrans permettant de garantir une navigation fluide et intuitive pour l'utilisateur, assurant ainsi une expérience optimale et une adoption rapide de l'extension",
-    "projectBuyerPersonaMission2": "La mise en place du serveur Express permettant de centraliser les appels API et de garantir des réponses rapides et fiables, assurant une communication fluide entre l'extension et ChatGPT, ce qui optimise la performance du projet global."
+    "projectBuyerPersonaMission2": "La mise en place du serveur Express permettant de centraliser les appels API et de garantir des réponses rapides et fiables, assurant une communication fluide entre l'extension et ChatGPT, ce qui optimise la performance du projet global.",
 
+    "projectLappsysOverview": "Cette application innovante a été conçue pour centraliser la gestion des établissements, des bénéficiaires et des interventions dans un outil unique. Elle permet aux utilisateurs de gérer de manière fluide et efficace l'ensemble des processus associés aux bénéficiaires et aux interventions, tout en offrant une expérience utilisateur optimisée grâce à des fonctionnalités à la fois simples et intuitives. L'objectif est d'améliorer la productivité, la transparence et la coordination, tout en garantissant une prise en charge optimale des besoins.",
+    "projectLappsysTitle": "Résolution des bugs potentiels de l'application : ",
+    "projectLappsysMission1": "Génération du rapport d'intervention",
+    "projectLappsysMission2": "Bug d'exportation PDF",
+    "projectLappsysMission3": "Téléchargement des photos sur l'établissement et le bénéficiaire",
+    "projectLappsysMission4": "Upload de la signature bénéficiaire sur l'application mobile",
+    "projectLappsysMission5": "Mise à jour en temps réel sur l'application mobile",
+    "projectLappsysMission6": "Importer la liste des bénéficiaires depuis Excel",
+    "projectLappsysMission7": "Filtrer les intervenants et les bénéficiaires surla planification",
 
+    "projectIttsOverview": "Une application web pour les familles, amies ayant besoin d'organiser leur voyage.depuis la selection de l'endroit, l'hotel, jusaqu'au payement.",
+    "projectIttsMission1": "Mettre en place le service de payement stripe",
+    "projectIttsMission2": "Envoie automatique d'email (inscription, confirmation de payement, newsLetter)",
+    "projectIttsMission3": "Mise en œuvre d'une interface utilisateur ergonomique et responsive pour la reservation et la gestion des paiements.",
+    "projectIttsMission4": "Conception du model conceptuel de donnee",
+
+    "projectOsawOverview": "Application web de référencement des sociétés et établissements malagasy par géolocalisation, développé avec laravel et React.",
+    "projectOsawMission1": "Conception et gestion des routes pour la navigation entre les pages de l'application.",
+    "projectOsawMission2": "Integration de la page d'acceuil avec un map de madagascar ainsi que les 26 regions cliquable pour permettre a l'utilisateur de filtrer ces recherche.",
+    "projectOsawMission3": "Affichage par defaut de quelques etablissement (Pharmacie, Poste de Police, Hopital) sur la map pour une interaction plus ergonomique et rapide.",
+    "projectOsawMission4": "Mise en place des modeles concuptuel de donnees (Societe, Annexe, Evenement, Information, Produit) pour assurer une structure optimale des donnees sauvegarder.",
+    "projectOsawMission5": "Integration et affichage des evenements avec geolocalisation afin d'aider l'utilisateur a reserver directement son billet sans plus se soucier de la localisation.",
+    "projectOsawMission6": "Affichage des Produits vendue par un etablissement pour avoir plus d'information.",
+    "projectOsawMission7": "Conception du dashboard pour l'admnistrateur de l'application afin qu'il puisse gerer les societes, les annexes, les evenements et le produits en vente."
 }

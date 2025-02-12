@@ -2,8 +2,10 @@ import Link from "../../../../../Link"
 import Minio from "../../../../../TechnosChip/Minio"
 import LappsysLogo from "../../../../../../assets/EsnLogo/neoptim.png"
 import { GraphqlChip, PrismaChip, ReactChip } from "../../../../../TechnosChip"
+import { useLocalFormatHook } from "../../../../../../common/hooks/localFormatHook"
 
 const Lappsys = () => {
+    const {formatText} = useLocalFormatHook()
     return (
       <div className="experience-card">
         <div className="experience-card-header-container">
@@ -14,20 +16,20 @@ const Lappsys = () => {
         </div>
         <div>
           <p className='project-description'>
-          Cette application innovante est conçue pour faciliter la gestion des établissements, des bénéficiaires et des interventions au sein d'un même outil. Elle permet aux utilisateurs de gérer efficacement les différents processus liés aux bénéficiaires et aux interventions, tout en offrant des fonctionnalités simples et intuitives.
+            {formatText("projectLappsysOverview")}
           </p>
           <div>
             <span className="experience-card-subtitle">Missions :</span>
             <ol>
-              <li>Corriger les éventuels bug sur l'application : </li>
+              <li>{formatText("projectLappsysTitle")}</li>
               <ul>
-                <li>Création du rapport d'intervention</li>
-                <li>Bug d'exportation PDF</li>
-                <li>Téléchargement des photos sur l'établissement et le bénéficiaire </li>
-                <li>Upload de la signature bénéficiaire sur l'application mobile</li>
-                <li>Mise à jour en temps réel sur l'application mobile </li>
-                <li>Importer la liste des bénéficiaires depuis Excel</li>
-                <li>Filtrer les intervenants et les bénéficiaires surla planification</li>
+                <li>{formatText("projectLappsysMission1")}</li>
+                <li>{formatText("projectLappsysMission2")}</li>
+                <li>{formatText("projectLappsysMission3")}</li>
+                <li>{formatText("projectLappsysMission4")}</li>
+                <li>{formatText("projectLappsysMission5")}</li>
+                <li>{formatText("projectLappsysMission6")}</li>
+                <li>{formatText("projectLappsysMission7")}</li>
               </ul>
             </ol>
           </div>
