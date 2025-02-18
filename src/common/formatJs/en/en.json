@@ -124,5 +124,16 @@
     "projectOsawMission4": "Development of conceptual data models (Company, Annex, Event, Information, Product) to ensure an optimal and structured data storage system.",
     "projectOsawMission5": "Integration and display of events with geolocation to help users book their tickets directly without worrying about location details.",
     "projectOsawMission6": "Display of products sold by an establishment, providing users with more detailed information.",
-    "projectOsawMission7": "Design of an administrator dashboard, allowing easy management of companies, annexes, events, and products for sale."
+    "projectOsawMission7": "Design of an administrator dashboard, allowing easy management of companies, annexes, events, and products for sale.",
+
+    "expenseTracking": "Expense Tracking",
+    "financialStrategy": "Financial Strategy",
+    "projectGestionFondOverview":"This is an expense management and financial planning app designed to simplify the way you manage your personal finances. It allows you to track your expenses, set financial goals, and analyze your spending habits in an easy-to-use, intuitive interface. With advanced features, you’ll be able to better understand where your money goes and make informed decisions to optimize your budget.",
+    "projectGestionFondMission1": "UI/UX integration optimization to provide a smooth and intuitive user experience by simplifying navigation and optimizing user flows.",
+    "projectGestionFondMission2": "Development and enhancement of the expense entry page, providing an interactive and intuitive interface to facilitate expense input.",
+    "projectGestionFondMission3": "Implementation of comprehensive expense management, allowing users to view, edit, or delete recorded expenses.",
+    "projectGestionFondMission4": "Design and implementation of personalized financial plans, enabling users to set specific financial goals (savings, debt repayment, etc.).",
+    "projectGestionFondMission5": "Design and development of the REST API with Deno, enabling optimized request management and smooth communication between the front-end and back-end.",
+    "projectGestionFondMission6": "Development of advanced filtering and sorting features for expenses, allowing users to filter and organize expenses by category, creation date.",
+    "":""
 }

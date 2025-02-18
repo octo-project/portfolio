@@ -12,13 +12,13 @@ const About: FC<AboutProps> = (props) => {
 
   return (
     <div className="projectDetails">
-      <div style={{display: 'flex'}}>
-        <h5 style={{fontSize: '15px', color: "black"}}>
+      <div style={{display: 'none'}}>
+        <h5 style={{fontSize: '15px', color: "black", opacity: 0.2}}>
           <u>
             <a href={about.demoUrl} target='_blank' rel='noopener noreferrer'>{formatText("seeDemo")}</a>
           </u>
         </h5>
-        <h5 style={{fontSize: '15px', color: "black"}}>
+        <h5 style={{fontSize: '15px', color: "black", opacity: 0.2}}>
           <u>
             <a href={about.gitHubRepository} target='_blank' rel='noopener noreferrer'>{formatText("repository")}</a>
           </u>
@@ -31,10 +31,19 @@ const About: FC<AboutProps> = (props) => {
       <p style={{ marginLeft: '9px', marginRight: '9px', fontSize: '16px', textAlign: 'justify' }}>
         {formatText(about.description)}
       </p>
+
+      <h5>{formatText("tech")} : </h5>
+      <div className="technoGrid">
+        {about.technos.map((techno: any, index: number) => {
+          return <TechnoCard text={techno} key={index}/>
+        })}
+      </div>
+
       <h5>
         <span className='spkear-medium animate'>🔉</span>
         {formatText("missions")} : 
       </h5>
+
       <ul>
         {(about?.missions || []).map((mission: any, index: number) => {
           return (
@@ -50,12 +59,7 @@ const About: FC<AboutProps> = (props) => {
           return <span className="functionnalityCard purpleBg animate" key={index}>{formatText(item)}</span>
         })}
       </div>
-      <h5>{formatText("tech")} : </h5>
-      <div className="technoGrid">
-        {about.technos.map((techno: any, index: number) => {
-          return <TechnoCard text={techno} key={index}/>
-        })}
-      </div>
+      
     </div>
   )
 }

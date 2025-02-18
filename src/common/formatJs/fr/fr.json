@@ -124,5 +124,16 @@
     "projectOsawMission4": "Mise en place des modeles concuptuel de donnees (Societe, Annexe, Evenement, Information, Produit) pour assurer une structure optimale des donnees sauvegarder.",
     "projectOsawMission5": "Integration et affichage des evenements avec geolocalisation afin d'aider l'utilisateur a reserver directement son billet sans plus se soucier de la localisation.",
     "projectOsawMission6": "Affichage des Produits vendue par un etablissement pour avoir plus d'information.",
-    "projectOsawMission7": "Conception du dashboard pour l'admnistrateur de l'application afin qu'il puisse gerer les societes, les annexes, les evenements et le produits en vente."
+    "projectOsawMission7": "Conception du dashboard pour l'admnistrateur de l'application afin qu'il puisse gerer les societes, les annexes, les evenements et le produits en vente.",
+
+    "expenseTracking": "Suivi des dépenses",
+    "financialStrategy": "Stratégie financière",
+    "projectGestionFondOverview":"Une application de gestion des dépenses et de planification financière conçue pour simplifier la gestion de vos finances personnelles. Elle vous permet de suivre vos dépenses, fixer des objectifs financiers, et d'analyser vos habitudes de consommation de manière simple et intuitive. Grâce à des fonctionnalités avancées, vous pourrez mieux comprendre où va votre argent et prendre des décisions éclairées pour optimiser votre budget.",
+    "projectGestionFondMission1": "Intégration UI/UX pour offrir une expérience utilisateur fluide et intuitive, en simplifiant la navigation et en optimisant les parcours utilisateurs.",
+    "projectGestionFondMission2": "Développement et dynamisation de la page d’ajout de dépenses, en offrant une interface interactive et intuitive pour faciliter la saisie des dépenses.",
+    "projectGestionFondMission3": "Mise en place d’une gestion complète des dépenses, avec la possibilité d’afficher, modifier ou supprimer les dépenses enregistrées.",
+    "projectGestionFondMission4": "Conception et implémentation de plans financiers personnalisés, permettant aux utilisateurs de définir des objectifs financiers spécifiques (épargne, remboursement de dettes, etc.).",
+    "projectGestionFondMission5": "Conception et développement de l'API REST avec Deno, permettant une gestion optimisée des requêtes et une communication fluide entre le front-end et le back-end.",
+    "projectGestionFondMission6": "Développement de fonctionnalités avancées de filtrage et de tri des dépenses, permettant aux utilisateurs de filtrer et organiser leurs dépenses par catégorie, date de création.",
+    "":""
 }

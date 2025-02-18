@@ -17,6 +17,23 @@ import GeneratedFile from '../assets/Buyer Persona/generated-file.png'
 // import orderEaseDetailsPlats from '../assets/OrderEase/DetailsPlats.png'
 import SuccessGenerate from '../assets/Buyer Persona/SuccessGenerate.png'
 import SuccessDownload from '../assets/Buyer Persona/SuccessDownload.png'
+
+import expense_tracking_home from '../assets/GestionDeFond/home.png'
+import expense_tracking_expenses from '../assets/GestionDeFond/expenses.png'
+import expense_tracking_finance_home from '../assets/GestionDeFond/finance-home.png'
+import expense_tracking_new_buy_plan from '../assets/GestionDeFond/new-buy-plan.png'
+import expense_tracking_delete_expense from '../assets/GestionDeFond/delete-expense.png'
+import expense_tracking_select_plan_detail from '../assets/GestionDeFond/plan-detail.png'
+import expense_tracking_select_plan_type from '../assets/GestionDeFond/select-plan-type.png'
+import expense_tracking_new_selling_goal from '../assets/GestionDeFond/new-selling-goal.png'
+import expense_tracking_expense_details_2 from '../assets/GestionDeFond/expense-details-2.png'
+import expense_tracking_delete_finance_goal from '../assets/GestionDeFond/delete-finance-goal.png'
+import expense_tracking_finance_sold_detail from '../assets/GestionDeFond/finance-sold-detail.png'
+import expense_tracking_creation_new_expense from '../assets/GestionDeFond/creation-new-expense.png'
+import expense_tracking_expense_chart_details from '../assets/GestionDeFond/expense-chart-details.png'
+import expense_tracking_creation_expense_1 from '../assets/GestionDeFond/creation-new-expense-amount.png'
+import expense_tracking_expense_category_filters from '../assets/GestionDeFond/expense-category-filters.png'
+
 //
 import vatsy_page_1 from '../assets/Vatsy/page_1.png';
 import vatsy_addition from '../assets/Vatsy/addition.png';
@@ -57,7 +74,7 @@ export const useProjectConstant = () => {
           "projectVatsyMission9",
         ],
         functionnalities: ['projectVatsyInvoicePrinting', 'projectVatsyOrderManagement', 'projectVatsyTransactionHistory', 'projectVatsySearchEngine'],
-        technos: ['React', 'Tailwind', 'Rust', 'Tauri', 'Typescript'],
+        technos: ['React', 'Tailwind', 'Rust', 'Tauri', 'Typescript', 'Sqlite'],
       },
       //'Apollo',
       screenShootType: 'web',
@@ -176,25 +193,88 @@ export const useProjectConstant = () => {
     // },
     {
       logo: gestionFond,
-      // logo: undefined,
       name: 'Gestion-fond',
-      logoSize: '50px',
-      link: '/project/getsion-fond',
+      logoSize: '70px',
+      link: '/project/gestion-fond',
       about: {
+        missions: [
+          "projectGestionFondMission1",
+          "projectGestionFondMission2",
+          "projectGestionFondMission3",
+          "projectGestionFondMission4",
+          "projectGestionFondMission5",
+          "projectGestionFondMission6",
+        ],
         demoUrl: 'https://youtube/asdas6a5465/podcast-app-web',
         gitHubRepository: ' https://git-lab.com/hmathieutsialonina/podcast-app',
-        description: `L'application mobile de gestion de fonds permet aux utilisateurs de suivre leurs finances personnelles, de gérer leur budget et d'investir dans différents types de fonds d'investissement.
-        Les utilisateurs peuvent facilement connecter leurs comptes bancaires et cartes de crédit pour suivre leurs dépenses et leurs revenus en temps réel. L'application offre des fonctionnalités de catégorisation des dépenses pour aider les utilisateurs à mieux comprendre leurs habitudes de dépenses et à établir des budgets réalistes.
-        En outre, l'application permet aux utilisateurs d'investir dans des fonds communs de placement, des ETF et d'autres produits d'investissement. Les utilisateurs peuvent choisir parmi une variété de portefeuilles recommandés en fonction de leur profil de risque et de leurs objectifs d'investissement.
-        L'application fournit également des outils d'analyse et de visualisation de données pour aider les utilisateurs à suivre leurs investissements, à évaluer leur performance et à prendre des décisions éclairées.
-        Enfin, l'application offre des fonctionnalités de sécurité de pointe pour protéger les informations financières des utilisateurs et assurer la confidentialité de leurs données.
-        Dans l'ensemble, cette application de gestion de fonds est conçue pour aider les utilisateurs à mieux gérer leur argent, à investir dans des produits d'investissement à long terme et à atteindre leurs objectifs financiers.`,
+        description: `projectGestionFondOverview`,
         animation: 'All animation is made with after effect and lottie',
-        functionnalities: ['Mutli Language', 'Toogle themes', 'Audio Player'],
-        technos: ['React', 'NodeJs', 'GraphQL', 'Typescript'],
+        functionnalities: ['expenseTracking', 'financialStrategy'],
+        technos: ['Deno','Typescript', 'React', 'Tailwind'],
       },
       screenShootType: 'web',
-      screenShoots: [],
+      screenShoots: [
+        { 
+          label: 'expense home', 
+          image: expense_tracking_home, 
+        },
+        { 
+          label: 'expense tracking', 
+          image: expense_tracking_expenses, 
+        },
+        { 
+          label: 'finance home', 
+          image: expense_tracking_finance_home, 
+        },
+        { 
+          label: 'New buy plan', 
+          image: expense_tracking_new_buy_plan, 
+        },
+        { 
+          label: 'delete expense', 
+          image: expense_tracking_delete_expense, 
+        },
+        { 
+          label: 'select plan detail', 
+          image: expense_tracking_select_plan_detail, 
+        },
+        { 
+          label: 'select plan type', 
+          image: expense_tracking_select_plan_type, 
+        },
+        { 
+          label: 'new selling goal', 
+          image: expense_tracking_new_selling_goal, 
+        },
+        { 
+          label: 'expense detail 2', 
+          image: expense_tracking_expense_details_2, 
+        },
+        { 
+          label: 'delte goal', 
+          image: expense_tracking_delete_finance_goal, 
+        },
+        { 
+          label: 'finance sold detail', 
+          image: expense_tracking_finance_sold_detail, 
+        },
+        { 
+          label: 'creation new expense', 
+          image: expense_tracking_creation_new_expense, 
+        },
+        { 
+          label: 'expense chart details', 
+          image: expense_tracking_expense_chart_details, 
+        },
+        { 
+          label: 'creation expense', 
+          image: expense_tracking_creation_expense_1, 
+        },
+        { 
+          label: 'expense category filters', 
+          image: expense_tracking_expense_category_filters, 
+        },
+      ],
     },
     // {
     //   // logo: undefined,
@@ -220,11 +300,11 @@ export const useProjectConstant = () => {
     {
       logo: BPLogo,
       // logo: undefined,
+      name: 'Buyer',
       logoSize: '35px',
       textColor: 'white',
       background: '#22222f',
-      name: 'Buyer',
-      link: '/project/buyer-persona-app',
+      link: '/project/buyer',
       about: {
         demoUrl: 'https://youtube/asdas6a5465/podcast-app-web',
         gitHubRepository: ' https://git-lab.com/hmathieutsialonina/podcast-app',
