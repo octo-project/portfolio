@@ -20,6 +20,20 @@
   position: relative;
 }
 
+.tauri-logo {
+  top: -5px;
+  left: 0px;
+  width: 94px;
+  position: relative;
+}
+
+.sqlite-logo {
+  left: 5px;
+  top: -13px;
+  width: 91px;
+  position: relative;
+}
+
 .react-native-logo {
   top: -9px;
   left: -14px;

@@ -14,7 +14,8 @@ const MyProject: FC = () => {
   const {formatText} = useLocalFormatHook()
   const projectName = search.get('name') || null
 
-  const logo = Projects.find(el => el.name.toLowerCase() === projectName?.toLowerCase())?.logo;
+  const currentProject = Projects.find(el => el.name.toLowerCase() === projectName?.toLowerCase());
+  const logo = currentProject ? currentProject?.logo : undefined;
 
   return (
     <div className="containerProject">
@@ -24,10 +25,10 @@ const MyProject: FC = () => {
         </Link>
         {projectName && (
           <>
-            <span style={{ fontWeight: 'normal', letterSpacing: '2px', display: 'flex', flexDirection:'row', alignItems:'end' }}>
+            <span style={{ fontWeight: 'normal', position: "relative", letterSpacing: '2px', display: 'flex', flexDirection:'row', alignItems:'end' }}>
               <span>/</span>
-              {logo && (<img src={logo} alt="project" style={{marginLeft: "3px"}} width={25}/>)}
-              <span style={{marginLeft: "3px"}}>
+              {logo && (<img src={logo} alt="project" style={{marginLeft: "3px", left:8, top: -3, position: "absolute", width: 38}}/>)}
+              <span style={{marginLeft: "44px"}}>
                 {` ${projectName}`}
               </span>
             </span>

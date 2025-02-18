@@ -1,4 +1,5 @@
 import React, { FC } from 'react'
+import { useLocalFormatHook } from '../../../../common/hooks/localFormatHook'
 
 interface QualityAndDefaultProps {
   refer: React.MutableRefObject<null>
@@ -6,54 +7,43 @@ interface QualityAndDefaultProps {
 
 const QualityAndDefaut: FC<QualityAndDefaultProps> = (props) => {
   const { refer } = props
+  const {formatText} = useLocalFormatHook()
 
   return (
     <section className="content" ref={refer}>
-      <h3>Quality</h3>
+      <h3>{formatText("qualityTitle")}</h3>
       <div className="qualityContainer">
         <div className="qualityContent">
-          <span className="qualitySubTitle">Quality</span>
+          <span className="qualitySubTitle">{formatText("Quality")}</span>
           <div>
             <ul>
               <li className="quality-item ">
-                Passionné par la programmation et toujours en quête de nouvelles
-                connaissances et technologies pour améliorer mes compétences en
-                tant que développeur full-stack.
+                {formatText("quality1")}
               </li>
               <li className="quality-item">
-                Capacité à travailler de manière autonome ou en équipe pour
-                atteindre les objectifs de projet tout en respectant les délais.
+                {formatText("quality2")}
               </li>
               <li className="quality-item">
-                Souci du détail et de la qualité pour fournir un code efficace
-                et maintenable.
+                {formatText("quality3")}
               </li>
               <li className="quality-item">
-                Excellente communication et capacité à travailler avec des
-                équipes interdisciplinaires pour garantir la satisfaction des
-                clients et la livraison réussie des projets.
+                {formatText("quality4")}
               </li>
             </ul>
           </div>
         </div>
         <div className="defautContent">
-          <span className="qualitySubTitle">Defaut</span>
+          <span className="qualitySubTitle">{formatText("Weakness")}</span>
           <div>
             <ul>
               <li className="defaut-item">
-                Parfois trop exigeant envers moi-même et envers les autres, ce
-                qui peut me pousser à vouloir perfectionner chaque petit détail.
+                {formatText("weakness1")}
               </li>
               <li className="defaut-item">
-                J'ai tendance à m'investir tellement dans mes projets que je
-                peux parfois oublier de prendre des pauses nécessaires pour
-                maintenir un équilibre vie professionnelle/vie privée.
+                {formatText("weakness2")}
               </li>
               <li className="defaut-item">
-                Parfois, j'ai besoin de plus de temps pour prendre des décisions
-                importantes, car je veux m'assurer d'avoir considéré toutes les
-                options et de faire le meilleur choix pour l'équipe et les
-                clients.
+                {formatText("weakness3")}
               </li>
             </ul>
           </div>

@@ -34,37 +34,12 @@ const Experience: FC<ExperienceProps> = (props) => {
       <Itts/>
       <OSAW/>
 
-      <h4>Project personel</h4>
+      <h4>{formatText("personaProjects")}</h4>
       <div className="project-perso animate">
         <Link to={'/'}>
-          Voir mes projets 
+          {formatText("myAchievements")}
         </Link> 
       </div>
-
-      {/* Easy chain */}
-      {/* Leviathan loi en vigeur  Angular */}
-      
-      {/*  
-      <h4>Project personnel</h4>
-      <div className="experience-card">
-        <span className="experience-card-title">Avatar Generator:</span>
-        <div>
-          <p>
-            Une module npm pour generer des avatars en randoom ou
-            personalisable.
-          </p>
-          <div>
-            <span className="experience-card-subtitle">Missions :</span>
-            <ol>
-              <li>Creation from scratch.</li>
-            </ol>
-          </div>
-          <div>
-            <span className="experience-card-subtitle">Technos:</span>
-            <p>React, Typescript</p>
-          </div>
-        </div>
-      </div> */}
     </section>
   )
 }

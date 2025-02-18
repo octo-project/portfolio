@@ -1,18 +1,20 @@
+import Link from '../../components/Link';
 import './contact.css'
 import { FC } from 'react'
 
 interface contactProp{
     icon: any;
-    contact: string;
+    link: string;
 }
 
 const Contact:FC<contactProp> = (props) => {
-    const {icon, contact} = props;
+    const {icon, link} = props;
 
     return (
         <div className="contactContainer">
-            <img src={icon} width={25} height={25} alt=""/>
-            <span className="contact">{contact}</span>
+            <Link target={link}>
+                <img src={icon} width={25} height={25} alt=""/>
+            </Link>
         </div>
     )
 }
