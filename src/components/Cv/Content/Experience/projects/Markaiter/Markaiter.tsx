@@ -26,6 +26,7 @@ const Markaiter = () => {
                     <li>{formatText("projectMarketerMission3")}</li>
                     <li>{formatText("projectMarketerMission4")}</li>
                     <li>{formatText("projectMarketerMission5")}</li>
+                    <li>{formatText("projectMarketerMission6")}</li>
                 </ol>
             </div>
             <div>
