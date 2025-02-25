@@ -29,6 +29,7 @@ const Layout: FC<layoutProps> = (props: { children: any }) => {
   const [isActive, setActive] = useState(isActivex)
 
   const toggleDrawer = () => {
+    console.log("drawer ....");
     setActive(!isActive)
     localStorage.setItem("IsActive", `${!isActive}`);
   }
@@ -40,6 +41,7 @@ const Layout: FC<layoutProps> = (props: { children: any }) => {
   return (
     <div className="container">
       <div className={isActive ? 'navigation active' : 'navigation'}>
+        <button className="mobile-close-btn" onClick={toggleDrawer}>close</button>
         <div className="header-title">
           <div className="tooltip">
             <span style={{cursor: 'pointer'}}>TSIALONINA Heriniaina Mathieu</span>

@@ -28,7 +28,7 @@ const ProjectDetails: FC<ProjectDetailsProps> = (props) => {
   }
 
   return (
-    <div style={{ paddingLeft: '20px' }}>
+    <div className='projectDetail'>
       <div className="detailsTitlesContainer">
         <div className="detailsTitles">
           <div
