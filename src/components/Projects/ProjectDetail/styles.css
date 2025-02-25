@@ -64,6 +64,7 @@
 }
 
 .projectDetails {
+  width: 100%;
   height: 72vh;
   overflow: auto;
   margin-top: 12px;
@@ -95,6 +96,7 @@ u:hover {
 
 .technoGrid {
   display: flex;
+  flex-wrap: wrap;
   margin-left: 9px;
   margin-bottom: 21px;
   justify-content: flex-start;

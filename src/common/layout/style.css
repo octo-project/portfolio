@@ -45,6 +45,165 @@ h4 {
   margin-left: 320px;
 }
 
+.mobile-close-btn{
+  top: 11px;
+  right: 12px;
+  z-index: 200;
+  visibility: hidden;
+  position: absolute;
+}
+
+.projectDetail{
+  padding-left: 20px;
+}
+
+.functionnalityCard{
+  margin-bottom: 10px;
+}
+
+@media (max-width: 415px){
+  .passion-content{
+    flex-wrap: wrap;
+    justify-content: start;
+  }
+  .passion-content > * {
+    margin-bottom: 15px;
+    margin-right: 15px;
+  }
+  .parcour-container{
+    flex-wrap: wrap-reverse;
+  }
+  .parcour-container > * {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .btnCertifications,.btnCustom {
+    width: 65px;
+    margin-right: 3px;
+  }
+  .cvMenu{
+    margin-left: 15px;
+    margin-bottom: 15px
+  }
+  .CvContent{
+    margin-top: 5px;
+  }
+  .CvContent > div > p {
+    width: 91%;
+    margin-bottom: 5px;
+  }
+  ul {
+    width: 89%;
+    margin-left: -11px;
+  }
+  ol > ul > li {
+    margin-left: -41px
+  }
+  ol > li {
+    line-height: 1.4;
+    margin-left: -23px;
+    text-align: justify;
+    margin-bottom: 17px;
+  }
+  ul > li{
+    line-height: 1.4;
+    text-align: justify;
+    margin-bottom: 17px;
+  }
+  .CvHeaderContainer{
+    flex-direction: column;
+  }
+  .projectDetail{
+    margin-left: -26px;
+    padding-left: 0px;
+  }
+  .projectDetails{
+    width: 105%;
+  }
+}
+
+@media (max-width: 600px) and (min-width: 415px){
+  .parcour-container{
+    flex-wrap: wrap-reverse;
+  }
+  .parcour-container > * {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .btnCertifications,.btnCustom {
+    width: 70px;
+    margin-right: 6px;
+  }
+  .CvContent{
+    margin-top: 5px;
+  }
+  .cvMenu{
+    margin-bottom: 12px
+  }
+  .CvContent > div > p {
+    width: 94%;
+    margin-bottom: 5px;
+  }
+  ul {
+    width: 89%;
+    margin-left: -11px;
+  }
+  ol > ul > li {
+    margin-left: -41px
+  }
+  ol > li {
+    line-height: 1.4;
+    margin-left: -23px;
+    text-align: justify;
+    margin-bottom: 17px;
+  }
+  ul > li{
+    line-height: 1.4;
+    text-align: justify;
+    margin-bottom: 17px;
+  }
+  .CvHeaderContainer{
+    flex-direction: column;
+  }
+  .projectDetail{
+    margin-left: -26px;
+    padding-left: 0px;
+  }
+  .projectDetails{
+    width: 105%;
+  }
+}
+
+/* For Ipad Screen */
+@media (max-width: 1024px) {
+  .passion-item{
+    width: 135px;
+  }
+  .qualityContainer{
+    flex-direction: column;
+  }
+  .qualityContainer > :first-child {
+    margin-bottom: 21px;
+  }
+  .local-btn{
+    visibility: hidden;
+  }
+  .cvContainer{
+    margin-top: 5px;
+    margin-left: -38px;
+  }
+  .mobile-close-btn{
+    visibility: visible;
+  }
+  .navigation{
+    z-index: 500;
+    background: #f1f1f1;
+  }
+  .navigation.active ~ .root {
+    margin-left: 0;
+  }
+}
+
 .root {
   flex: 1;
   width: 100%;
@@ -92,7 +251,7 @@ h4 {
 
 .cvBtn {
   display: flex;
-  font-size: 22px;
+  font-size: clamp(14px, 2vw, 22px);;
   margin-right: 4px;
   align-items: center;
   justify-content: center;
