@@ -28,7 +28,7 @@ const MyProject: FC = () => {
             <span style={{ fontWeight: 'normal', position: "relative", letterSpacing: '2px', display: 'flex', flexDirection:'row', alignItems:'end' }}>
               <span>/</span>
               {logo && (<img src={logo} alt="project" style={{marginLeft: "3px", left:8, top: -3, position: "absolute", width: 38}}/>)}
-              <span style={{marginLeft: "44px"}}>
+              <span className='projectTitle' style={{marginLeft: "44px"}}>
                 {` ${projectName}`}
               </span>
             </span>
