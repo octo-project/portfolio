@@ -27,6 +27,13 @@
   position: relative;
 }
 
+.stripe-logo {
+  top: -8px;
+  left: 11px;
+  height: 38px;
+  position: relative;
+}
+
 .sqlite-logo {
   left: 5px;
   top: -13px;
