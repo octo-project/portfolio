@@ -1,5 +1,6 @@
 import { useLocalFormatHook } from "../../../../../../common/hooks/localFormatHook"
 import LaravelChip from "../../../../../TechnosChip/LaravelChip"
+import StripeChip from "../../../../../TechnosChip/StripeChip"
 
 const Itts = () => {
     const {formatText} = useLocalFormatHook()
@@ -28,6 +29,7 @@ const Itts = () => {
           <span className="experience-card-subtitle">Technos:</span>
           <div className="technos-content">
             <LaravelChip /> 
+            <StripeChip/>
           </div>
         </div>
       </div>

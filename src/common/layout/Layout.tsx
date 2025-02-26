@@ -93,6 +93,10 @@ const Layout: FC<layoutProps> = (props: { children: any }) => {
             </div>
           </div>
         </div>
+        <div className='local-btn-mobile'>
+          <button className={`btn-local-style ${locale === "fr" ? "active" : ""}`} onClick={() => changeLocal('fr')}>fr</button>
+          <button className={`btn-local-style ${locale === "en" ? "active" : ""}`} onClick={() => changeLocal('en')}>en</button>
+        </div>
       </div>
       <div className="root">
         <div
