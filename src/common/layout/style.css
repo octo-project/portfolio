@@ -61,7 +61,7 @@ h4 {
   margin-bottom: 10px;
 }
 
-@media (max-width: 415px){
+@media(max-width: 360px){
   .passion-content{
     flex-wrap: wrap;
     justify-content: start;
@@ -78,8 +78,8 @@ h4 {
     margin-bottom: 10px;
   }
   .btnCertifications,.btnCustom {
-    width: 65px;
-    margin-right: 3px;
+    width: 54px;
+    margin-right: 5px;
   }
   .cvMenu{
     margin-left: 15px;
@@ -89,11 +89,11 @@ h4 {
     margin-top: 5px;
   }
   .CvContent > div > p {
-    width: 91%;
-    margin-bottom: 5px;
+    width: 89%;
+    margin-bottom: 3px;
   }
   ul {
-    width: 89%;
+    width: 75%;
     margin-left: -11px;
   }
   ol > ul > li {
@@ -118,11 +118,72 @@ h4 {
     padding-left: 0px;
   }
   .projectDetails{
-    width: 105%;
+    width: 100%;
   }
 }
 
-@media (max-width: 600px) and (min-width: 415px){
+@media (max-width: 430px) and (min-width: 361px) {
+  .passion-content{
+    flex-wrap: wrap;
+    justify-content: start;
+  }
+  .passion-content > * {
+    margin-bottom: 15px;
+    margin-right: 15px;
+  }
+  .parcour-container{
+    flex-wrap: wrap-reverse;
+  }
+  .parcour-container > * {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .btnCertifications,.btnCustom {
+    width: 54px;
+    margin-right: 5px;
+  }
+  .cvMenu{
+    margin-left: 15px;
+    margin-bottom: 15px
+  }
+  .CvContent{
+    margin-top: 5px;
+  }
+  .CvContent > div > p {
+    width: 95%;
+    margin-bottom: 3px;
+  }
+  ul {
+    width: 75%;
+    margin-left: -11px;
+  }
+  ol > ul > li {
+    margin-left: -41px
+  }
+  ol > li {
+    line-height: 1.4;
+    margin-left: -23px;
+    text-align: justify;
+    margin-bottom: 17px;
+  }
+  ul > li{
+    line-height: 1.4;
+    text-align: justify;
+    margin-bottom: 17px;
+  }
+  .CvHeaderContainer{
+    flex-direction: column;
+  }
+  .projectDetail{
+    margin-left: -26px;
+    padding-left: 0px;
+  }
+  .projectDetails{
+    width: 100%;
+  }
+}
+
+@media (max-width: 600px) and (min-width: 430px){
   .parcour-container{
     flex-wrap: wrap-reverse;
   }
@@ -141,7 +202,7 @@ h4 {
     margin-bottom: 12px
   }
   .CvContent > div > p {
-    width: 94%;
+    width: 84%;
     margin-bottom: 5px;
   }
   ul {
