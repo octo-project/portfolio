@@ -30,6 +30,10 @@
     "description": "This is a simple React-Intl example.",
     "cvDescription": "As a full-stack developer, I am passionate about creation of innovative technological solutions to meet the needs of customers and end users. I am an expert in the design, development and maintenance of websites and applications, from front-end to back-end.",
     
+    "notFoundTitle": "Whoops! Page Not Found",
+    "notFoundDescription": "It looks like the page you're looking for doesn't exist or has been moved. Don't worry, you can always go back to the homepage and continue your journey from there.",
+    "notFoundBack": "[Go Back to Home]",
+
     "interestAndPassionTitle": "Interests & Passions",
     "contact": "Get in Touch",
 

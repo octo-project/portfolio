@@ -62,10 +62,10 @@ const Layout: FC<layoutProps> = (props: { children: any }) => {
           </div>
         </div>
         <div className="menu">
-          <Link to="/cv" style={{ textDecoration: 'none', flex: '0 1 100px' }}>
+          <Link to="/" style={{ textDecoration: 'none', flex: '0 1 100px' }}>
             <div className="btn cvBtn">CV</div>
           </Link>
-          <Link to="/" style={{ textDecoration: 'none', flex: 1 }}>
+          <Link to="/projects" style={{ textDecoration: 'none', flex: 1 }}>
             <div className="btn projectBtn">
               {/* <div className="statProject">
                 <span className="totalProjects">06</span>
