@@ -2,14 +2,15 @@ import './style.css'
 import { FC } from 'react'
 import ProjectLists from './ProjectLists/ProjectLists'
 import ProjectDetails from './ProjectDetail/ProjectDetail'
-import { Link, useLocation, useParams } from 'react-router-dom'
 import { useLocalFormatHook } from '../../common/hooks/localFormatHook'
 import { useProjectConstant } from '../../constant/projectListConstant'
+import { Link, useLocation, useParams, useHistory } from 'react-router-dom'
 
 const MyProject: FC = () => {
   const params = useParams()
   const location = useLocation()
   const {Projects} = useProjectConstant()
+  const history  = useHistory()
   const search = new URLSearchParams(params)
   const {formatText} = useLocalFormatHook()
   const projectName = search.get('name') || null
@@ -17,10 +18,14 @@ const MyProject: FC = () => {
   const currentProject = Projects.find(el => el.name.toLowerCase() === projectName?.toLowerCase());
   const logo = currentProject ? currentProject?.logo : undefined;
 
+  if(projectName && !currentProject){
+    history.replace("/random-path")
+  }
+
   return (
     <div className="containerProject">
       <h3 className="containerProjectTitle">
-        <Link to="/" style={{ textDecoration: 'none', fontSize: 18 }}>
+        <Link to="/projects" style={{ textDecoration: 'none', fontSize: 18 }}>
           {formatText("projects").toUpperCase()}
         </Link>
         {projectName && (
