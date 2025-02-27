@@ -34,6 +34,9 @@
     "notFoundDescription": "Il semble que la page que vous cherchez n'existe pas ou a été déplacée. Pas de panique, vous pouvez retourner à la page d'accueil et continuer votre navigation.",
     "notFoundBack": "[Retour à l'Accueil]",
 
+    "projectNotFoundTitle":"Projet introuvable",
+    "projectNotFoundDescription":"Le projet que vous avez saisi est introuvable. Veuillez vérifier le nom du projet et réessayer. Si vous avez besoin d’assistance, n’hésitez pas à contacter le support.",
+
     "interestAndPassionTitle": "Centres d'Intérêt",
     "contact": "Mes Coordonnées",
 

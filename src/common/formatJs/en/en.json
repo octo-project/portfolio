@@ -34,6 +34,9 @@
     "notFoundDescription": "It looks like the page you're looking for doesn't exist or has been moved. Don't worry, you can always go back to the homepage and continue your journey from there.",
     "notFoundBack": "[Go Back to Home]",
 
+    "projectNotFoundTitle":"Project Not Found",
+    "projectNotFoundDescription":"The project you entered could not be found. Please verify the project name and try again. If you need assistance, feel free to contact support.",
+
     "interestAndPassionTitle": "Interests & Passions",
     "contact": "Get in Touch",
 
