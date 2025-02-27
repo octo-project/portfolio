@@ -1,0 +1,2 @@
+# Redirect all paths to index.html (needed for client-side routing in SPAs)
+*    /index.html   200

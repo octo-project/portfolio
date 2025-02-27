@@ -36,7 +36,7 @@ const Experience: FC<ExperienceProps> = (props) => {
 
       <h4>{formatText("personaProjects")}</h4>
       <div className="project-perso animate">
-        <Link to={'/'}>
+        <Link to={'/projects'}>
           {formatText("myAchievements")}
         </Link> 
       </div>
