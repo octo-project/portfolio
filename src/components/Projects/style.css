@@ -1,3 +1,15 @@
+
+.project-not-found{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.project-not-found-description{
+  width: 50%;
+  text-align: justify;
+}
+
 .containerProjectTitle {
   display: flex;
   padding-left: 25px;

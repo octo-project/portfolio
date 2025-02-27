@@ -132,6 +132,9 @@ h4 {
 }
 
 @media (max-width: 450px) {
+  .project-not-found-description{
+    width: 98%;
+  }
   .local-btn-mobile{
     visibility: visible;
   }
