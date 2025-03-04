@@ -6,7 +6,7 @@ const AntDesignChip = () => {
   return (
     <Link target={'https://ant.design/'}>
       <div className="chip-card animate white-bg">
-        <img src={AntD} className="ant-logo" alt="card content" />
+        <img src={AntD} className="ant-logo" alt="card content" loading='lazy' />
       </div>
     </Link>
   )

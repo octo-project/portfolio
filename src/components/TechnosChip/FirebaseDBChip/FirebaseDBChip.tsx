@@ -6,7 +6,7 @@ const FirebaseDBChip = () => {
   return (
     <Link target={'https://firebase.google.com/docs/database'}>
       <div className="chip-card animate white-bg">
-        <img src={FirebaseDB} className="firebase-logo" alt="" />
+        <img src={FirebaseDB} className="firebase-logo" alt="FirebaseDb card" loading='lazy'/>
       </div>
     </Link>
   )

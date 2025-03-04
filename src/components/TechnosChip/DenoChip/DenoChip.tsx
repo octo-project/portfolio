@@ -6,7 +6,7 @@ const DenoChip = () => {
   return (
     <Link target={'https://deno.com/'}>
       <div className="chip-card animate">
-        <img src={Deno} className="ts-logo" alt="" />
+        <img src={Deno} className="ts-logo" alt="Deno" loading='lazy' />
       </div>
     </Link>
   )

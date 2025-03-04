@@ -6,7 +6,7 @@ const LaravelChip = () => {
   return (
     <Link target={'https://laravel.com/'}>
       <div className="chip-card animate white-bg">
-        <img src={LaravelLogo} className="laravel-logo" alt="card content" />
+        <img src={LaravelLogo} className="laravel-logo" alt="card content" loading='lazy'/>
       </div>
     </Link>
   )

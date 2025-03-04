@@ -3,6 +3,9 @@ import Minio from "../../../../../TechnosChip/Minio"
 import LappsysLogo from "../../../../../../assets/EsnLogo/neoptim.png"
 import { GraphqlChip, PrismaChip, ReactChip } from "../../../../../TechnosChip"
 import { useLocalFormatHook } from "../../../../../../common/hooks/localFormatHook"
+import { lazy, Suspense } from "react"
+
+const ProjectDescription = lazy(() => import('../../../../Header/HeaderDescription'))
 
 const Lappsys = () => {
     const {formatText} = useLocalFormatHook()
@@ -10,14 +13,14 @@ const Lappsys = () => {
       <div className="experience-card">
         <div className="experience-card-header-container">
           <Link target={"https://neoptimconsulting.com/"} >
-            <img src={LappsysLogo} className="esn-neoptim-logo" alt="neoptim"/>
+            <img src={LappsysLogo} className="esn-neoptim-logo" loading='lazy' alt="neoptim"/>
           </Link>
           <span className="experience-card-title">Lappsys :</span>
         </div>
         <div>
-          <p className='project-description'>
-            {formatText("projectLappsysOverview")}
-          </p>
+          <Suspense fallback={<div>Loading ...</div>}>
+            <ProjectDescription text='projectLappsysOverview' className="project-description"/>
+          </Suspense>
           <div>
             <span className="experience-card-subtitle">Missions :</span>
             <ol>

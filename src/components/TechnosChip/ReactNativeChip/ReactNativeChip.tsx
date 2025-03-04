@@ -6,7 +6,7 @@ const ReactNativeChip = () => {
   return (
     <Link target={'https://reactnative.dev/'}>
       <div className="chip-card animate white-bg">
-        <img src={ReactNativeLogo} className="react-native-logo" alt="card content" />
+        <img src={ReactNativeLogo} className="react-native-logo" alt="card content" loading='lazy'/>
       </div>
     </Link>
   )

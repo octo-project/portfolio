@@ -24,15 +24,15 @@ const Experience: FC<ExperienceProps> = (props) => {
       <h3>{formatText("experienceAndProjects")}</h3>
       <h4>{formatText("professionalProjects")}</h4>
       
-      <Konsistent/>
       <HapticComposer/>
       <Yoomum/>
       <Markaiter/>
+      <Konsistent/>
       <FourMp/>
       <Adom/>
       <Lappsys/>
       <Itts/>
-      <OSAW/>
+      <OSAW/> 
 
       <h4>{formatText("personaProjects")}</h4>
       <div className="project-perso animate">

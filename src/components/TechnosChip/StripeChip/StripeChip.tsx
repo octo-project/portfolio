@@ -6,7 +6,7 @@ const StripeChip = () => {
   return (
     <Link target={'https://stripe.com/'}>
       <div className="chip-card animate white-bg">
-        <img src={Stripe} className="stripe-logo" alt="card content" />
+        <img src={Stripe} className="stripe-logo" alt="card content" loading='lazy'/>
       </div>
     </Link>
   )

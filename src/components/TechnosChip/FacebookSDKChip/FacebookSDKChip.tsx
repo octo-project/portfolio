@@ -6,7 +6,7 @@ const FacebookSDKChip = () => {
   return (
     <Link target={'https://developers.facebook.com/docs/business-sdk/getting-started/'}>
       <div className="chip-card flex animate white-bg">
-        <img src={FacebookLogo} className="fb-sdk-logo" alt="card content" />
+        <img src={FacebookLogo} className="fb-sdk-logo" alt="card content" loading='lazy' />
         <span className='logo-black-blue custom'>Facebook SDK</span>
       </div>
     </Link>

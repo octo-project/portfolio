@@ -1,6 +1,9 @@
 import ReactNativeChip from "../../../../../TechnosChip/ReactNativeChip"
 import { GraphqlChip, PrismaChip, ReactChip } from "../../../../../TechnosChip"
 import { useLocalFormatHook } from "../../../../../../common/hooks/localFormatHook"
+import { lazy, Suspense } from "react"
+
+const ProjectDescription = lazy(() => import('../../../../Header/HeaderDescription'))
 
 const FourMp = () => {
   const {formatText} = useLocalFormatHook()
@@ -13,9 +16,9 @@ const FourMp = () => {
           <span className="experience-card-title">4Mp :</span>
         </div>
         <div>
-          <p className='project-description'>
-            {formatText("project4MpOverview")}
-          </p>
+          <Suspense fallback={<div>Loading ...</div>}>
+            <ProjectDescription text='project4MpOverview' className="project-description"/>
+          </Suspense>
           <div>
             <span className="experience-card-subtitle">Missions :</span>
             <ol>

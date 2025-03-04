@@ -6,7 +6,7 @@ const D3Chip = () => {
   return (
     <Link target={'https://d3js.org/'}>
       <div className="chip-card animate white-bg">
-        <img src={D3} className="ant-logo" alt="card content" />
+        <img src={D3} className="ant-logo" alt="card content" loading='lazy' />
       </div>
     </Link>
   )

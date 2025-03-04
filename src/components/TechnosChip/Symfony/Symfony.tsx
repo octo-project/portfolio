@@ -6,7 +6,7 @@ const SymfonyChip = () => {
   return (
     <Link target={'https://symfony.com/4'}>
       <div className="chip-card animate white-bg">
-        <img src={Symfony4} className="symfony-logo" alt="card content" />
+        <img src={Symfony4} className="symfony-logo" alt="card content" loading='lazy'/>
       </div>
     </Link>
   )

@@ -16,12 +16,12 @@ const PictureModal: FC<PictureModalProps> = (props) => {
         <div className="modal-overlay">
             <div className="modal-content">
                 <button className='right absolute-btn animate-up' onClick={() => moovImage("right")}>
-                    <img src={RightChevron} width={50} alt="chevron" />
+                    <img src={RightChevron} width={50} alt="chevron" loading='lazy' />
                 </button>
                 <button className='left absolute-btn animate-up' onClick={() => moovImage("left")}>
-                    <img src={RightChevron} width={50} style={{transform: "rotate(180deg)"}} alt="chevron" />
+                    <img src={RightChevron} loading='lazy' width={50} style={{transform: "rotate(180deg)"}} alt="chevron" />
                 </button>
-                <img src={picture} className={containerClass} alt="big-modal" />
+                <img src={picture} loading='lazy' className={containerClass} alt="big-modal" />
                 <button className='picture-modal-close-btn animate-up' onClick={closeModal}>Close</button>
             </div>
         </div>

@@ -6,7 +6,7 @@ const PythonChip = () => {
   return (
     <Link target={'https://www.python.org/about/'}>
       <div className="chip-card animate white-bg">
-        <img src={PythonLogo} className="python-logo" alt="card content" />
+        <img src={PythonLogo} className="python-logo" alt="card content" loading='lazy' />
       </div>
     </Link>
   )

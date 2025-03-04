@@ -6,7 +6,7 @@ const FirebaseAuthChip = () => {
   return (
     <Link target={'https://firebase.google.com/docs/auth'}>
       <div className="chip-card animate white-bg">
-        <img src={FirebaseAuth} className="firebase-auth-logo" alt="" />
+        <img src={FirebaseAuth} className="firebase-auth-logo" alt="firebase card"  loading='lazy'/>
       </div>
     </Link>
   )

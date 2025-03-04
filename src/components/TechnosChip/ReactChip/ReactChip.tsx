@@ -7,7 +7,7 @@ const ReactChip = () => {
     <Link target={'https://fr.react.dev/'}>
       <div className="chip-card animate">
         <span>React</span>
-        <img src={React} className="react-logo" alt="card content" />
+        <img src={React} className="react-logo" alt="card content" loading='lazy'/>
       </div>
     </Link>
   )

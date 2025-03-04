@@ -5,8 +5,8 @@ import FirebaseDynamicLinksLogo from '../../../assets/techsLogo/firebase_dynamic
 const FirebaseDynamicLinkChip = () => {
   return (
     <Link target={'https://firebase.google.com/docs/dynamic-links'}>
-      <div className="chip-card animate white-bg">
-        <img src={FirebaseDynamicLinksLogo} className="firebase-dl-logo" alt="" />
+      <div className="chip-card animate white-bg"> 
+        <img src={FirebaseDynamicLinksLogo} className="firebase-dl-logo" alt="firebase DL card" loading='lazy' />
       </div>
     </Link>
   )

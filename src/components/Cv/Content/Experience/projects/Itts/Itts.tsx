@@ -1,6 +1,9 @@
+import { lazy, Suspense } from "react"
 import { useLocalFormatHook } from "../../../../../../common/hooks/localFormatHook"
 import LaravelChip from "../../../../../TechnosChip/LaravelChip"
 import StripeChip from "../../../../../TechnosChip/StripeChip"
+
+const ProjectDescription = lazy(() => import('../../../../Header/HeaderDescription'))
 
 const Itts = () => {
     const {formatText} = useLocalFormatHook()
@@ -13,9 +16,9 @@ const Itts = () => {
         <span className="experience-card-title">Itts :</span>
       </div>
       <div>
-        <p className='project-description'>
-          {formatText("projectIttsOverview")}
-        </p>
+        <Suspense fallback={<div>Loading ...</div>}>
+          <ProjectDescription text='projectIttsOverview' className="project-description"/>
+        </Suspense>
         <div>
           <span className="experience-card-subtitle">Missions :</span>
           <ol>

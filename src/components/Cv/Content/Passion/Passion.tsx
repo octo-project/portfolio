@@ -21,13 +21,14 @@ const Passion: FC<PassionProps> = (props) => {
           <img
             src={Manette}
             alt="manette"
+            loading='lazy'
             className="passion-logo logo-gaming"
           />
           <div className="passion-detail">
             {gamingData.map((game, index) => {
               return (
                 <a href={game.url} key={index} target="_blank" rel='noopener noreferrer'>
-                  <img src={game.img} className="game-icon" alt={game.name} />
+                  <img src={game.img} className="game-icon" loading='lazy' alt={game.name} />
                 </a>
               )
             })}
@@ -37,6 +38,7 @@ const Passion: FC<PassionProps> = (props) => {
           <img
             src={Musique}
             alt="musique"
+            loading='lazy'
             className="passion-logo logo-musique"
           />
           <div className="passion-detail">
@@ -46,6 +48,7 @@ const Passion: FC<PassionProps> = (props) => {
                   <img
                     src={music.img}
                     alt={music.name}
+                    loading='lazy'
                     className="spotify-icon"
                   />
                 </a>
@@ -58,6 +61,7 @@ const Passion: FC<PassionProps> = (props) => {
             src={Techno}
             width="100px"
             alt="manette"
+            loading='lazy'
             className="logo-techno"
           />
           <div className="passion-detail">
@@ -65,9 +69,10 @@ const Passion: FC<PassionProps> = (props) => {
               return (
                 <a href={techno.url} key={index} target="_blank" rel='noopener noreferrer'>
                   <img
+                    loading='lazy'
                     src={techno.img}
-                    className="spotify-icon"
                     alt={techno.name}
+                    className="spotify-icon"
                   />
                 </a>
               )

@@ -6,7 +6,7 @@ const NodeChip = () => {
   return (
     <Link target={'https://nodejs.org/en/about'}>
       <div className="chip-card white-bg animate">
-        <img src={Node} className="node-logo" alt="" />
+        <img src={Node} className="node-logo" alt="Node Chip" loading='lazy'/>
       </div>
     </Link>
   )

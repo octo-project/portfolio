@@ -6,7 +6,7 @@ const ApiPlatformeChip = () => {
   return (
     <Link target={'https://api-platform.com/'}>
       <div className="chip-card animate white-bg">
-        <img src={ApiPlatforme} className="api-platform-logo" alt="card content" />
+        <img src={ApiPlatforme} className="api-platform-logo" alt="card content" loading='lazy' />
       </div>
     </Link>
   )
