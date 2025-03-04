@@ -46,16 +46,16 @@ const Layout: FC<layoutProps> = (props: { children: any }) => {
           <div className="tooltip">
             <span style={{cursor: 'pointer'}}>TSIALONINA Heriniaina Mathieu</span>
             <span className="tooltiptext">
-              <img src={MyCvPicture} alt="Svg" />
+              <img src={MyCvPicture} alt="Svg" loading='lazy'/>
               <div className='separator'></div>
               <div className='tooltipDescription'>
                 <span className="description">Dev Full Stack</span>
                 <span>Code l'avenir, des pixels au back-end 🚀</span>
                 <div>
-                  <img src={reactLogo} style={{width: 34, height: 29}} alt="react" />
-                  <img src={laravelLogo} style={{width: 29, height: 29}} alt="react" />
-                  <img src={pythonLogo} style={{width: 29, height: 29}} alt="react" />
-                  <img src={nestJSLogo} style={{width: 29, height: 29}} alt="react" />
+                  <img src={reactLogo} style={{width: 34, height: 29}} alt="react" loading='lazy' />
+                  <img src={laravelLogo} style={{width: 29, height: 29}} alt="laravel" loading='lazy' />
+                  <img src={pythonLogo} style={{width: 29, height: 29}} alt="python" loading='lazy' />
+                  <img src={nestJSLogo} style={{width: 29, height: 29}} alt="nestJs" loading='lazy' />
                 </div>
               </div>
             </span>

@@ -1,8 +1,8 @@
 import './header.css'
-import React, { FC } from 'react'
+import React, { FC, lazy, Suspense } from 'react'
 import { useLocalFormatHook } from '../../../common/hooks/localFormatHook'
 import MyCvPicture from '../../../assets/Portfolio Design V2/Assets/Cv_picture.jpg'
-
+// import HeaderDescription from './HeaderDescription'
 interface HeaderProps {
   passionRef: React.MutableRefObject<null>
   diplomeRef: React.MutableRefObject<null>
@@ -10,6 +10,8 @@ interface HeaderProps {
   experienceRef: React.MutableRefObject<null>
   qualityAndDefautRef: React.MutableRefObject<null>
 }
+
+const HeaderDescription = lazy(() => import('./HeaderDescription') )
 
 const Header: FC<HeaderProps> = (props) => {
   const {
@@ -33,14 +35,14 @@ const Header: FC<HeaderProps> = (props) => {
     <div className='bigCvContainer'>
       <div className="CvHeaderContainer">
         <div className="photoCv">
-          <img src={MyCvPicture} style={{zIndex:'-1 !important'}} width={100} alt="no img" />
+          <img src={MyCvPicture} style={{zIndex:'-1 !important'}} width={100} alt="no img" loading='lazy' />
         </div>
         <div className="CvContent">
           <div>
             <span style={{fontSize: '20px'}}>TSIALONINA Heriniaina Mathieu</span>
-            <p style={{fontSize: '16px'}}>
-              {formatText("cvDescription")}
-            </p>
+            <Suspense fallback={<div>Loading ...</div>}>
+              <HeaderDescription text='cvDescription' className='text-base'/>
+            </Suspense>
           </div>
         </div>
       </div>

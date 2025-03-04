@@ -6,7 +6,7 @@ const GraphqlChip = () => {
   return (
     <Link target={'https://graphql.org/'}>
       <div className="chip-card animate white-bg">
-        <img src={GraphqlLogo} className="graphql-logo" alt="" />
+        <img src={GraphqlLogo} className="graphql-logo" alt="Graphql card" loading='lazy' />
       </div>
     </Link>
   )

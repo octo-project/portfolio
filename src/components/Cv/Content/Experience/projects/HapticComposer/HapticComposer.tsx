@@ -6,6 +6,9 @@ import AntDesignChip from "../../../../../TechnosChip/AntDesignChip"
 import TypescriptChip from "../../../../../TechnosChip/TypescriptChip"
 import InterhapticsLogo from "../../../../../../assets/EsnLogo/interhaptics.png"
 import { useLocalFormatHook } from "../../../../../../common/hooks/localFormatHook"
+import { Suspense, lazy } from "react"
+
+const ProjectDescription = lazy(() => import('../../../../Header/HeaderDescription'))
 
 const HapticComposer = () => {
   const {formatText} = useLocalFormatHook()
@@ -14,14 +17,14 @@ const HapticComposer = () => {
     <div className="experience-card">
       <div className="experience-card-header-container">
         <Link target={"https://www.interhaptics.com/tech/haptic-composer"} >
-          <img src={InterhapticsLogo} className="esn-interhaptics-logo" alt="interhaptics"/>
+          <img src={InterhapticsLogo} className="esn-interhaptics-logo" loading='lazy' alt="interhaptics"/>
         </Link>
         <span className="experience-card-title">Haptic Composer:</span>
       </div>
       <div>
-        <p className='project-description'>
-          {formatText("projectHapticOverview")}
-        </p>
+        <Suspense fallback={<div>Loading ...</div>}>
+          <ProjectDescription text='projectHapticOverview' className="project-description"/>
+        </Suspense>
         <div>
           <span className="experience-card-subtitle">Missions :</span>
           <ol>

@@ -7,6 +7,9 @@ import FirebaseDBChip from "../../../../../TechnosChip/FirebaseDBChip"
 import FirebaseAuthChip from "../../../../../TechnosChip/FirebaseAuthChip"
 import { useLocalFormatHook } from "../../../../../../common/hooks/localFormatHook"
 import FirebaseDynamicLinkChip from "../../../../../TechnosChip/FirebaseDynamicLinksChip"
+import { lazy, Suspense } from "react"
+
+const ProjectDescription = lazy(() => import('../../../../Header/HeaderDescription'))
 
 const Yoomum = () => {
     const {formatText} = useLocalFormatHook()
@@ -14,14 +17,14 @@ const Yoomum = () => {
         <div className="experience-card">
         <div className="experience-card-header-container">
             <Link target={"https://www.yoomum.com/"}>
-              <img src={YoomumLogo} className="esn-yoomum-logo" alt="yoomum"/>
+              <img src={YoomumLogo} className="esn-yoomum-logo" loading='lazy' alt="yoomum"/>
             </Link>
             <span className="experience-card-title">YOOMUM:</span>
           </div>
         <div>
-          <p className='project-description'>
-            {formatText("projectYoomumOverview")}
-          </p>
+          <Suspense fallback={<div>Loading ...</div>}>
+            <ProjectDescription text='projectYoomumOverview' className="project-description"/>
+          </Suspense>
           <div>
             <span className="experience-card-subtitle">Missions :</span>
             <ol>

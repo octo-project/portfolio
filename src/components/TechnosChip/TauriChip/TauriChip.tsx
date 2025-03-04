@@ -6,7 +6,7 @@ const TauriChip = () => {
   return (
     <Link target={'https://v2.tauri.app/fr/'}>
       <div className="chip-card animate white-bg">
-        <img src={Tauri} className="tauri-logo" alt="" />
+        <img src={Tauri} className="tauri-logo" alt="Tauri Chip" loading='lazy' />
       </div>
     </Link>
   )

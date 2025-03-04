@@ -46,7 +46,7 @@ const ProjectDetails: FC<ProjectDetailsProps> = (props) => {
         </div>
         <div className="detailLogoContainerx">
           <div className="detailLogoContainer">
-            <img src={project.logo} className="detailLogo" alt="casque.jpg" />
+            <img src={project.logo} loading='lazy' className="detailLogo" alt="casque.jpg" />
             <div className="info">
               <h5>Authentification :</h5>
               <div>

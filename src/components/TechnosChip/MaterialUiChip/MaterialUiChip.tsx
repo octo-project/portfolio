@@ -6,7 +6,7 @@ const MaterialUiChip = () => {
   return (
     <Link target={'https://mui.com/'}>
       <div className="chip-card animate white-bg">
-        <img src={Mui} className="mui-logo" alt="" />
+        <img src={Mui} className="mui-logo" alt="Mui Chip" loading='lazy'/>
       </div>
     </Link>
   )

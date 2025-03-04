@@ -6,7 +6,7 @@ const TailwindChip = () => {
   return (
     <Link target={'https://tailwindcss.com/'}>
       <div className="chip-card animate">
-        <img src={Tailwind} className="ts-logo" alt="" />
+        <img src={Tailwind} className="ts-logo" alt="Tailwind Chip" loading='lazy'/>
       </div>
     </Link>
   )

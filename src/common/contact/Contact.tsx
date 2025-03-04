@@ -13,7 +13,7 @@ const Contact:FC<contactProp> = (props) => {
     return (
         <div className="contactContainer">
             <Link target={link}>
-                <img src={icon} width={25} height={25} alt=""/>
+                <img src={icon} width={25} height={25} alt="contact" loading='lazy'/>
             </Link>
         </div>
     )

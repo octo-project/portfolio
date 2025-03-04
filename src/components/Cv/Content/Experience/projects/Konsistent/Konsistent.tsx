@@ -4,6 +4,9 @@ import MaterialUiChip from "../../../../../TechnosChip/MaterialUiChip"
 import TypescriptChip from "../../../../../TechnosChip/TypescriptChip"
 import KonsistentLogo from "../../../../../../assets/EsnLogo/konsistent.png"
 import { useLocalFormatHook } from "../../../../../../common/hooks/localFormatHook"
+import { lazy, Suspense } from "react"
+
+const ProjectDescription = lazy(() => import('../../../../Header/HeaderDescription'))
 
 const Konsistent = () => {
     const {formatText} = useLocalFormatHook()
@@ -11,13 +14,13 @@ const Konsistent = () => {
     return (
         <div className="experience-card">
           <div className="experience-card-header-container">
-            <img src={KonsistentLogo} className="esn-logo" alt="konsistent"/>
+            <img src={KonsistentLogo} className="esn-logo" loading='lazy' alt="konsistent"/>
             <span className="experience-card-title">Konsistent :</span>
           </div>
           <div>
-            <p className='project-description'>
-              {formatText("projectKonsistentOverview")}
-            </p>
+            <Suspense fallback={<div>Loading ...</div>}>
+              <ProjectDescription text='projectKonsistentOverview' className="project-description"/>
+            </Suspense>
             <div>
               <span className="experience-card-subtitle">Missions :</span>
               <ol>

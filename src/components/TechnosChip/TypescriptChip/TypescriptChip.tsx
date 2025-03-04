@@ -6,7 +6,7 @@ const TypescriptChip = () => {
   return (
     <Link target={'https://www.typescriptlang.org/'}>
       <div className="chip-card animate">
-        <img src={Ts} className="ts-logo" alt="" />
+        <img src={Ts} className="ts-logo" alt="Typescript Chip" loading='lazy'/>
       </div>
     </Link>
   )

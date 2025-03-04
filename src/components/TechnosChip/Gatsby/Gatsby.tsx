@@ -6,7 +6,7 @@ const Gatsby = () => {
   return (
     <Link target={'https://www.gatsbyjs.com/'}>
       <div className="chip-card animate">
-        <img src={GatsbyLogo} className="gatsby-logo" alt="card content" />
+        <img src={GatsbyLogo} className="gatsby-logo" alt="card content" loading='lazy' />
       </div>
     </Link>
   )

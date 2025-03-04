@@ -2,19 +2,22 @@ import { ReactChip } from "../../../../../TechnosChip"
 import OsawLogo from "../../../../../../assets/EsnLogo/osaw.png"
 import LaravelChip from "../../../../../TechnosChip/LaravelChip"
 import { useLocalFormatHook } from "../../../../../../common/hooks/localFormatHook"
+import { lazy, Suspense } from "react"
+
+const ProjectDescription = lazy(() => import('../../../../Header/HeaderDescription'))
 
 const OSAW = () => {
     const {formatText} = useLocalFormatHook()
     return (
         <div className="experience-card">
             <div className="experience-card-header-container">
-                <img src={OsawLogo} className="esn-osaw-logo" alt="interhaptics"/>
+                <img src={OsawLogo} className="esn-osaw-logo" loading='lazy' alt="interhaptics"/>
                 {/* <span className="experience-card-title">OSAW :</span> */}
             </div>
             <div>
-            <p className='project-description'>
-               {formatText("projectOsawOverview")}
-            </p>
+            <Suspense fallback={<div>Loading ...</div>}>
+                <ProjectDescription text='projectOsawOverview' className="project-description"/>
+            </Suspense>
             <div>
                 <span className="experience-card-subtitle">Missions :</span>
                 <ol>

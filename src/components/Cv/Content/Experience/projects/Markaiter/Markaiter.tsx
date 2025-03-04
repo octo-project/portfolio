@@ -2,6 +2,9 @@ import Link from "../../../../../Link"
 import MarkaiterLogo from "../../../../../../assets/EsnLogo/markaiter.png"
 import { useLocalFormatHook } from "../../../../../../common/hooks/localFormatHook"
 import { FacebookSDKChip, GraphqlChip, MaterialUiChip, PrismaChip, PythonChip, ReactChip } from "../../../../../TechnosChip"
+import { lazy, Suspense } from "react"
+
+const ProjectDescription = lazy(() => import('../../../../Header/HeaderDescription'))
 
 const Markaiter = () => {
     const {formatText} = useLocalFormatHook()
@@ -10,14 +13,14 @@ const Markaiter = () => {
         <div className="experience-card">
             <div className="experience-card-header-container">
                 <Link target={"https://www.markaiter.com/"} >
-                    <img src={MarkaiterLogo} className="esn-yoomum-logo" alt="markaiter"/>
+                    <img src={MarkaiterLogo} className="esn-yoomum-logo" loading='lazy' alt="markaiter"/>
                 </Link>
                 <span className="experience-card-title">Markaiter:</span>
             </div>
             <div>
-            <p className='project-description'>
-               {formatText("projectMarketerOverview")}
-            </p>
+            <Suspense fallback={<div>Loading ...</div>}>
+                <ProjectDescription text='projectMarketerOverview' className="project-description"/>
+            </Suspense>
             <div>
                 <span className="experience-card-subtitle">Missions :</span>
                 <ol>

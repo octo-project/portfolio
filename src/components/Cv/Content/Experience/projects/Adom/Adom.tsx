@@ -1,5 +1,8 @@
 import Gatsby from "../../../../../TechnosChip/Gatsby"
 import { useLocalFormatHook } from "../../../../../../common/hooks/localFormatHook"
+import { lazy, Suspense } from "react"
+
+const ProjectDescription = lazy(() => import('../../../../Header/HeaderDescription'))
 
 const Adom = () => {
   const {formatText} = useLocalFormatHook()
@@ -13,9 +16,9 @@ const Adom = () => {
       <span className="experience-card-title">Adom :</span>
     </div>
     <div>
-      <p className='project-description'>
-        {formatText("projectAdomOverview")}
-      </p>
+      <Suspense fallback={<div>Loading ...</div>}>
+        <ProjectDescription text='projectAdomOverview' className="project-description"/>
+      </Suspense>
       <div>
         <span className="experience-card-subtitle">Missions :</span>
         <ol>

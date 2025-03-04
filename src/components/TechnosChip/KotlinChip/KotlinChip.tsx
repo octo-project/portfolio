@@ -6,7 +6,7 @@ const KotlinChip = () => {
   return (
     <Link target={'https://kotlinlang.org/'}>
       <div className="chip-card animate white-bg">
-        <img src={KotlinLogo} className="firebase-dl-logo" alt="" />
+        <img src={KotlinLogo} className="firebase-dl-logo" alt="kotlin card" loading='lazy'/>
       </div>
     </Link>
   )

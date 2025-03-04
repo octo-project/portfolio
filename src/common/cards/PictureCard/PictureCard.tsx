@@ -11,7 +11,7 @@ const PictureCard: FC<PictureCardProps> = (props) => {
     const {image, handleSeePicture} = props;
 
     return (
-        <img src={image} onClick={() => handleSeePicture(image)} className="picture-card-img animate-up" alt="recovering" />
+        <img src={image} loading='lazy' onClick={() => handleSeePicture(image)} className="picture-card-img animate-up" alt="recovering" />
     )
 }
 

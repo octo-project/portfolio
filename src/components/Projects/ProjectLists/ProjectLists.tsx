@@ -26,6 +26,7 @@ const ProjectLists = () => {
                 }
                 className="logo"
                 alt="casque.jpg"
+                loading='lazy'
               />
               <span style={{color: project.textColor || "#29293e"}}>{project.name}</span>
             </div>
