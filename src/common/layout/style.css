@@ -270,6 +270,16 @@ h4 {
   }
 }
 
+@media (max-width: 725px) and (min-width: 601px) {
+  .CvContent > div > p {
+    width: 85%;
+  }
+  .btnCertifications,.btnCustom {
+    width: 94px;
+    margin-right: 5px;
+  }
+}
+
 /* For Ipad Screen */
 @media (max-width: 1024px) {
   .passion-item{
