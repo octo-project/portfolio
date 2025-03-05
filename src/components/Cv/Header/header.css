@@ -34,10 +34,9 @@
 .CvContent > div > p {
   width: 95%;
   margin-top: 2px;
-  color: #000;
   font-weight: 300;
+  font-display: swap;
   text-align: justify;
-  /* margin-right: 42px; */
 }
 
 .cvMenu {
@@ -47,3 +46,4 @@
   flex-direction: row;
   margin-bottom: 4px;
 }
+
