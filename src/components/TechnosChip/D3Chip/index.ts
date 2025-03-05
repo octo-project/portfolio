@@ -1,1 +1,1 @@
-export {default} from './D3Chip'
+export { default } from "./D3Chip";

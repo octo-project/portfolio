@@ -1,1 +1,1 @@
-export {default} from './KotlinChip'
+export { default } from "./KotlinChip";

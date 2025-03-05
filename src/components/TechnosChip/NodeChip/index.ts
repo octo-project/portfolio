@@ -1,1 +1,1 @@
-export { default } from './NodeChip'
+export { default } from "./NodeChip";

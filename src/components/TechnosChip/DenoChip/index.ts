@@ -1,1 +1,1 @@
-export {default} from './DenoChip'
+export { default } from "./DenoChip";

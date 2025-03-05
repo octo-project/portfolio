@@ -1,3 +1,63 @@
+.performance {
+  height: calc(50vh - 200px);
+}
+
+.invisible {
+  visibility: hidden;
+}
+
+.visible {
+  visibility: visible;
+}
+
+.metrics-link {
+  color: #80a3cd !important;
+}
+
+.perf-root > h2 {
+  text-align: center;
+}
+
+.perf-root > span {
+  text-align: center;
+}
+
+.perf-root {
+  display: flex;
+  justify-items: center;
+  flex-direction: column;
+}
+
+.performance-container {
+  display: flex;
+  margin-top: 15px;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.metrics-container {
+  width: 100px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.performance-container {
+  position: relative;
+}
+
+.percentage {
+  top: 13px;
+  color: #2a9b2c;
+  position: absolute;
+}
+
+.circle {
+  width: 50px;
+  height: 50px;
+}
+
 .detailsTitles {
   /* width: 220px; */
   display: flex;
@@ -51,7 +111,7 @@
   box-shadow: 0px 0px 4px -1px darkgrey;
 }
 
-.btnCertifications{
+.btnCertifications {
   width: 220px;
 }
 
@@ -79,7 +139,7 @@ h5 {
   letter-spacing: 0.7px;
 }
 
-.spkear-medium{
+.spkear-medium {
   opacity: 0.8;
   cursor: pointer;
   margin-right: 2px;
@@ -128,7 +188,7 @@ u:hover {
   grid-template-columns: repeat(4, calc(20% - 0.5em));
 }
 
-.screenShootWeb{
+.screenShootWeb {
   padding: 15px;
   display: flex;
   flex-wrap: wrap;

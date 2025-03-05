@@ -7,7 +7,7 @@
   padding-bottom: 10px;
 }
 
-.bigCvContainer{
+.bigCvContainer {
   display: flex;
   flex-direction: column;
 }
@@ -46,4 +46,3 @@
   flex-direction: row;
   margin-bottom: 4px;
 }
-

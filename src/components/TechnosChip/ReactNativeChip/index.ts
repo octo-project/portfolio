@@ -1,1 +1,1 @@
-export { default } from './ReactNativeChip'
+export { default } from "./ReactNativeChip";

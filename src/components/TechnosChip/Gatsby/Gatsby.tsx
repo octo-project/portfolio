@@ -1,15 +1,20 @@
-import '../TechnosChip.css'
-import Link from '../../Link'
-import GatsbyLogo from '../../../assets/techsLogo/gatsby.png'
+import "../TechnosChip.css";
+import Link from "../../Link";
+import GatsbyLogo from "../../../assets/techsLogo/gatsby.png";
 
 const Gatsby = () => {
   return (
-    <Link target={'https://www.gatsbyjs.com/'}>
+    <Link target={"https://www.gatsbyjs.com/"}>
       <div className="chip-card animate">
-        <img src={GatsbyLogo} className="gatsby-logo" alt="card content" loading='lazy' />
+        <img
+          src={GatsbyLogo}
+          className="gatsby-logo"
+          alt="card content"
+          loading="lazy"
+        />
       </div>
     </Link>
-  )
-}
+  );
+};
 
-export default Gatsby
+export default Gatsby;

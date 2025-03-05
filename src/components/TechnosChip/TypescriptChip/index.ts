@@ -1,1 +1,1 @@
-export { default } from './TypescriptChip'
+export { default } from "./TypescriptChip";

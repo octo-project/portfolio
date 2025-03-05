@@ -1,1 +1,1 @@
-export {default} from './PythonChip'
+export { default } from "./PythonChip";

@@ -1,11 +1,11 @@
-import React, { FC } from 'react'
+import React, { FC } from "react";
 
 interface DiplomeProps {
-  refer: React.MutableRefObject<null>
+  refer: React.MutableRefObject<null>;
 }
 
 const Diplome: FC<DiplomeProps> = (props) => {
-  const { refer } = props
+  const { refer } = props;
 
   return (
     <section className="content" ref={refer}>
@@ -31,7 +31,7 @@ const Diplome: FC<DiplomeProps> = (props) => {
         </li>
       </ul>
     </section>
-  )
-}
+  );
+};
 
-export default Diplome
+export default Diplome;

@@ -1,17 +1,13 @@
-import { FC } from "react"
+import { FC } from "react";
 
 type LocaleFormaterProps = {
-    children: any
-}
+  children: any;
+};
 
 const LocaleFormater: FC<LocaleFormaterProps> = (props) => {
-    const {children} = props
+  const { children } = props;
 
-    return (
-        <>
-            {children}
-        </>
-    )
-}
+  return <>{children}</>;
+};
 
-export default LocaleFormater
+export default LocaleFormater;

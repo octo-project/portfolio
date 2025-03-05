@@ -1,1 +1,1 @@
-export {default} from './ApiPlatforme'
+export { default } from "./ApiPlatforme";

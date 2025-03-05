@@ -1,3 +1,3 @@
 export interface technoCardProps {
-    text: string
+  text: string;
 }

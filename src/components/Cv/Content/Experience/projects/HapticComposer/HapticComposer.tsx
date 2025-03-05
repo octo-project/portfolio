@@ -1,29 +1,39 @@
-import Link from "../../../../../Link"
-import D3Chip from "../../../../../TechnosChip/D3Chip"
-import ReactChip from "../../../../../TechnosChip/ReactChip"
-import ElectronChip from "../../../../../TechnosChip/ElectronChip"
-import AntDesignChip from "../../../../../TechnosChip/AntDesignChip"
-import TypescriptChip from "../../../../../TechnosChip/TypescriptChip"
-import InterhapticsLogo from "../../../../../../assets/EsnLogo/interhaptics.png"
-import { useLocalFormatHook } from "../../../../../../common/hooks/localFormatHook"
-import { Suspense, lazy } from "react"
+import Link from "../../../../../Link";
+import D3Chip from "../../../../../TechnosChip/D3Chip";
+import ReactChip from "../../../../../TechnosChip/ReactChip";
+import ElectronChip from "../../../../../TechnosChip/ElectronChip";
+import AntDesignChip from "../../../../../TechnosChip/AntDesignChip";
+import TypescriptChip from "../../../../../TechnosChip/TypescriptChip";
+import InterhapticsLogo from "../../../../../../assets/EsnLogo/interhaptics.png";
+import { useLocalFormatHook } from "../../../../../../common/hooks/localFormatHook";
+import { Suspense, lazy } from "react";
 
-const ProjectDescription = lazy(() => import('../../../../Header/HeaderDescription'))
+const ProjectDescription = lazy(
+  () => import("../../../../Header/HeaderDescription"),
+);
 
 const HapticComposer = () => {
-  const {formatText} = useLocalFormatHook()
+  const { formatText } = useLocalFormatHook();
 
   return (
     <div className="experience-card">
       <div className="experience-card-header-container">
-        <Link target={"https://www.interhaptics.com/tech/haptic-composer"} >
-          <img src={InterhapticsLogo} className="esn-interhaptics-logo" loading='lazy' alt="interhaptics"/>
+        <Link target={"https://www.interhaptics.com/tech/haptic-composer"}>
+          <img
+            src={InterhapticsLogo}
+            className="esn-interhaptics-logo"
+            loading="lazy"
+            alt="interhaptics"
+          />
         </Link>
         <span className="experience-card-title">Haptic Composer:</span>
       </div>
       <div>
         <Suspense fallback={<div>Loading ...</div>}>
-          <ProjectDescription text='projectHapticOverview' className="project-description"/>
+          <ProjectDescription
+            text="projectHapticOverview"
+            className="project-description"
+          />
         </Suspense>
         <div>
           <span className="experience-card-subtitle">Missions :</span>
@@ -41,16 +51,16 @@ const HapticComposer = () => {
         <div>
           <span className="experience-card-subtitle">Technos:</span>
           <div className="technos-content">
-            <ReactChip /> 
-            <TypescriptChip /> 
+            <ReactChip />
+            <TypescriptChip />
             <AntDesignChip />
-            <D3Chip/>
-            <ElectronChip/>
+            <D3Chip />
+            <ElectronChip />
           </div>
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default HapticComposer
+export default HapticComposer;

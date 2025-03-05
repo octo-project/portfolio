@@ -1,1 +1,1 @@
-export { default } from './Gatsby'
+export { default } from "./Gatsby";

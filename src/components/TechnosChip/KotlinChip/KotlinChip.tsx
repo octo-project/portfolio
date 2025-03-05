@@ -1,15 +1,20 @@
-import '../TechnosChip.css'
-import Link from '../../Link'
-import KotlinLogo from '../../../assets/techsLogo/kotlin.png'
+import "../TechnosChip.css";
+import Link from "../../Link";
+import KotlinLogo from "../../../assets/techsLogo/kotlin.png";
 
 const KotlinChip = () => {
   return (
-    <Link target={'https://kotlinlang.org/'}>
+    <Link target={"https://kotlinlang.org/"}>
       <div className="chip-card animate white-bg">
-        <img src={KotlinLogo} className="firebase-dl-logo" alt="kotlin card" loading='lazy'/>
+        <img
+          src={KotlinLogo}
+          className="firebase-dl-logo"
+          alt="kotlin card"
+          loading="lazy"
+        />
       </div>
     </Link>
-  )
-}
+  );
+};
 
-export default KotlinChip
+export default KotlinChip;

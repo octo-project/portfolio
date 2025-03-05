@@ -1,1 +1,1 @@
-export {default} from './AntDesignChip'
+export { default } from "./AntDesignChip";

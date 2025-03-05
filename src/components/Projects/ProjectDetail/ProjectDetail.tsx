@@ -1,52 +1,72 @@
-import './styles.css'
-import About from './About/About'
-import React, { FC, useState } from 'react'
-import Screenshoot from './ScreenShoot/ScreenShoot'
-import { useLocalFormatHook } from '../../../common/hooks/localFormatHook'
+import "./styles.css";
+import About from "./About/About";
+import React, { FC, useState } from "react";
+import Performance from "./Performance/Performance";
+import Screenshoot from "./ScreenShoot/ScreenShoot";
+import { useLocalFormatHook } from "../../../common/hooks/localFormatHook";
 
-type tabType = 'about' | 'screenshoot'
+type tabType = "about" | "screenshoot" | "performance";
 
 interface ProjectDetailsProps {
-  project: any
+  project: any;
 }
 
 const ProjectDetails: FC<ProjectDetailsProps> = (props) => {
-  const { project } = props
-  const [tab, setTab] = useState<tabType>('about')
-  const {formatText} = useLocalFormatHook()
+  const { project } = props;
+  const [tab, setTab] = useState<tabType>("about");
+  const { formatText } = useLocalFormatHook();
 
   const handleSelectTab = (
     event: React.MouseEvent<HTMLDivElement, MouseEvent>,
     tab: tabType,
   ) => {
-    setTab(tab)
-  }
+    setTab(tab);
+  };
 
   const GET_CURRENT_TAB: Record<tabType, JSX.Element> = {
     about: <About about={project.about} />,
-    screenshoot: <Screenshoot screenShoots={project.screenShoots} screenShootType={project.screenShootType} />,
-  }
+    screenshoot: (
+      <Screenshoot
+        screenShoots={project.screenShoots}
+        screenShootType={project.screenShootType}
+      />
+    ),
+    performance: <Performance />,
+  };
+
+  console.log("project.withPerformance : ", project.withPerformance);
 
   return (
-    <div className='projectDetail'>
+    <div className="projectDetail">
       <div className="detailsTitlesContainer">
         <div className="detailsTitles">
           <div
             className="btnDetails animate"
-            onClick={(event) => handleSelectTab(event, 'about')}
+            onClick={(event) => handleSelectTab(event, "about")}
           >
             {formatText("about")}
           </div>
           <div
             className="btnDetails animate"
-            onClick={(event) => handleSelectTab(event, 'screenshoot')}
+            onClick={(event) => handleSelectTab(event, "screenshoot")}
           >
             {formatText("screenshoot")}
+          </div>
+          <div
+            className={`btnDetails animate ${project.withPerformance === true ? "visible" : "invisible"}`}
+            onClick={(event) => handleSelectTab(event, "performance")}
+          >
+            {formatText("Performance")}
           </div>
         </div>
         <div className="detailLogoContainerx">
           <div className="detailLogoContainer">
-            <img src={project.logo} loading='lazy' className="detailLogo" alt="casque.jpg" />
+            <img
+              src={project.logo}
+              loading="lazy"
+              className="detailLogo"
+              alt="casque.jpg"
+            />
             <div className="info">
               <h5>Authentification :</h5>
               <div>
@@ -64,7 +84,13 @@ const ProjectDetails: FC<ProjectDetailsProps> = (props) => {
                     <tr>
                       <td className="columnTitle">url:</td>
                       <td className="columnMdp">
-                        <a href="https://asdasdasd.xyz" target='_blank' rel='noopener noreferrer'>https://asdasdasd.xyz</a>
+                        <a
+                          href="https://asdasdasd.xyz"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          https://asdasdasd.xyz
+                        </a>
                       </td>
                     </tr>
                   </tbody>
@@ -76,7 +102,7 @@ const ProjectDetails: FC<ProjectDetailsProps> = (props) => {
       </div>
       {GET_CURRENT_TAB[tab]}
     </div>
-  )
-}
+  );
+};
 
-export default ProjectDetails
+export default ProjectDetails;
