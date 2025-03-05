@@ -41,7 +41,7 @@ const Header: FC<HeaderProps> = (props) => {
           <div>
             <span style={{fontSize: '20px'}}>TSIALONINA Heriniaina Mathieu</span>
             <Suspense fallback={<div>Loading ...</div>}>
-              <HeaderDescription text='cvDescription' className='text-base'/>
+              <HeaderDescription text='cvDescription' className=''/>
             </Suspense>
           </div>
         </div>
