@@ -1,8 +1,8 @@
 import './header.css'
 import React, { FC, lazy, Suspense } from 'react'
 import { useLocalFormatHook } from '../../../common/hooks/localFormatHook'
-import MyCvPicture from '../../../assets/Portfolio Design V2/Assets/Cv_picture.jpg'
-// import HeaderDescription from './HeaderDescription'
+import MyCvPicture from '../../../assets/Portfolio Design V2/Assets/Cv_picture.webp'
+
 interface HeaderProps {
   passionRef: React.MutableRefObject<null>
   diplomeRef: React.MutableRefObject<null>
