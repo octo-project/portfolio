@@ -1,1 +1,1 @@
-export {default} from './FirebaseDynamicLinksChip'
+export { default } from "./FirebaseDynamicLinksChip";

@@ -1,19 +1,23 @@
-import { Link } from 'react-router-dom'
-import { useProjectConstant } from '../../../constant/projectListConstant'
+import { Link } from "react-router-dom";
+import { useProjectConstant } from "../../../constant/projectListConstant";
 
 const ProjectLists = () => {
-  const {Projects} = useProjectConstant()
-  
+  const { Projects } = useProjectConstant();
+
   return (
     <div className="projectCard">
       {Projects.map((project, index) => {
         return (
-          <Link to={{ pathname: project.link, state: project }} className='card-link' key={index}>
+          <Link
+            to={{ pathname: project.link, state: project }}
+            className="card-link"
+            key={index}
+          >
             <div
               className="card"
               style={
                 project?.background
-                  ? { background: project?.background, color: 'white' }
+                  ? { background: project?.background, color: "white" }
                   : {}
               }
             >
@@ -26,15 +30,17 @@ const ProjectLists = () => {
                 }
                 className="logo"
                 alt="casque.jpg"
-                loading='lazy'
+                loading="lazy"
               />
-              <span style={{color: project.textColor || "#29293e"}}>{project.name}</span>
+              <span style={{ color: project.textColor || "#29293e" }}>
+                {project.name}
+              </span>
             </div>
           </Link>
-        )
+        );
       })}
     </div>
-  )
-}
+  );
+};
 
-export default ProjectLists
+export default ProjectLists;

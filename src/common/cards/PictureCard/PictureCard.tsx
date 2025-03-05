@@ -1,18 +1,24 @@
-import './style.css'
+import "./style.css";
 import { FC } from "react";
 
 type PictureCardProps = {
-    label: string; 
-    image: string;
-    handleSeePicture: (picture: string) => void;
-}
+  label: string;
+  image: string;
+  handleSeePicture: (picture: string) => void;
+};
 
 const PictureCard: FC<PictureCardProps> = (props) => {
-    const {image, handleSeePicture} = props;
+  const { image, handleSeePicture } = props;
 
-    return (
-        <img src={image} loading='lazy' onClick={() => handleSeePicture(image)} className="picture-card-img animate-up" alt="recovering" />
-    )
-}
+  return (
+    <img
+      src={image}
+      loading="lazy"
+      onClick={() => handleSeePicture(image)}
+      className="picture-card-img animate-up"
+      alt="recovering"
+    />
+  );
+};
 
-export default PictureCard
+export default PictureCard;

@@ -1,51 +1,68 @@
-import Link from "../../../../../Link"
-import MarkaiterLogo from "../../../../../../assets/EsnLogo/markaiter.png"
-import { useLocalFormatHook } from "../../../../../../common/hooks/localFormatHook"
-import { FacebookSDKChip, GraphqlChip, MaterialUiChip, PrismaChip, PythonChip, ReactChip } from "../../../../../TechnosChip"
-import { lazy, Suspense } from "react"
+import Link from "../../../../../Link";
+import MarkaiterLogo from "../../../../../../assets/EsnLogo/markaiter.png";
+import { useLocalFormatHook } from "../../../../../../common/hooks/localFormatHook";
+import {
+  FacebookSDKChip,
+  GraphqlChip,
+  MaterialUiChip,
+  PrismaChip,
+  PythonChip,
+  ReactChip,
+} from "../../../../../TechnosChip";
+import { lazy, Suspense } from "react";
 
-const ProjectDescription = lazy(() => import('../../../../Header/HeaderDescription'))
+const ProjectDescription = lazy(
+  () => import("../../../../Header/HeaderDescription"),
+);
 
 const Markaiter = () => {
-    const {formatText} = useLocalFormatHook()
+  const { formatText } = useLocalFormatHook();
 
-    return (
-        <div className="experience-card">
-            <div className="experience-card-header-container">
-                <Link target={"https://www.markaiter.com/"} >
-                    <img src={MarkaiterLogo} className="esn-yoomum-logo" loading='lazy' alt="markaiter"/>
-                </Link>
-                <span className="experience-card-title">Markaiter:</span>
-            </div>
-            <div>
-            <Suspense fallback={<div>Loading ...</div>}>
-                <ProjectDescription text='projectMarketerOverview' className="project-description"/>
-            </Suspense>
-            <div>
-                <span className="experience-card-subtitle">Missions :</span>
-                <ol>
-                    <li>{formatText("projectMarketerMission1")}</li>
-                    <li>{formatText("projectMarketerMission2")}</li>
-                    <li>{formatText("projectMarketerMission3")}</li>
-                    <li>{formatText("projectMarketerMission4")}</li>
-                    <li>{formatText("projectMarketerMission5")}</li>
-                    <li>{formatText("projectMarketerMission6")}</li>
-                </ol>
-            </div>
-            <div>
-              <span className="experience-card-subtitle">Technos:</span>
-              <div className="technos-content">
-                <PythonChip/>
-                <ReactChip />
-                <MaterialUiChip />
-                <GraphqlChip/>
-                <FacebookSDKChip/>
-                <PrismaChip/>
-              </div>
-            </div>
-            </div>
+  return (
+    <div className="experience-card">
+      <div className="experience-card-header-container">
+        <Link target={"https://www.markaiter.com/"}>
+          <img
+            src={MarkaiterLogo}
+            className="esn-yoomum-logo"
+            loading="lazy"
+            alt="markaiter"
+          />
+        </Link>
+        <span className="experience-card-title">Markaiter:</span>
+      </div>
+      <div>
+        <Suspense fallback={<div>Loading ...</div>}>
+          <ProjectDescription
+            text="projectMarketerOverview"
+            className="project-description"
+          />
+        </Suspense>
+        <div>
+          <span className="experience-card-subtitle">Missions :</span>
+          <ol>
+            <li>{formatText("projectMarketerMission1")}</li>
+            <li>{formatText("projectMarketerMission2")}</li>
+            <li>{formatText("projectMarketerMission3")}</li>
+            <li>{formatText("projectMarketerMission4")}</li>
+            <li>{formatText("projectMarketerMission5")}</li>
+            <li>{formatText("projectMarketerMission6")}</li>
+          </ol>
         </div>
-    )
-}
+        <div>
+          <span className="experience-card-subtitle">Technos:</span>
+          <div className="technos-content">
+            <PythonChip />
+            <ReactChip />
+            <MaterialUiChip />
+            <GraphqlChip />
+            <FacebookSDKChip />
+            <PrismaChip />
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
 
-export default Markaiter
+export default Markaiter;

@@ -1,15 +1,20 @@
-import '../TechnosChip.css'
-import Link from '../../Link'
-import ReactNativeLogo from '../../../assets/techsLogo/react-native.png'
+import "../TechnosChip.css";
+import Link from "../../Link";
+import ReactNativeLogo from "../../../assets/techsLogo/react-native.png";
 
 const ReactNativeChip = () => {
   return (
-    <Link target={'https://reactnative.dev/'}>
+    <Link target={"https://reactnative.dev/"}>
       <div className="chip-card animate white-bg">
-        <img src={ReactNativeLogo} className="react-native-logo" alt="card content" loading='lazy'/>
+        <img
+          src={ReactNativeLogo}
+          className="react-native-logo"
+          alt="card content"
+          loading="lazy"
+        />
       </div>
     </Link>
-  )
-}
+  );
+};
 
-export default ReactNativeChip
+export default ReactNativeChip;

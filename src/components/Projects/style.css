@@ -1,11 +1,10 @@
-
-.project-not-found{
+.project-not-found {
   display: flex;
   align-items: center;
   flex-direction: column;
   justify-content: center;
 }
-.project-not-found-description{
+.project-not-found-description {
   width: 50%;
   text-align: justify;
 }
@@ -46,7 +45,7 @@ a {
   /* grid-row-gap: 2;
    margin-top: 42px; 
    grid-column-gap: 2;
-  grid-template-columns: repeat(4, calc(25% - 0.5rem)); */ 
+  grid-template-columns: repeat(4, calc(25% - 0.5rem)); */
 }
 
 .card {
@@ -93,7 +92,7 @@ a {
 .card-link {
   display: flex;
   text-align: center;
-  align-items:center;
-  flex-direction: column; 
-  justify-content:center; 
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
 }

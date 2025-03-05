@@ -1,1 +1,1 @@
-export {default} from './Symfony'
+export { default } from "./Symfony";

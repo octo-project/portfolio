@@ -1,1 +1,1 @@
-export { default } from './ElectronChip'
+export { default } from "./ElectronChip";

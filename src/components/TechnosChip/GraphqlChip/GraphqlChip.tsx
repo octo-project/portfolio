@@ -1,15 +1,20 @@
-import '../TechnosChip.css'
-import Link from '../../Link'
-import GraphqlLogo from '../../../assets/techsLogo/graphql.png'
+import "../TechnosChip.css";
+import Link from "../../Link";
+import GraphqlLogo from "../../../assets/techsLogo/graphql.png";
 
 const GraphqlChip = () => {
   return (
-    <Link target={'https://graphql.org/'}>
+    <Link target={"https://graphql.org/"}>
       <div className="chip-card animate white-bg">
-        <img src={GraphqlLogo} className="graphql-logo" alt="Graphql card" loading='lazy' />
+        <img
+          src={GraphqlLogo}
+          className="graphql-logo"
+          alt="Graphql card"
+          loading="lazy"
+        />
       </div>
     </Link>
-  )
-}
+  );
+};
 
-export default GraphqlChip
+export default GraphqlChip;

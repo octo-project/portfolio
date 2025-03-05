@@ -1,15 +1,20 @@
-import '../TechnosChip.css'
-import Link from '../../Link'
-import Tauri from '../../../assets/techsLogo/tauri.png'
+import "../TechnosChip.css";
+import Link from "../../Link";
+import Tauri from "../../../assets/techsLogo/tauri.png";
 
 const TauriChip = () => {
   return (
-    <Link target={'https://v2.tauri.app/fr/'}>
+    <Link target={"https://v2.tauri.app/fr/"}>
       <div className="chip-card animate white-bg">
-        <img src={Tauri} className="tauri-logo" alt="Tauri Chip" loading='lazy' />
+        <img
+          src={Tauri}
+          className="tauri-logo"
+          alt="Tauri Chip"
+          loading="lazy"
+        />
       </div>
     </Link>
-  )
-}
+  );
+};
 
-export default TauriChip
+export default TauriChip;

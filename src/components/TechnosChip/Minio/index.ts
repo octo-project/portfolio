@@ -1,1 +1,1 @@
-export { default } from './Minio'
+export { default } from "./Minio";

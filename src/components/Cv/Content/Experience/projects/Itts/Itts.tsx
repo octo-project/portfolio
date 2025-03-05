@@ -1,14 +1,16 @@
-import { lazy, Suspense } from "react"
-import { useLocalFormatHook } from "../../../../../../common/hooks/localFormatHook"
-import LaravelChip from "../../../../../TechnosChip/LaravelChip"
-import StripeChip from "../../../../../TechnosChip/StripeChip"
+import { lazy, Suspense } from "react";
+import { useLocalFormatHook } from "../../../../../../common/hooks/localFormatHook";
+import LaravelChip from "../../../../../TechnosChip/LaravelChip";
+import StripeChip from "../../../../../TechnosChip/StripeChip";
 
-const ProjectDescription = lazy(() => import('../../../../Header/HeaderDescription'))
+const ProjectDescription = lazy(
+  () => import("../../../../Header/HeaderDescription"),
+);
 
 const Itts = () => {
-    const {formatText} = useLocalFormatHook()
-    return (
-            <div className="experience-card">
+  const { formatText } = useLocalFormatHook();
+  return (
+    <div className="experience-card">
       <div className="experience-card-header-container">
         {/* <Link target={"https://www.interhaptics.com/tech/haptic-composer"} >
           <img src={InterhapticsLogo} className="esn-interhaptics-logo" alt="interhaptics"/>
@@ -17,7 +19,10 @@ const Itts = () => {
       </div>
       <div>
         <Suspense fallback={<div>Loading ...</div>}>
-          <ProjectDescription text='projectIttsOverview' className="project-description"/>
+          <ProjectDescription
+            text="projectIttsOverview"
+            className="project-description"
+          />
         </Suspense>
         <div>
           <span className="experience-card-subtitle">Missions :</span>
@@ -31,13 +36,13 @@ const Itts = () => {
         <div>
           <span className="experience-card-subtitle">Technos:</span>
           <div className="technos-content">
-            <LaravelChip /> 
-            <StripeChip/>
+            <LaravelChip />
+            <StripeChip />
           </div>
         </div>
       </div>
     </div>
-    )
-}
+  );
+};
 
-export default Itts
+export default Itts;

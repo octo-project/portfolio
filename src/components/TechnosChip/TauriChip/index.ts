@@ -1,1 +1,1 @@
-export {default} from './TauriChip'
+export { default } from "./TauriChip";

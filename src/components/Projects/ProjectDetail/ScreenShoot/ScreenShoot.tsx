@@ -1,6 +1,6 @@
-import { FC, useState } from 'react'
-import { PictureModal } from '../../../Modal';
-import PictureCard from '../../../../common/cards/PictureCard/PictureCard';
+import { FC, useState } from "react";
+import { PictureModal } from "../../../Modal";
+import PictureCard from "../../../../common/cards/PictureCard/PictureCard";
 
 interface ScreenShootProps {
   screenShoots: any[];
@@ -9,30 +9,33 @@ interface ScreenShootProps {
 
 const Screenshoot: FC<ScreenShootProps> = (props) => {
   const [openPictureModal, setOpenPictureModal] = useState<boolean>(false);
-  const [selectedPicture, setSelectedPicture] = useState<string|null>(null);
-  
-  const { screenShoots , screenShootType} = props
-  const containerClass = screenShootType === 'mobile' ? 'little-img' : 'big-img'
+  const [selectedPicture, setSelectedPicture] = useState<string | null>(null);
+
+  const { screenShoots, screenShootType } = props;
+  const containerClass =
+    screenShootType === "mobile" ? "little-img" : "big-img";
   // const containerClass = screenShootType === 'Mobile' ? 'screenShootMobile' : 'screenShootWeb'
 
   const handleSeePicture = (picture: string) => {
-    setSelectedPicture(picture)
-    setOpenPictureModal(true)
-  }
+    setSelectedPicture(picture);
+    setOpenPictureModal(true);
+  };
 
-  const handleCloseModalPicture = () => setOpenPictureModal(false)
+  const handleCloseModalPicture = () => setOpenPictureModal(false);
 
   const moveImage = (direction: string) => {
     if (selectedPicture) {
-      const indexOfPicture = screenShoots.findIndex(el => el.image === selectedPicture);
+      const indexOfPicture = screenShoots.findIndex(
+        (el) => el.image === selectedPicture,
+      );
       const maxIndex = screenShoots.length - 1;
-      
-      const newIndex = direction === 'right' 
-        ? indexOfPicture + 1
-        : indexOfPicture - 1;
-  
-      const correctIndex = newIndex < 0 ? maxIndex : (newIndex > maxIndex ? 0 : newIndex);
-  
+
+      const newIndex =
+        direction === "right" ? indexOfPicture + 1 : indexOfPicture - 1;
+
+      const correctIndex =
+        newIndex < 0 ? maxIndex : newIndex > maxIndex ? 0 : newIndex;
+
       setSelectedPicture(screenShoots[correctIndex].image);
     }
   };
@@ -42,17 +45,25 @@ const Screenshoot: FC<ScreenShootProps> = (props) => {
       <div className="screenShootWeb">
         {screenShoots.map((item, index) => {
           return (
-            <PictureCard key={index} image={item.image} label={item.label} handleSeePicture={handleSeePicture}/>
-          )
+            <PictureCard
+              key={index}
+              image={item.image}
+              label={item.label}
+              handleSeePicture={handleSeePicture}
+            />
+          );
         })}
       </div>
-      {
-        openPictureModal && selectedPicture  && (
-          <PictureModal moovImage={moveImage} containerClass={containerClass} picture={selectedPicture} closeModal={handleCloseModalPicture}/>
-        )
-      }
+      {openPictureModal && selectedPicture && (
+        <PictureModal
+          moovImage={moveImage}
+          containerClass={containerClass}
+          picture={selectedPicture}
+          closeModal={handleCloseModalPicture}
+        />
+      )}
     </div>
-  )
-}
+  );
+};
 
-export default Screenshoot
+export default Screenshoot;

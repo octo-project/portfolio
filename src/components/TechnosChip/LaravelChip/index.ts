@@ -1,1 +1,1 @@
-export {default} from './LaravelChip'
+export { default } from "./LaravelChip";

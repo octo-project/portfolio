@@ -1,1 +1,1 @@
-export {default} from './FacebookSDKChip'
+export { default } from "./FacebookSDKChip";

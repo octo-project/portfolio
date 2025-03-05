@@ -1,66 +1,124 @@
-import vatsy from '../assets/vatsy_icon.png'
+import vatsy from "../assets/vatsy_icon.png";
 // import todoApp from '../assets/TodoApp/logo.png'
-import FAQ from '../assets/Buyer Persona/FAQ.png'
-import Avis from '../assets/Buyer Persona/Avis.png'
+import FAQ from "../assets/Buyer Persona/FAQ.png";
+import Avis from "../assets/Buyer Persona/Avis.png";
 // import orderEase from '../assets/OrderEase/logo.png'
-import About from '../assets/Buyer Persona/About.png'
-import BPLogo from '../assets/Buyer Persona/Logo-BP.png'
-import Welcome from '../assets/Buyer Persona/Welcome.png'
-import Setting from '../assets/Buyer Persona/Setting.png'
-import Loading from '../assets/Buyer Persona/Loading.png'
+import About from "../assets/Buyer Persona/About.png";
+import BPLogo from "../assets/Buyer Persona/Logo-BP.png";
+import Welcome from "../assets/Buyer Persona/Welcome.png";
+import Setting from "../assets/Buyer Persona/Setting.png";
+import Loading from "../assets/Buyer Persona/Loading.png";
 // import orderEaseError from '../assets/OrderEase/Error.png'
-import gestionFond from '../assets/GestionDeFond/logo.jpg'
-import Generator from '../assets/Buyer Persona/Generator.png'
+import gestionFond from "../assets/GestionDeFond/logo.jpg";
+import Generator from "../assets/Buyer Persona/Generator.png";
 // import orderEaseFacture from '../assets/OrderEase/Facture.png'
-import GeneratedFile from '../assets/Buyer Persona/generated-file.png'
+import GeneratedFile from "../assets/Buyer Persona/generated-file.png";
 // import orderEaseConfirmation from '../assets/OrderEase/Confirmation.png'
 // import orderEaseDetailsPlats from '../assets/OrderEase/DetailsPlats.png'
-import SuccessGenerate from '../assets/Buyer Persona/SuccessGenerate.png'
-import SuccessDownload from '../assets/Buyer Persona/SuccessDownload.png'
+import SuccessGenerate from "../assets/Buyer Persona/SuccessGenerate.png";
+import SuccessDownload from "../assets/Buyer Persona/SuccessDownload.png";
 
-import expense_tracking_home from '../assets/GestionDeFond/home.png'
-import expense_tracking_expenses from '../assets/GestionDeFond/expenses.png'
-import expense_tracking_finance_home from '../assets/GestionDeFond/finance-home.png'
-import expense_tracking_new_buy_plan from '../assets/GestionDeFond/new-buy-plan.png'
-import expense_tracking_delete_expense from '../assets/GestionDeFond/delete-expense.png'
-import expense_tracking_select_plan_detail from '../assets/GestionDeFond/plan-detail.png'
-import expense_tracking_select_plan_type from '../assets/GestionDeFond/select-plan-type.png'
-import expense_tracking_new_selling_goal from '../assets/GestionDeFond/new-selling-goal.png'
-import expense_tracking_expense_details_2 from '../assets/GestionDeFond/expense-details-2.png'
-import expense_tracking_delete_finance_goal from '../assets/GestionDeFond/delete-finance-goal.png'
-import expense_tracking_finance_sold_detail from '../assets/GestionDeFond/finance-sold-detail.png'
-import expense_tracking_creation_new_expense from '../assets/GestionDeFond/creation-new-expense.png'
-import expense_tracking_expense_chart_details from '../assets/GestionDeFond/expense-chart-details.png'
-import expense_tracking_creation_expense_1 from '../assets/GestionDeFond/creation-new-expense-amount.png'
-import expense_tracking_expense_category_filters from '../assets/GestionDeFond/expense-category-filters.png'
+import expense_tracking_home from "../assets/GestionDeFond/home.png";
+import expense_tracking_expenses from "../assets/GestionDeFond/expenses.png";
+import expense_tracking_finance_home from "../assets/GestionDeFond/finance-home.png";
+import expense_tracking_new_buy_plan from "../assets/GestionDeFond/new-buy-plan.png";
+import expense_tracking_delete_expense from "../assets/GestionDeFond/delete-expense.png";
+import expense_tracking_select_plan_detail from "../assets/GestionDeFond/plan-detail.png";
+import expense_tracking_select_plan_type from "../assets/GestionDeFond/select-plan-type.png";
+import expense_tracking_new_selling_goal from "../assets/GestionDeFond/new-selling-goal.png";
+import expense_tracking_expense_details_2 from "../assets/GestionDeFond/expense-details-2.png";
+import expense_tracking_delete_finance_goal from "../assets/GestionDeFond/delete-finance-goal.png";
+import expense_tracking_finance_sold_detail from "../assets/GestionDeFond/finance-sold-detail.png";
+import expense_tracking_creation_new_expense from "../assets/GestionDeFond/creation-new-expense.png";
+import expense_tracking_expense_chart_details from "../assets/GestionDeFond/expense-chart-details.png";
+import expense_tracking_creation_expense_1 from "../assets/GestionDeFond/creation-new-expense-amount.png";
+import expense_tracking_expense_category_filters from "../assets/GestionDeFond/expense-category-filters.png";
 
 //
-import vatsy_page_1 from '../assets/Vatsy/page_1.png';
-import vatsy_addition from '../assets/Vatsy/addition.png';
-import vatsy_liste_soupe from '../assets/Vatsy/liste_soupe.png';
-import vatsy_date_filter from '../assets/Vatsy/date_filter.png';
-import vatsy_see_invoice from '../assets/Vatsy/see_invoice.png';
-import vatsy_table_filter from '../assets/Vatsy/table_filter.png';
-import vatsy_ask_password from '../assets/Vatsy/ask_password.png';
-import vatsy_bol_renverser from '../assets/Vatsy/bol_renverser.png';
-import vatsy_purchase_filter from '../assets/Vatsy/purchase_filter.png';
-import vatsy_selection_quantity from '../assets/Vatsy/selection_quantity.png';
-import vatsy_category_de_depense from '../assets/Vatsy/category_de_depense.png';
-import vatsy_historique_de_vente from '../assets/Vatsy/historique_de_vente.png';
-import vatsy_historique_de_depense from '../assets/Vatsy/historique_de_depense.png';
+import vatsy_page_1 from "../assets/Vatsy/page_1.png";
+import vatsy_addition from "../assets/Vatsy/addition.png";
+import vatsy_liste_soupe from "../assets/Vatsy/liste_soupe.png";
+import vatsy_date_filter from "../assets/Vatsy/date_filter.png";
+import vatsy_see_invoice from "../assets/Vatsy/see_invoice.png";
+import vatsy_table_filter from "../assets/Vatsy/table_filter.png";
+import vatsy_ask_password from "../assets/Vatsy/ask_password.png";
+import vatsy_bol_renverser from "../assets/Vatsy/bol_renverser.png";
+import vatsy_purchase_filter from "../assets/Vatsy/purchase_filter.png";
+import vatsy_selection_quantity from "../assets/Vatsy/selection_quantity.png";
+import vatsy_category_de_depense from "../assets/Vatsy/category_de_depense.png";
+import vatsy_historique_de_vente from "../assets/Vatsy/historique_de_vente.png";
+import vatsy_historique_de_depense from "../assets/Vatsy/historique_de_depense.png";
+
+import portfolio from "../assets/Portfolio Design V2/Assets/apple-touch-icon.png";
+import portfolio_home from "../assets/Portfolio Design V2/home.png";
+import portfolio_vatsy from "../assets/Portfolio Design V2/vatsy.png";
+import portfolio_buyer from "../assets/Portfolio Design V2/buyer.png";
+import portfolio_projects from "../assets/Portfolio Design V2/projects.png";
+import portfolio_vatsy_screen from "../assets/Portfolio Design V2/vatsy-screen.png";
+import portfolio_buyer_screen from "../assets/Portfolio Design V2/buyer-screen.png";
 
 export const useProjectConstant = () => {
-
   const Projects = [
     {
-      logo: vatsy,
-      // logo: undefined,
-      name: 'Vatsy',
-      logoSize: '50px',
-      link: '/project/vatsy',
+      logo: portfolio,
+      logoSize: "50px",
+      name: "Portfolio",
+      withPerformance: true,
+      screenShootType: "web",
+      link: "/project/portfolio",
       about: {
-        demoUrl: 'https://youtube/asdas6a5465/podcast-app-web',
-        gitHubRepository: ' https://git-lab.com/hmathieutsialonina/podcast-app',
+        demoUrl: "",
+        gitHubRepository: "",
+        description: "projectPortfolioOverview",
+        missions: [
+          "projectPortfolioMission1",
+          "projectPortfolioMission2",
+          "projectPortfolioMission3",
+          "projectPortfolioMission4",
+        ],
+        functionnalities: [
+          "projectPortfolioFunctionality1",
+          "projectPortfolioFunctionality2",
+          "projectPortfolioFunctionality3",
+        ],
+        technos: ["React", "TailwindCss", "Typescript"],
+      },
+      screenShoots: [
+        {
+          label: "Portfolio Home",
+          image: portfolio_home,
+        },
+        {
+          label: "Portfolio Vatsy",
+          image: portfolio_vatsy,
+        },
+        {
+          label: "Portfolio Projects",
+          image: portfolio_projects,
+        },
+        {
+          label: "Portfolio Vatsy Screen",
+          image: portfolio_vatsy_screen,
+        },
+        {
+          label: "Portfolio Buyer",
+          image: portfolio_buyer,
+        },
+        {
+          label: "Portfolio Buyer Screen",
+          image: portfolio_buyer_screen,
+        },
+      ],
+    },
+    {
+      logo: vatsy,
+      name: "Vatsy",
+      logoSize: "50px",
+      withPerformance: false,
+      link: "/project/vatsy",
+      about: {
+        demoUrl: "https://youtube/asdas6a5465/podcast-app-web",
+        gitHubRepository: " https://git-lab.com/hmathieutsialonina/podcast-app",
         description: "projectVatsyOverview",
         missions: [
           "projectVatsyMission1",
@@ -73,64 +131,69 @@ export const useProjectConstant = () => {
           "projectVatsyMission8",
           "projectVatsyMission9",
         ],
-        functionnalities: ['projectVatsyInvoicePrinting', 'projectVatsyOrderManagement', 'projectVatsyTransactionHistory', 'projectVatsySearchEngine'],
-        technos: ['React', 'Tailwind', 'Rust', 'Tauri', 'Typescript', 'Sqlite'],
+        functionnalities: [
+          "projectVatsyInvoicePrinting",
+          "projectVatsyOrderManagement",
+          "projectVatsyTransactionHistory",
+          "projectVatsySearchEngine",
+        ],
+        technos: ["React", "Tailwind", "Rust", "Tauri", "Typescript", "Sqlite"],
       },
       //'Apollo',
-      screenShootType: 'web',
+      screenShootType: "web",
       screenShoots: [
-        { 
-          label: 'First page', 
-          image: vatsy_page_1, 
+        {
+          label: "First page",
+          image: vatsy_page_1,
         },
-        { 
-          label: 'Addition', 
+        {
+          label: "Addition",
           image: vatsy_addition,
         },
-        { 
-          label: 'Bol renverser', 
+        {
+          label: "Bol renverser",
           image: vatsy_bol_renverser,
         },
-        { 
-          label: 'Liste soupr', 
+        {
+          label: "Liste soupr",
           image: vatsy_liste_soupe,
         },
-        { 
-          label: 'Category de depense', 
+        {
+          label: "Category de depense",
           image: vatsy_category_de_depense,
         },
-        { 
-          label: 'Historique de vente', 
+        {
+          label: "Historique de vente",
           image: vatsy_historique_de_vente,
         },
-        { 
-          label: 'Historique de depense', 
+        {
+          label: "Historique de depense",
           image: vatsy_historique_de_depense,
         },
-        { 
-          label: 'Ask password', 
+        {
+          label: "Ask password",
           image: vatsy_ask_password,
         },
-        { 
-          label: 'Selection quantity', 
+        {
+          label: "Selection quantity",
           image: vatsy_selection_quantity,
         },
-        { 
-          label: 'Date filter', 
+        {
+          label: "Date filter",
           image: vatsy_date_filter,
         },
-        { 
-          label: 'Purchase filter', 
+        {
+          label: "Purchase filter",
           image: vatsy_purchase_filter,
         },
-        { 
-          label: 'Table filter', 
+        {
+          label: "Table filter",
           image: vatsy_table_filter,
         },
         {
           label: "See invoice",
-          image:vatsy_see_invoice,
-        }
+          image: vatsy_see_invoice,
+        },
       ],
     },
     // {
@@ -173,15 +236,15 @@ export const useProjectConstant = () => {
     //   },
     //   screenShootType: 'mobile',
     //   screenShoots: [
-    //     { label: 'Erreur', 
-    //     image: orderEaseError, 
-    //     // image: undefined 
+    //     { label: 'Erreur',
+    //     image: orderEaseError,
+    //     // image: undefined
     //   },
-    //     { label: 'Facture', 
+    //     { label: 'Facture',
     //     image: orderEaseFacture,
     //     // image: undefined,
     //    },
-    //     { label: 'Confirmation', 
+    //     { label: 'Confirmation',
     //     image: orderEaseConfirmation,
     //     // image: undefined,
     //    },
@@ -193,9 +256,10 @@ export const useProjectConstant = () => {
     // },
     {
       logo: gestionFond,
-      name: 'Gestion-fond',
-      logoSize: '70px',
-      link: '/project/gestion-fond',
+      name: "Gestion-fond",
+      withPerformance: false,
+      logoSize: "70px",
+      link: "/project/gestion-fond",
       about: {
         missions: [
           "projectGestionFondMission1",
@@ -205,74 +269,74 @@ export const useProjectConstant = () => {
           "projectGestionFondMission5",
           "projectGestionFondMission6",
         ],
-        demoUrl: 'https://youtube/asdas6a5465/podcast-app-web',
-        gitHubRepository: ' https://git-lab.com/hmathieutsialonina/podcast-app',
+        demoUrl: "https://youtube/asdas6a5465/podcast-app-web",
+        gitHubRepository: " https://git-lab.com/hmathieutsialonina/podcast-app",
         description: `projectGestionFondOverview`,
-        animation: 'All animation is made with after effect and lottie',
-        functionnalities: ['expenseTracking', 'financialStrategy'],
-        technos: ['Deno','Typescript', 'React', 'Tailwind'],
+        animation: "All animation is made with after effect and lottie",
+        functionnalities: ["expenseTracking", "financialStrategy"],
+        technos: ["Deno", "Typescript", "React", "Tailwind"],
       },
-      screenShootType: 'web',
+      screenShootType: "web",
       screenShoots: [
-        { 
-          label: 'expense home', 
-          image: expense_tracking_home, 
+        {
+          label: "expense home",
+          image: expense_tracking_home,
         },
-        { 
-          label: 'expense tracking', 
-          image: expense_tracking_expenses, 
+        {
+          label: "expense tracking",
+          image: expense_tracking_expenses,
         },
-        { 
-          label: 'finance home', 
-          image: expense_tracking_finance_home, 
+        {
+          label: "finance home",
+          image: expense_tracking_finance_home,
         },
-        { 
-          label: 'New buy plan', 
-          image: expense_tracking_new_buy_plan, 
+        {
+          label: "New buy plan",
+          image: expense_tracking_new_buy_plan,
         },
-        { 
-          label: 'delete expense', 
-          image: expense_tracking_delete_expense, 
+        {
+          label: "delete expense",
+          image: expense_tracking_delete_expense,
         },
-        { 
-          label: 'select plan detail', 
-          image: expense_tracking_select_plan_detail, 
+        {
+          label: "select plan detail",
+          image: expense_tracking_select_plan_detail,
         },
-        { 
-          label: 'select plan type', 
-          image: expense_tracking_select_plan_type, 
+        {
+          label: "select plan type",
+          image: expense_tracking_select_plan_type,
         },
-        { 
-          label: 'new selling goal', 
-          image: expense_tracking_new_selling_goal, 
+        {
+          label: "new selling goal",
+          image: expense_tracking_new_selling_goal,
         },
-        { 
-          label: 'expense detail 2', 
-          image: expense_tracking_expense_details_2, 
+        {
+          label: "expense detail 2",
+          image: expense_tracking_expense_details_2,
         },
-        { 
-          label: 'delte goal', 
-          image: expense_tracking_delete_finance_goal, 
+        {
+          label: "delte goal",
+          image: expense_tracking_delete_finance_goal,
         },
-        { 
-          label: 'finance sold detail', 
-          image: expense_tracking_finance_sold_detail, 
+        {
+          label: "finance sold detail",
+          image: expense_tracking_finance_sold_detail,
         },
-        { 
-          label: 'creation new expense', 
-          image: expense_tracking_creation_new_expense, 
+        {
+          label: "creation new expense",
+          image: expense_tracking_creation_new_expense,
         },
-        { 
-          label: 'expense chart details', 
-          image: expense_tracking_expense_chart_details, 
+        {
+          label: "expense chart details",
+          image: expense_tracking_expense_chart_details,
         },
-        { 
-          label: 'creation expense', 
-          image: expense_tracking_creation_expense_1, 
+        {
+          label: "creation expense",
+          image: expense_tracking_creation_expense_1,
         },
-        { 
-          label: 'expense category filters', 
-          image: expense_tracking_expense_category_filters, 
+        {
+          label: "expense category filters",
+          image: expense_tracking_expense_category_filters,
         },
       ],
     },
@@ -300,72 +364,83 @@ export const useProjectConstant = () => {
     {
       logo: BPLogo,
       // logo: undefined,
-      name: 'Buyer',
-      logoSize: '35px',
-      textColor: 'white',
-      background: '#22222f',
-      link: '/project/buyer',
+      withPerformance: false,
+      name: "Buyer",
+      logoSize: "35px",
+      textColor: "white",
+      background: "#22222f",
+      link: "/project/buyer",
       about: {
-        demoUrl: 'https://youtube/asdas6a5465/podcast-app-web',
-        gitHubRepository: ' https://git-lab.com/hmathieutsialonina/podcast-app',
+        demoUrl: "https://youtube/asdas6a5465/podcast-app-web",
+        gitHubRepository: " https://git-lab.com/hmathieutsialonina/podcast-app",
         description: `projectBuyerPersonaOverview`,
-        missions:[
-          'projectBuyerPersonaMission1',
-          'projectBuyerPersonaMission2'
+        missions: [
+          "projectBuyerPersonaMission1",
+          "projectBuyerPersonaMission2",
         ],
         functionnalities: [
-          'chatgpt',
-          'audienceTargeting',
-          'personaGenerator',
-          'chromeExtension',
+          "chatgpt",
+          "audienceTargeting",
+          "personaGenerator",
+          "chromeExtension",
         ],
-        technos: ['React', 'NodeJs', 'Express', 'Typescript'],
+        technos: ["React", "NodeJs", "Express", "Typescript"],
       },
-      screenShootType: 'mobile',
+      screenShootType: "mobile",
       screenShoots: [
-        { label: 'Welcome', 
-        image: Welcome,
-        // image: undefined,
-       },
-        { label: 'SuccessGenerate', 
-        // image: undefined,
-        image: SuccessGenerate
-       },
-        { label: 'SuccessDownload', 
-        image: SuccessDownload, 
-        // image: undefined,
-       },
-        { label: 'Setting', 
-        image: Setting,
-        //  image: undefined,
-          },
-        { label: 'Loading', 
-        image: Loading,
-        // image: undefined,  
-       },
-        { label: 'Generator', 
-        image: Generator, 
-        // image: undefined,  
-      },
-        { label: 'GeneratedFile', 
-        image: GeneratedFile, 
-        // image: undefined,  
-      },
-        { label: 'FAQ', 
-        image: FAQ, 
-        // image: undefined 
-      },
-        { label: 'Avis',
-         image: Avis, 
-        // image: undefined
-       },
-        { label: 'About', 
-        image: About,
-        // image: undefined
-      },
+        {
+          label: "Welcome",
+          image: Welcome,
+          // image: undefined,
+        },
+        {
+          label: "SuccessGenerate",
+          // image: undefined,
+          image: SuccessGenerate,
+        },
+        {
+          label: "SuccessDownload",
+          image: SuccessDownload,
+          // image: undefined,
+        },
+        {
+          label: "Setting",
+          image: Setting,
+          //  image: undefined,
+        },
+        {
+          label: "Loading",
+          image: Loading,
+          // image: undefined,
+        },
+        {
+          label: "Generator",
+          image: Generator,
+          // image: undefined,
+        },
+        {
+          label: "GeneratedFile",
+          image: GeneratedFile,
+          // image: undefined,
+        },
+        {
+          label: "FAQ",
+          image: FAQ,
+          // image: undefined
+        },
+        {
+          label: "Avis",
+          image: Avis,
+          // image: undefined
+        },
+        {
+          label: "About",
+          image: About,
+          // image: undefined
+        },
       ],
     },
-  ]
+  ];
 
-  return {Projects}
-} 
+  return { Projects };
+};

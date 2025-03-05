@@ -1,1 +1,1 @@
-export {default} from './MyCv'
+export { default } from "./MyCv";

@@ -1,1 +1,1 @@
-export { default } from './ReactChip'
+export { default } from "./ReactChip";

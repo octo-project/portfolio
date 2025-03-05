@@ -1,17 +1,17 @@
-import { FC } from 'react'
-import Techno from '../../../../assets/tech1.png'
-import Manette from '../../../../assets/manette.png'
-import Musique from '../../../../assets/musique.png'
-import { gamingData, musicData, technoData } from './constant/passion-constant'
-import { useLocalFormatHook } from '../../../../common/hooks/localFormatHook'
+import { FC } from "react";
+import Techno from "../../../../assets/tech1.png";
+import Manette from "../../../../assets/manette.png";
+import Musique from "../../../../assets/musique.png";
+import { gamingData, musicData, technoData } from "./constant/passion-constant";
+import { useLocalFormatHook } from "../../../../common/hooks/localFormatHook";
 
 interface PassionProps {
-  refer: React.MutableRefObject<null>
+  refer: React.MutableRefObject<null>;
 }
 
 const Passion: FC<PassionProps> = (props) => {
-  const { refer } = props
-  const {formatText} = useLocalFormatHook()
+  const { refer } = props;
+  const { formatText } = useLocalFormatHook();
 
   return (
     <section className="content content-passion" ref={refer}>
@@ -21,16 +21,26 @@ const Passion: FC<PassionProps> = (props) => {
           <img
             src={Manette}
             alt="manette"
-            loading='lazy'
+            loading="lazy"
             className="passion-logo logo-gaming"
           />
           <div className="passion-detail">
             {gamingData.map((game, index) => {
               return (
-                <a href={game.url} key={index} target="_blank" rel='noopener noreferrer'>
-                  <img src={game.img} className="game-icon" loading='lazy' alt={game.name} />
+                <a
+                  href={game.url}
+                  key={index}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img
+                    src={game.img}
+                    className="game-icon"
+                    loading="lazy"
+                    alt={game.name}
+                  />
                 </a>
-              )
+              );
             })}
           </div>
         </div>
@@ -38,21 +48,26 @@ const Passion: FC<PassionProps> = (props) => {
           <img
             src={Musique}
             alt="musique"
-            loading='lazy'
+            loading="lazy"
             className="passion-logo logo-musique"
           />
           <div className="passion-detail">
             {musicData.map((music, index) => {
               return (
-                <a href={music.url} key={index} target="_blank" rel='noopener noreferrer'>
+                <a
+                  href={music.url}
+                  key={index}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <img
                     src={music.img}
                     alt={music.name}
-                    loading='lazy'
+                    loading="lazy"
                     className="spotify-icon"
                   />
                 </a>
-              )
+              );
             })}
           </div>
         </div>
@@ -61,27 +76,32 @@ const Passion: FC<PassionProps> = (props) => {
             src={Techno}
             width="100px"
             alt="manette"
-            loading='lazy'
+            loading="lazy"
             className="logo-techno"
           />
           <div className="passion-detail">
             {technoData.map((techno, index) => {
               return (
-                <a href={techno.url} key={index} target="_blank" rel='noopener noreferrer'>
+                <a
+                  href={techno.url}
+                  key={index}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <img
-                    loading='lazy'
+                    loading="lazy"
                     src={techno.img}
                     alt={techno.name}
                     className="spotify-icon"
                   />
                 </a>
-              )
+              );
             })}
           </div>
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default Passion
+export default Passion;

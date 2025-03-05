@@ -1,1 +1,1 @@
-export {default} from './SqliteChip'
+export { default } from "./SqliteChip";

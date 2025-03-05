@@ -1,1 +1,1 @@
-export { default } from './MaterialUiChip'
+export { default } from "./MaterialUiChip";

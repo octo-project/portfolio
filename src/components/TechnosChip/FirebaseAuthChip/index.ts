@@ -1,1 +1,1 @@
-export {default} from './FirebaseAuthChip'
+export { default } from "./FirebaseAuthChip";

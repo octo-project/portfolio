@@ -1,1 +1,1 @@
-export {default} from './GraphqlChip'
+export { default } from "./GraphqlChip";

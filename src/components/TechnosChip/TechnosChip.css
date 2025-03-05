@@ -62,14 +62,14 @@
   position: relative;
 }
 
-.Minio-logo{
+.Minio-logo {
   top: -13px;
   left: -7px;
   height: 47px;
   position: relative;
 }
 
-.ts-logo{
+.ts-logo {
   top: -27px;
   left: -16px;
   height: 71px;
@@ -77,111 +77,111 @@
   position: relative;
 }
 
-.white-bg{
+.white-bg {
   background: white;
 }
 
-.node-logo{
+.node-logo {
   top: -9px;
   left: -7px;
   height: 33px;
   position: relative;
 }
 
-.mui-logo{
+.mui-logo {
   top: -27px;
   left: -18px;
   height: 78px;
   position: relative;
 }
 
-.logo-black-blue{
+.logo-black-blue {
   color: #366eff;
 }
 
-.custom{
+.custom {
   top: 16px;
   left: 36px;
   font-size: 12px;
   position: absolute;
 }
 
-.flex{
+.flex {
   display: flex;
   position: relative;
 }
 
-.fb-sdk-logo{
+.fb-sdk-logo {
   top: -5px;
   left: -20px;
   height: 30px;
   position: relative;
 }
 
-.firebase-logo{
+.firebase-logo {
   top: -29px;
   left: -33px;
   height: 74px;
   position: relative;
 }
 
-.firebase-auth-logo{
+.firebase-auth-logo {
   top: -29px;
   left: -26px;
   height: 83px;
   position: relative;
 }
 
-.firebase-dl-logo{
+.firebase-dl-logo {
   top: -12px;
   left: -12px;
   height: 43px;
   position: relative;
 }
 
-.prisma-logo{
+.prisma-logo {
   top: -21px;
   left: -7px;
   height: 60px;
   position: relative;
 }
 
-.graphql-logo{
+.graphql-logo {
   top: -14px;
   left: -6px;
   height: 49px;
   position: relative;
 }
 
-.ant-logo{
+.ant-logo {
   top: -43px;
   left: -6px;
   height: 108px;
   position: relative;
 }
 
-.symfony-logo{
+.symfony-logo {
   top: -37px;
   left: -19px;
   height: 93px;
   position: relative;
 }
 
-.laravel-logo{
+.laravel-logo {
   top: -37px;
   left: -34px;
   height: 93px;
   position: relative;
 }
 
-.python-logo{
+.python-logo {
   top: -4px;
   left: -10px;
   height: 35px;
   position: relative;
 }
 
-.api-platform-logo{
+.api-platform-logo {
   top: -25px;
   left: -14px;
   height: 69px;

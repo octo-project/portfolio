@@ -1,1 +1,1 @@
-export {default} from './PrismaChip'
+export { default } from "./PrismaChip";
