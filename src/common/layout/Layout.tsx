@@ -11,9 +11,10 @@ import pythonLogo from "../../assets/techsLogo/python.png";
 import nestJSLogo from "../../assets/techsLogo/nestJs.png";
 import laravelLogo from "../../assets/techsLogo/laravel.png";
 import { useLocalFormatHook } from "../hooks/localFormatHook";
-import FbIcon from "../../assets/Portfolio Design V2/Assets/Fb.png";
-import GoogleIcon from "../../assets/Portfolio Design V2/Assets/Google.png";
-import LinkedInIcon from "../../assets/Portfolio Design V2/Assets/linkedin.png";
+import GoogleIcon from "../../assets/Portfolio Design V2/Assets/gmail-icon.svg";
+import FbIcon from "../../assets/Portfolio Design V2/Assets/facebook-icon.svg";
+import GitHubIcon from "../../assets/Portfolio Design V2/Assets/github-mark.svg";
+import LinkedInIcon from "../../assets/Portfolio Design V2/Assets/linkedin-icon.svg";
 
 interface layoutProps {
   children: any;
@@ -29,7 +30,6 @@ const Layout: FC<layoutProps> = (props: { children: any }) => {
   const [isActive, setActive] = useState(isActivex);
 
   const toggleDrawer = () => {
-    console.log("drawer ....");
     setActive(!isActive);
     localStorage.setItem("IsActive", `${!isActive}`);
   };
@@ -105,17 +105,23 @@ const Layout: FC<layoutProps> = (props: { children: any }) => {
             <div className="icon-container">
               <Contact
                 icon={FbIcon}
+                content="Mathieu Tsialonina"
                 link={"https://www.facebook.com/profile.php?id=100008382949411"}
               />
               <Contact
                 icon={GoogleIcon}
+                content="hmathieutsialonina@gmail.com"
                 link={"mailto:hmathieutsialonina@gmail.com"}
               />
               <Contact
                 icon={LinkedInIcon}
-                link={
-                  "https://www.linkedin.com/in/heriniaina-mathieu-tsialonina-79a724209/"
-                }
+                content="Heriniaina Mathieu Tsialonina"
+                link={"https://www.linkedin.com/in/heriniaina-mathieu-tsialonina-79a724209/"}
+              />
+              <Contact
+                icon={GitHubIcon}
+                content="HMathieuTsialonina"
+                link={"https://github.com/HMathieuTsialonina"}
               />
             </div>
           </div>

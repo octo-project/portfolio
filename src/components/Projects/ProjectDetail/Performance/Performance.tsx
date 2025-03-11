@@ -16,7 +16,7 @@ const Performance = () => {
             rel="noopener noreferrer"
             className="metrics-link"
           >
-            : {formatText("performanceLinkcls")}
+            : {formatText("performanceLink")}
           </a>
         </span>
         <div className="performance-container">
