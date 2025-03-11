@@ -1,7 +1,7 @@
 .contactContainer {
   display: flex;
-  padding: 10px;
   align-items: center;
+  padding: 10px 10px 5px 10px;
 }
 
 .contactContainer > img {
@@ -10,4 +10,21 @@
 
 .contact {
   font-size: 11px;
+}
+
+.label-link {
+  cursor: pointer;
+}
+
+.contactContainer > a {
+  display: flex;
+  align-items: center;
+}
+
+.contactContainer > a > label {
+  margin-left: 5px;
+}
+
+.contactContainer > a > label:hover {
+  color: #0086FF
 }
