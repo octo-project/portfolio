@@ -1,61 +1,56 @@
 import vatsy from "../assets/vatsy_icon.png";
-// import todoApp from '../assets/TodoApp/logo.png'
-import FAQ from "../assets/Buyer Persona/FAQ.png";
-import Avis from "../assets/Buyer Persona/Avis.png";
-// import orderEase from '../assets/OrderEase/logo.png'
-import About from "../assets/Buyer Persona/About.png";
-import BPLogo from "../assets/Buyer Persona/Logo-BP.png";
-import Welcome from "../assets/Buyer Persona/Welcome.png";
-import Setting from "../assets/Buyer Persona/Setting.png";
-import Loading from "../assets/Buyer Persona/Loading.png";
-// import orderEaseError from '../assets/OrderEase/Error.png'
-import gestionFond from "../assets/GestionDeFond/logo.jpg";
-import Generator from "../assets/Buyer Persona/Generator.png";
-// import orderEaseFacture from '../assets/OrderEase/Facture.png'
-import GeneratedFile from "../assets/Buyer Persona/generated-file.png";
-// import orderEaseConfirmation from '../assets/OrderEase/Confirmation.png'
-// import orderEaseDetailsPlats from '../assets/OrderEase/DetailsPlats.png'
-import SuccessGenerate from "../assets/Buyer Persona/SuccessGenerate.png";
-import SuccessDownload from "../assets/Buyer Persona/SuccessDownload.png";
 
-import expense_tracking_home from "../assets/GestionDeFond/home.png";
-import expense_tracking_expenses from "../assets/GestionDeFond/expenses.png";
-import expense_tracking_finance_home from "../assets/GestionDeFond/finance-home.png";
-import expense_tracking_new_buy_plan from "../assets/GestionDeFond/new-buy-plan.png";
-import expense_tracking_delete_expense from "../assets/GestionDeFond/delete-expense.png";
-import expense_tracking_select_plan_detail from "../assets/GestionDeFond/plan-detail.png";
-import expense_tracking_select_plan_type from "../assets/GestionDeFond/select-plan-type.png";
-import expense_tracking_new_selling_goal from "../assets/GestionDeFond/new-selling-goal.png";
-import expense_tracking_expense_details_2 from "../assets/GestionDeFond/expense-details-2.png";
-import expense_tracking_delete_finance_goal from "../assets/GestionDeFond/delete-finance-goal.png";
-import expense_tracking_finance_sold_detail from "../assets/GestionDeFond/finance-sold-detail.png";
-import expense_tracking_creation_new_expense from "../assets/GestionDeFond/creation-new-expense.png";
-import expense_tracking_expense_chart_details from "../assets/GestionDeFond/expense-chart-details.png";
-import expense_tracking_creation_expense_1 from "../assets/GestionDeFond/creation-new-expense-amount.png";
-import expense_tracking_expense_category_filters from "../assets/GestionDeFond/expense-category-filters.png";
+import FAQ from "../assets/Buyer Persona/FAQ.webp";
+import Avis from "../assets/Buyer Persona/Avis.webp";
+import About from "../assets/Buyer Persona/About.webp";
+import BPLogo from "../assets/Buyer Persona/Logo-BP.webp";
+import Welcome from "../assets/Buyer Persona/Welcome.webp";
+import Setting from "../assets/Buyer Persona/Setting.webp";
+import Loading from "../assets/Buyer Persona/Loading.webp";
+import gestionFond from "../assets/GestionDeFond/logo.jpg";
+import Generator from "../assets/Buyer Persona/Generator.webp";
+import GeneratedFile from "../assets/Buyer Persona/generated-file.png";
+import SuccessGenerate from "../assets/Buyer Persona/SuccessGenerate.webp";
+import SuccessDownload from "../assets/Buyer Persona/SuccessDownload.webp";
+
+import expense_tracking_home from "../assets/GestionDeFond/home.webp";
+import expense_tracking_expenses from "../assets/GestionDeFond/expenses.webp";
+import expense_tracking_finance_home from "../assets/GestionDeFond/finance-home.webp";
+import expense_tracking_new_buy_plan from "../assets/GestionDeFond/new-buy-plan.webp";
+import expense_tracking_delete_expense from "../assets/GestionDeFond/delete-expense.webp";
+import expense_tracking_select_plan_detail from "../assets/GestionDeFond/plan-detail.webp";
+import expense_tracking_select_plan_type from "../assets/GestionDeFond/select-plan-type.webp";
+import expense_tracking_new_selling_goal from "../assets/GestionDeFond/new-selling-goal.webp";
+import expense_tracking_expense_details_2 from "../assets/GestionDeFond/expense-details-2.webp";
+import expense_tracking_delete_finance_goal from "../assets/GestionDeFond/delete-finance-goal.webp";
+import expense_tracking_finance_sold_detail from "../assets/GestionDeFond/finance-sold-detail.webp";
+import expense_tracking_creation_new_expense from "../assets/GestionDeFond/creation-new-expense.webp";
+import expense_tracking_expense_chart_details from "../assets/GestionDeFond/expense-chart-details.webp";
+import expense_tracking_creation_expense_1 from "../assets/GestionDeFond/creation-new-expense-amount.webp";
+import expense_tracking_expense_category_filters from "../assets/GestionDeFond/expense-category-filters.webp";
 
 //
-import vatsy_page_1 from "../assets/Vatsy/page_1.png";
-import vatsy_addition from "../assets/Vatsy/addition.png";
-import vatsy_liste_soupe from "../assets/Vatsy/liste_soupe.png";
-import vatsy_date_filter from "../assets/Vatsy/date_filter.png";
-import vatsy_see_invoice from "../assets/Vatsy/see_invoice.png";
-import vatsy_table_filter from "../assets/Vatsy/table_filter.png";
-import vatsy_ask_password from "../assets/Vatsy/ask_password.png";
-import vatsy_bol_renverser from "../assets/Vatsy/bol_renverser.png";
-import vatsy_purchase_filter from "../assets/Vatsy/purchase_filter.png";
-import vatsy_selection_quantity from "../assets/Vatsy/selection_quantity.png";
-import vatsy_category_de_depense from "../assets/Vatsy/category_de_depense.png";
-import vatsy_historique_de_vente from "../assets/Vatsy/historique_de_vente.png";
-import vatsy_historique_de_depense from "../assets/Vatsy/historique_de_depense.png";
+import vatsy_page_1 from "../assets/Vatsy/page_1.webp";
+import vatsy_addition from "../assets/Vatsy/addition.webp";
+import vatsy_liste_soupe from "../assets/Vatsy/liste_soupe.webp";
+import vatsy_date_filter from "../assets/Vatsy/date_filter.webp";
+import vatsy_see_invoice from "../assets/Vatsy/see_invoice.webp";
+import vatsy_table_filter from "../assets/Vatsy/table_filter.webp";
+import vatsy_ask_password from "../assets/Vatsy/ask_password.webp";
+import vatsy_bol_renverser from "../assets/Vatsy/bol_renverser.webp";
+import vatsy_purchase_filter from "../assets/Vatsy/purchase_filter.webp";
+import vatsy_selection_quantity from "../assets/Vatsy/selection_quantity.webp";
+import vatsy_category_de_depense from "../assets/Vatsy/category_de_depense.webp";
+import vatsy_historique_de_vente from "../assets/Vatsy/historique_de_vente.webp";
+import vatsy_historique_de_depense from "../assets/Vatsy/historique_de_depense.webp";
 
 import portfolio from "../assets/Portfolio Design V2/Assets/apple-touch-icon.png";
-import portfolio_home from "../assets/Portfolio Design V2/home.png";
-import portfolio_vatsy from "../assets/Portfolio Design V2/vatsy.png";
-import portfolio_buyer from "../assets/Portfolio Design V2/buyer.png";
-import portfolio_projects from "../assets/Portfolio Design V2/projects.png";
-import portfolio_vatsy_screen from "../assets/Portfolio Design V2/vatsy-screen.png";
-import portfolio_buyer_screen from "../assets/Portfolio Design V2/buyer-screen.png";
+import portfolio_home from "../assets/Portfolio Design V2/home.webp";
+import portfolio_vatsy from "../assets/Portfolio Design V2/vatsy.webp";
+import portfolio_buyer from "../assets/Portfolio Design V2/buyer.webp";
+import portfolio_projects from "../assets/Portfolio Design V2/projects.webp";
+import portfolio_vatsy_screen from "../assets/Portfolio Design V2/vatsy-screen.webp";
+import portfolio_buyer_screen from "../assets/Portfolio Design V2/buyer-screen.webp";
 
 export const useProjectConstant = () => {
   const Projects = [
