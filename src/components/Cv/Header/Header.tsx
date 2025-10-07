@@ -36,22 +36,27 @@ const Header: FC<HeaderProps> = (props) => {
       <div className="CvHeaderContainer">
         <div className="photoCv">
           <img
+            alt="no img"
+            width={300}
+            loading="lazy"
             src={MyCvPicture}
             style={{ zIndex: "-1 !important" }}
-            width={100}
-            alt="no img"
-            loading="lazy"
           />
         </div>
-        <div className="CvContent">
-          <div>
-            <span style={{ fontSize: "20px" }}>
-              TSIALONINA Heriniaina Mathieu
-            </span>
-            <Suspense fallback={<div>Loading ...</div>}>
-              <HeaderDescription text="cvDescription" className="" />
-            </Suspense>
-          </div>
+        <div className="CvContentName">
+          <span className="headertext">
+            <span style={{display: "block", fontSize: 38, fontWeight: 200}}>{formatText("me")}</span>
+            TSIALONINA Heriniaina Mathieu
+          </span>
+        </div>
+        <div className="CvContentDescription">
+          <Suspense fallback={<div>Loading ...</div>}>
+            <HeaderDescription text="cvDescription_1" className="text-secondary" />
+          </Suspense>
+        </div>
+        <div className="CvContentExp text-secondary">
+          <span className="f-68">05</span>
+          <span className="CvContentExpDescription">Ans d'experience</span>
         </div>
       </div>
       <div className="cvMenu">

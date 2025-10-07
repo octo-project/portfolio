@@ -1,4 +1,5 @@
 {
+  "me": "I' m,",
   "about": "About",
   "quality": "Quality",
   "greeting": "Hello!",
@@ -32,6 +33,7 @@
   "performanceText": "Regarding performance, according to Google PageSpeed Insights, the site performance is as follows",
   "performanceLink": "see the full analysis here.",
   "cvDescription": "Full Stack Developer with 4 years of experience, specializing in designing high-performance and scalable applications. Expert in React and Node.js, with strong expertise in performance optimization and software architecture.",
+  "cvDescription_1": "I design beautifully simple things, And i love what i do",
 
   "notFoundTitle": "Whoops! Page Not Found",
   "notFoundDescription": "It looks like the page you're looking for doesn't exist or has been moved. Don't worry, you can always go back to the homepage and continue your journey from there.",

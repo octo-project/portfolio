@@ -1,4 +1,5 @@
 {
+  "me": "Moi c'est,",
   "about": "À propos",
   "quality": "Qualité",
   "projects": "Projets",
@@ -32,6 +33,7 @@
   "performanceText": "Sur la partie performance, selon Google PageSpeed Insights, les performances du site sont les suivantes",
   "performanceLink": "voir l'analyse complète ici.",
   "cvDescription": "Développeur Full Stack avec 4 ans d'expérience, spécialisé dans la conception d'applications performantes et évolutives. Expert en React, Node.js, avec une forte expertise en optimisation des performances et en architecture logicielle",
+  "cvDescription_1": "Simplicité, élégance et performance : voilà ce que je fais",
 
   "notFoundTitle": "Oups ! Page Introuvable",
   "notFoundDescription": "Il semble que la page que vous cherchez n'existe pas ou a été déplacée. Pas de panique, vous pouvez retourner à la page d'accueil et continuer votre navigation.",
