@@ -1,5 +1,6 @@
 import "./styles.css";
 import About from "./About/About";
+import { Link } from "react-router-dom";
 import React, { FC, useState } from "react";
 import Performance from "./Performance/Performance";
 import Screenshoot from "./ScreenShoot/ScreenShoot";
@@ -34,8 +35,6 @@ const ProjectDetails: FC<ProjectDetailsProps> = (props) => {
     performance: <Performance />,
   };
 
-  console.log("project.withPerformance : ", project.withPerformance);
-
   return (
     <div className="projectDetail">
       <div className="detailsTitlesContainer">
@@ -46,12 +45,9 @@ const ProjectDetails: FC<ProjectDetailsProps> = (props) => {
           >
             {formatText("about")}
           </div>
-          <div
-            className="btnDetails animate"
-            onClick={(event) => handleSelectTab(event, "screenshoot")}
-          >
+          <Link to={`/screenshoots/${(project.name).toLowerCase()}`} className="btnDetails animate">
             {formatText("screenshoot")}
-          </div>
+          </Link>
           <div
             className={`btnDetails animate ${project.withPerformance === true ? "visible" : "invisible"}`}
             onClick={(event) => handleSelectTab(event, "performance")}
