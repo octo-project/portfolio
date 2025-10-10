@@ -64,6 +64,14 @@
   flex-direction: row;
 }
 
+@media (max-width: 500px) {
+  .detailsTitles {
+    gap: 10px;
+    width: 100%;
+    flex-direction: column; 
+  }
+}
+
 .detailsTitlesContainer {
   width: 100%;
   display: flex;
@@ -83,7 +91,7 @@
   border-radius: 5px;
   padding-bottom: 4px;
   background-color: #fff;
-  box-shadow: 2px 1px 1px 0px darkgrey;
+  box-shadow: 0px 1px 1px 0px darkgrey;
 }
 
 .detailLogoContainerx {
@@ -194,6 +202,12 @@ u:hover {
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: space-between;
+}
+
+@media (max-width: 500px) {
+  .screenShootWeb {
+    padding: 0;
+  }
 }
 
 .greenBg {

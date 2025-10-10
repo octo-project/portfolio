@@ -20,6 +20,7 @@
     grid-row-gap: 5;
     grid-template-rows: repeat(2, 1fr);
     grid-template-columns: repeat(4, 1fr);
+
 }
 
 .portfolio-grid {
@@ -41,4 +42,43 @@
     display: flex;
     overflow: auto;
     flex-direction: column
+}
+
+@media (max-width: 560px) {
+    .vatsy-grid, .portfolio-grid, .buyer-persona-grid {
+        row-gap: 30px;
+        grid-template-rows: auto;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .projectDetail-screenshoot{
+        padding: 0;
+    }
+
+    .buyer-img {
+        margin: auto;
+    }
+}
+
+@media (min-width: 768px) {
+    .vatsy-grid, .portfolio-grid, .buyer-persona-grid {
+        row-gap: 30px;
+        grid-template-rows: auto;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 1745px) {
+     .portfolio-grid {
+        grid-template-rows: auto;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .vatsy-grid {
+        grid-template-rows: auto;
+        grid-template-columns: repeat(4, 1fr);
+    }
+    .buyer-persona-grid  {
+        grid-template-rows: auto;
+        grid-template-columns: repeat(5, 1fr);
+    }
 }

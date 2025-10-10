@@ -159,16 +159,16 @@ const ScreenShoot: FC = () => {
             </h3>
             <div className="projectDetail-screenshoot">
                 <div className="screenShootWeb buyer-persona-grid" style={{display: projectName === "buyer" ? 'grid' : 'none'}}>
-                    <img src={FAQ} alt="FAQ Buyer persona" loading="lazy" width={200} onClick={()=> handleSeeImage(FAQ, "buyer")} className="animate-up" />
-                    <img src={Avis} alt="Avis Buyer persona" loading="lazy"  width={200} onClick={()=> handleSeeImage(Avis, "buyer")} className="animate-up"/>
-                    <img src={About} alt="About Buyer persona" loading="lazy"  width={200} onClick={()=> handleSeeImage(About, "buyer")} className="animate-up"/>
-                    <img src={Welcome} alt="Welcome Buyer persona" loading="lazy"  width={200} onClick={()=> handleSeeImage(Welcome, "buyer")} className="animate-up"/>
-                    <img src={Setting} alt="Setting Buyer persona" loading="lazy"  width={200} onClick={()=> handleSeeImage(Setting, "buyer")} className="animate-up"/>
-                    <img src={Loading} alt="Loading Buyer persona" loading="lazy" width={200} onClick={()=> handleSeeImage(Loading, "buyer")} className="animate-up" />
-                    <img src={Generator} alt="Generator Buyer persona" loading="lazy" width={200} onClick={()=> handleSeeImage(Generator, "buyer")} className="animate-up" />
-                    <img src={GeneratedFile} alt="GeneratedFile Buyer persona" loading="lazy"  width={200} onClick={()=> handleSeeImage(GeneratedFile, "buyer")} className="animate-up"/>
-                    <img src={SuccessGenerate} alt="SuccessGenerate Buyer persona" loading="lazy" width={200} onClick={()=> handleSeeImage(SuccessGenerate, "buyer")} className="animate-up" />
-                    <img src={SuccessDownload} alt="SuccessDownload Buyer persona" loading="lazy"  width={200} onClick={()=> handleSeeImage(SuccessDownload, "buyer")} className="animate-up"/>
+                    <img src={FAQ} alt="FAQ Buyer persona" loading="lazy" width={200} onClick={()=> handleSeeImage(FAQ, "buyer")} className="animate-up buyer-img " />
+                    <img src={Avis} alt="Avis Buyer persona" loading="lazy"  width={200} onClick={()=> handleSeeImage(Avis, "buyer")} className="animate-up buyer-img"/>
+                    <img src={About} alt="About Buyer persona" loading="lazy"  width={200} onClick={()=> handleSeeImage(About, "buyer")} className="animate-up buyer-img"/>
+                    <img src={Welcome} alt="Welcome Buyer persona" loading="lazy"  width={200} onClick={()=> handleSeeImage(Welcome, "buyer")} className="animate-up buyer-img"/>
+                    <img src={Setting} alt="Setting Buyer persona" loading="lazy"  width={200} onClick={()=> handleSeeImage(Setting, "buyer")} className="animate-up buyer-img"/>
+                    <img src={Loading} alt="Loading Buyer persona" loading="lazy" width={200} onClick={()=> handleSeeImage(Loading, "buyer")} className="animate-up buyer-img" />
+                    <img src={Generator} alt="Generator Buyer persona" loading="lazy" width={200} onClick={()=> handleSeeImage(Generator, "buyer")} className="animate-up buyer-img" />
+                    <img src={GeneratedFile} alt="GeneratedFile Buyer persona" loading="lazy"  width={200} onClick={()=> handleSeeImage(GeneratedFile, "buyer")} className="animate-up buyer-img"/>
+                    <img src={SuccessGenerate} alt="SuccessGenerate Buyer persona" loading="lazy" width={200} onClick={()=> handleSeeImage(SuccessGenerate, "buyer")} className="animate-up buyer-img" />
+                    <img src={SuccessDownload} alt="SuccessDownload Buyer persona" loading="lazy"  width={200} onClick={()=> handleSeeImage(SuccessDownload, "buyer")} className="animate-up buyer-img"/>
                 </div>
                 <div className="screenShootWeb vatsy-grid" style={{display: projectName === "gestion-fond" ? 'grid' : 'none'}}>
                     <img src={expense_tracking_home} alt="home gestion de fond" width={300} onClick={()=> handleSeeImage(expense_tracking_home, "gestion-fond")}  className="animate-up"/>
@@ -203,12 +203,12 @@ const ScreenShoot: FC = () => {
                     <img src={vatsy_historique_de_depense} alt="historique depense - vatsy"width={300} onClick={()=> handleSeeImage(vatsy_historique_de_depense, "vatsy")}  className="animate-up"/>
                 </div>
                 <div className="screenShootWeb portfolio-grid" style={{display: projectName === "portfolio" ? 'grid' : 'none'}}>
-                    <img src={portfolio_home} alt="home - portfolio" width={400} onClick={()=> handleSeeImage(portfolio_home, "portfolio")} className=" animate-up"/>
-                    <img src={portfolio_vatsy} alt="vatsy - portfolio" width={400} onClick={()=> handleSeeImage(portfolio_vatsy, "portfolio")} className=" animate-up"/>
-                    <img src={portfolio_buyer} alt="buyer - portfolio" width={400} onClick={()=> handleSeeImage(portfolio_buyer, "portfolio")} className=" animate-up"/>
-                    <img src={portfolio_projects} alt="projects - portfolio" width={400} onClick={()=> handleSeeImage(portfolio_projects, "portfolio")} className=" animate-up"/>
-                    <img src={portfolio_vatsy_screen} alt="vatsy screen - portfolio" width={400} onClick={()=> handleSeeImage(portfolio_vatsy_screen, "portfolio")} className=" animate-up"/>
-                    <img src={portfolio_buyer_screen} alt="buyer screen - portfolio" width={400} onClick={()=> handleSeeImage(portfolio_buyer_screen, "portfolio")} className=" animate-up"/>
+                    <img src={portfolio_home} alt="home - portfolio" width={300} onClick={()=> handleSeeImage(portfolio_home, "portfolio")} className=" animate-up"/>
+                    <img src={portfolio_vatsy} alt="vatsy - portfolio" width={300} onClick={()=> handleSeeImage(portfolio_vatsy, "portfolio")} className=" animate-up"/>
+                    <img src={portfolio_buyer} alt="buyer - portfolio" width={300} onClick={()=> handleSeeImage(portfolio_buyer, "portfolio")} className=" animate-up"/>
+                    <img src={portfolio_projects} alt="projects - portfolio" width={300} onClick={()=> handleSeeImage(portfolio_projects, "portfolio")} className=" animate-up"/>
+                    <img src={portfolio_vatsy_screen} alt="vatsy screen - portfolio" width={300} onClick={()=> handleSeeImage(portfolio_vatsy_screen, "portfolio")} className=" animate-up"/>
+                    <img src={portfolio_buyer_screen} alt="buyer screen - portfolio" width={300} onClick={()=> handleSeeImage(portfolio_buyer_screen, "portfolio")} className=" animate-up"/>
                 </div>
             </div>
 

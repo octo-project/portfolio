@@ -19,7 +19,7 @@ const PictureModal: FC<PictureModalProps> = (props) => {
           className="right absolute-btn animate-up"
           onClick={() => moovImage("right")}
         >
-          <img src={RightChevron} width={50} alt="chevron" loading="lazy" />
+          <img src={RightChevron} className="chevron-right" width={50} alt="chevron" loading="lazy" />
         </button>
         <button
           className="left absolute-btn animate-up"
@@ -39,7 +39,7 @@ const PictureModal: FC<PictureModalProps> = (props) => {
           loading="lazy"
           alt="big-modal"
           style={{maxWidth: "86%"}}
-          className={containerClass}
+          className={`${containerClass} picture-modal`}
         />
         <button
           className="picture-modal-close-btn animate-up"

@@ -7,8 +7,8 @@
   display: flex;
   position: fixed;
   align-items: center;
+  background: white;
   justify-content: center;
-  background-color: rgba(0, 0, 0, 0.5);
 }
 
 .absolute-btn {
@@ -34,7 +34,7 @@
 
 .modal-content {
   width: 100%;
-  height: 100%;
+  height: auto;
   display: flex;
   color: white;
   position: relative;
@@ -63,4 +63,24 @@
   margin-top: 9px;
   border-radius: 5px;
   background: #e33a3a;
+}
+
+@media (max-width: 500px) {
+  .picture-modal-close-btn{
+    width: 200px;
+    height: 45px;
+  }
+
+  .chevron-left, .chevron-right {
+    width: 25px;
+  }
+
+  .right, .left {
+    bottom: -2px;
+  }
+
+  .picture-modal{
+    max-height: 500px;
+    margin-bottom: 40px;
+  }
 }
