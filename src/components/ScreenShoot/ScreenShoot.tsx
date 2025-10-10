@@ -1,5 +1,5 @@
 import "./style.css";
-import { FC } from "react";
+import { FC, useState } from "react";
 import { Link, useParams } from "react-router-dom";
 import { useLocalFormatHook } from "../../common/hooks/localFormatHook";
 import { useProjectConstant } from "../../constant/projectListConstant";
@@ -52,6 +52,7 @@ import portfolio_buyer from "../../assets/Portfolio Design V2/buyer.webp";
 import portfolio_projects from "../../assets/Portfolio Design V2/projects.webp";
 import portfolio_vatsy_screen from "../../assets/Portfolio Design V2/vatsy-screen.webp";
 import portfolio_buyer_screen from "../../assets/Portfolio Design V2/buyer-screen.webp";
+import { PictureModal } from "../Modal";
 
 const ScreenShoot: FC = () => {
     const { Projects } = useProjectConstant();
@@ -67,6 +68,51 @@ const ScreenShoot: FC = () => {
     const logo = currentProject ? currentProject?.logo : undefined;
 
     console.log("projectrName = ", projectName);
+    const [setOfImages, setSetOfImages] = useState<any[]>([]);
+    const [openPictureModal, setOpenPictureModal] = useState<boolean>(false);
+    const [selectedPicture, setSelectedPicture] = useState<string|null>(null);
+
+    const sortArrayTheClickedElementPassFirst = (data: any[], el: string) => {
+        const res = data.sort((a, b ) => a === el ? -1 : b === el ? 1 : 0);
+        return res
+    }
+
+    const handleSeeImage = (imageSrc: string, projectName: string) => {
+        setSelectedPicture(imageSrc)
+        setOpenPictureModal(true)
+        switch (projectName) {
+            case "buyer" :
+                setSetOfImages(sortArrayTheClickedElementPassFirst([FAQ, Avis, About, Welcome, Setting, Loading, Generator, GeneratedFile, SuccessGenerate, SuccessDownload ],imageSrc))
+                break;
+            case "gestion-fond" :
+                setSetOfImages(sortArrayTheClickedElementPassFirst([expense_tracking_home, expense_tracking_expenses, expense_tracking_finance_home, expense_tracking_new_buy_plan, expense_tracking_delete_expense, expense_tracking_select_plan_detail, expense_tracking_select_plan_type, expense_tracking_new_selling_goal, expense_tracking_delete_finance_goal, expense_tracking_finance_sold_detail, expense_tracking_creation_new_expense, expense_tracking_expense_chart_details, expense_tracking_creation_expense_1, expense_tracking_expense_category_filters, expense_tracking_expense_details_2], imageSrc))
+                break;
+            case "vatsy" :
+                setSetOfImages(sortArrayTheClickedElementPassFirst([vatsy_page_1, vatsy_addition, vatsy_liste_soupe, vatsy_date_filter, vatsy_see_invoice, vatsy_table_filter, vatsy_ask_password, vatsy_bol_renverser,  vatsy_purchase_filter, vatsy_selection_quantity, vatsy_category_de_depense, vatsy_historique_de_vente, vatsy_historique_de_depense],imageSrc))
+                break;
+            case "portfolio" :
+                setSetOfImages(sortArrayTheClickedElementPassFirst([portfolio_home, portfolio_vatsy, portfolio_buyer, portfolio_projects, portfolio_vatsy_screen, portfolio_buyer_screen],imageSrc))
+                break;
+            default:
+                break;
+        }
+    }
+
+    const handleCloseModalPicture = () => setOpenPictureModal(false);
+
+    const moveImage = (direction: string) => {
+        if(selectedPicture) {
+            const indexOfPicture = setOfImages.findIndex((el) => el === selectedPicture)
+            const maxIndex = setOfImages.length - 1;
+
+            const newIndex = direction === "right" ? indexOfPicture + 1 : indexOfPicture - 1;
+            
+            const correctIndex = newIndex < 0 ? maxIndex : newIndex > maxIndex ? 0 : newIndex;
+            console.log("correct index : ", correctIndex);
+            
+            setSelectedPicture(setOfImages[correctIndex])
+        }
+    }
 
     return  (
         <div className="containerProject">
@@ -113,58 +159,67 @@ const ScreenShoot: FC = () => {
             </h3>
             <div className="projectDetail-screenshoot">
                 <div className="screenShootWeb buyer-persona-grid" style={{display: projectName === "buyer" ? 'grid' : 'none'}}>
-                    <img src={FAQ} alt="FAQ Buyer persona" loading="lazy" width={200} className="animate-up" />
-                    <img src={Avis} alt="Avis Buyer persona" loading="lazy"  width={200} className="animate-up"/>
-                    <img src={About} alt="About Buyer persona" loading="lazy"  width={200} className="animate-up"/>
-                    <img src={Welcome} alt="Welcome Buyer persona" loading="lazy"  width={200} className="animate-up"/>
-                    <img src={Setting} alt="Setting Buyer persona" loading="lazy"  width={200} className="animate-up"/>
-                    <img src={Loading} alt="Loading Buyer persona" loading="lazy" width={200} className="animate-up" />
-                    <img src={Generator} alt="Generator Buyer persona" loading="lazy" width={200} className="animate-up" />
-                    <img src={GeneratedFile} alt="GeneratedFile Buyer persona" loading="lazy"  width={200} className="animate-up"/>
-                    <img src={SuccessGenerate} alt="SuccessGenerate Buyer persona" loading="lazy" width={200} className="animate-up" />
-                    <img src={SuccessDownload} alt="SuccessDownload Buyer persona" loading="lazy"  width={200} className="animate-up"/>
+                    <img src={FAQ} alt="FAQ Buyer persona" loading="lazy" width={200} onClick={()=> handleSeeImage(FAQ, "buyer")} className="animate-up" />
+                    <img src={Avis} alt="Avis Buyer persona" loading="lazy"  width={200} onClick={()=> handleSeeImage(Avis, "buyer")} className="animate-up"/>
+                    <img src={About} alt="About Buyer persona" loading="lazy"  width={200} onClick={()=> handleSeeImage(About, "buyer")} className="animate-up"/>
+                    <img src={Welcome} alt="Welcome Buyer persona" loading="lazy"  width={200} onClick={()=> handleSeeImage(Welcome, "buyer")} className="animate-up"/>
+                    <img src={Setting} alt="Setting Buyer persona" loading="lazy"  width={200} onClick={()=> handleSeeImage(Setting, "buyer")} className="animate-up"/>
+                    <img src={Loading} alt="Loading Buyer persona" loading="lazy" width={200} onClick={()=> handleSeeImage(Loading, "buyer")} className="animate-up" />
+                    <img src={Generator} alt="Generator Buyer persona" loading="lazy" width={200} onClick={()=> handleSeeImage(Generator, "buyer")} className="animate-up" />
+                    <img src={GeneratedFile} alt="GeneratedFile Buyer persona" loading="lazy"  width={200} onClick={()=> handleSeeImage(GeneratedFile, "buyer")} className="animate-up"/>
+                    <img src={SuccessGenerate} alt="SuccessGenerate Buyer persona" loading="lazy" width={200} onClick={()=> handleSeeImage(SuccessGenerate, "buyer")} className="animate-up" />
+                    <img src={SuccessDownload} alt="SuccessDownload Buyer persona" loading="lazy"  width={200} onClick={()=> handleSeeImage(SuccessDownload, "buyer")} className="animate-up"/>
                 </div>
                 <div className="screenShootWeb vatsy-grid" style={{display: projectName === "gestion-fond" ? 'grid' : 'none'}}>
-                    <img src={expense_tracking_home} alt="home gestion de fond" width={300}  className="animate-up"/>
-                    <img src={expense_tracking_expenses} alt="expenses gestion de fond" width={300} className="animate-up"/>
-                    <img src={expense_tracking_finance_home} alt="finance home gestion de fond"  width={300} className="animate-up"/>
-                    <img src={expense_tracking_new_buy_plan} alt="buy plan gestion de fond"  width={300} className="animate-up"/>
-                    <img src={expense_tracking_delete_expense} alt="delete expense gestion de fond"  width={300} className="animate-up"/>
-                    <img src={expense_tracking_select_plan_detail} alt="plan detail gestion de fond"  width={300} className="animate-up"/>
-                    <img src={expense_tracking_select_plan_type} alt="plan type gestion de fond"  width={300} className="animate-up"/>
-                    <img src={expense_tracking_new_selling_goal} alt="selling goal gestion de fond"  width={300} className="animate-up"/>
-                    <img src={expense_tracking_delete_finance_goal} alt="delete finance goal gestion de fond"  width={300} className="animate-up"/>
-                    <img src={expense_tracking_finance_sold_detail} alt="finance sold detail - gestion de fond"  width={300} className="animate-up"/>
-                    <img src={expense_tracking_creation_new_expense} alt="new expense - gestion de fond"  width={300} className="animate-up"/>
-                    <img src={expense_tracking_expense_chart_details} alt="chart details - gestion de fond"  width={300} className="animate-up"/>
-                    <img src={expense_tracking_creation_expense_1} alt="creation expense - gestion de fond" width={300} className="animate-up" />
-                    <img src={expense_tracking_expense_category_filters} alt="category filters - gestion de fond"  width={300} className="animate-up"/>
-                    <img src={expense_tracking_expense_details_2} alt="detail - gestion de fond"  width={300} className="animate-up"/>   
+                    <img src={expense_tracking_home} alt="home gestion de fond" width={300} onClick={()=> handleSeeImage(expense_tracking_home, "gestion-fond")}  className="animate-up"/>
+                    <img src={expense_tracking_expenses} alt="expenses gestion de fond" width={300} onClick={()=> handleSeeImage(expense_tracking_expenses, "gestion-fond")} className="animate-up"/>
+                    <img src={expense_tracking_finance_home} alt="finance home gestion de fond"  width={300} onClick={()=> handleSeeImage(expense_tracking_finance_home, "gestion-fond")} className="animate-up"/>
+                    <img src={expense_tracking_new_buy_plan} alt="buy plan gestion de fond"  width={300} onClick={()=> handleSeeImage(expense_tracking_new_buy_plan, "gestion-fond")} className="animate-up"/>
+                    <img src={expense_tracking_delete_expense} alt="delete expense gestion de fond"  width={300} onClick={()=> handleSeeImage(expense_tracking_delete_expense, "gestion-fond")} className="animate-up"/>
+                    <img src={expense_tracking_select_plan_detail} alt="plan detail gestion de fond"  width={300} onClick={()=> handleSeeImage(expense_tracking_select_plan_detail, "gestion-fond")} className="animate-up"/>
+                    <img src={expense_tracking_select_plan_type} alt="plan type gestion de fond"  width={300} onClick={()=> handleSeeImage(expense_tracking_select_plan_type, "gestion-fond")} className="animate-up"/>
+                    <img src={expense_tracking_new_selling_goal} alt="selling goal gestion de fond"  width={300} onClick={()=> handleSeeImage(expense_tracking_new_selling_goal, "gestion-fond")} className="animate-up"/>
+                    <img src={expense_tracking_delete_finance_goal} alt="delete finance goal gestion de fond"  width={300} onClick={()=> handleSeeImage(expense_tracking_delete_finance_goal, "gestion-fond")} className="animate-up"/>
+                    <img src={expense_tracking_finance_sold_detail} alt="finance sold detail - gestion de fond"  width={300} onClick={()=> handleSeeImage(expense_tracking_finance_sold_detail, "gestion-fond")} className="animate-up"/>
+                    <img src={expense_tracking_creation_new_expense} alt="new expense - gestion de fond"  width={300} onClick={()=> handleSeeImage(expense_tracking_creation_new_expense, "gestion-fond")} className="animate-up"/>
+                    <img src={expense_tracking_expense_chart_details} alt="chart details - gestion de fond"  width={300} onClick={()=> handleSeeImage(expense_tracking_expense_chart_details, "gestion-fond")} className="animate-up"/>
+                    <img src={expense_tracking_creation_expense_1} alt="creation expense - gestion de fond" width={300} onClick={()=> handleSeeImage(expense_tracking_creation_expense_1, "gestion-fond")} className="animate-up" />
+                    <img src={expense_tracking_expense_category_filters} alt="category filters - gestion de fond"  width={300} onClick={()=> handleSeeImage(expense_tracking_expense_category_filters, "gestion-fond")} className="animate-up"/>
+                    <img src={expense_tracking_expense_details_2} alt="detail - gestion de fond"  width={300} onClick={()=> handleSeeImage(expense_tracking_expense_details_2, "gestion-fond")} className="animate-up"/>   
                 </div>
                 <div className="screenShootWeb vatsy-grid" style={{display: projectName === "vatsy" ? 'grid' : 'none'}}>
-                    <img src={vatsy_page_1} alt="page 1 - vatsy" width={300} className="animate-up"/>
-                    <img src={vatsy_addition} alt="addition - vatsy" width={300}  className="animate-up"/>
-                    <img src={vatsy_liste_soupe} alt="liste soupe - vatsy" width={300} className="animate-up"/>
-                    <img src={vatsy_date_filter} alt="date filter - vatsy" width={300} className="animate-up"/>
-                    <img src={vatsy_see_invoice} alt="invoice - vatsy" width={300} className="animate-up"/>
-                    <img src={vatsy_table_filter} alt="table filter - vatsy" width={300} className="animate-up"/>
-                    <img src={vatsy_ask_password} alt="password - vatsy" width={300} className="animate-up"/>
-                    <img src={vatsy_bol_renverser} alt="bol - vatsy" width={300} className="animate-up"/>
-                    <img src={vatsy_purchase_filter} alt="purchase - vatsy" width={300} className="animate-up"/>
-                    <img src={vatsy_selection_quantity} alt="selection quantity - vatsy" width={300} className="animate-up"/>
-                    <img src={vatsy_category_de_depense} alt="category depense - vatsy" width={300} className="animate-up"/>
-                    <img src={vatsy_historique_de_vente} alt="historique vente - vatsy" width={300} className="animate-up"/>
-                    <img src={vatsy_historique_de_depense} alt="historique depense - vatsy"width={300}  className="animate-up"/>
+                    <img src={vatsy_page_1} alt="page 1 - vatsy" width={300} onClick={()=> handleSeeImage(vatsy_page_1, "vatsy")} className="animate-up"/>
+                    <img src={vatsy_addition} alt="addition - vatsy" width={300} onClick={()=> handleSeeImage(vatsy_addition, "vatsy")}  className="animate-up"/>
+                    <img src={vatsy_liste_soupe} alt="liste soupe - vatsy" width={300} onClick={()=> handleSeeImage(vatsy_liste_soupe, "vatsy")} className="animate-up"/>
+                    <img src={vatsy_date_filter} alt="date filter - vatsy" width={300} onClick={()=> handleSeeImage(vatsy_date_filter, "vatsy")} className="animate-up"/>
+                    <img src={vatsy_see_invoice} alt="invoice - vatsy" width={300} onClick={()=> handleSeeImage(vatsy_see_invoice, "vatsy")} className="animate-up"/>
+                    <img src={vatsy_table_filter} alt="table filter - vatsy" width={300} onClick={()=> handleSeeImage(vatsy_table_filter, "vatsy")} className="animate-up"/>
+                    <img src={vatsy_ask_password} alt="password - vatsy" width={300} onClick={()=> handleSeeImage(vatsy_ask_password, "vatsy")} className="animate-up"/>
+                    <img src={vatsy_bol_renverser} alt="bol - vatsy" width={300} onClick={()=> handleSeeImage(vatsy_bol_renverser, "vatsy")} className="animate-up"/>
+                    <img src={vatsy_purchase_filter} alt="purchase - vatsy" width={300} onClick={()=> handleSeeImage(vatsy_purchase_filter, "vatsy")} className="animate-up"/>
+                    <img src={vatsy_selection_quantity} alt="selection quantity - vatsy" width={300} onClick={()=> handleSeeImage(vatsy_selection_quantity, "vatsy")} className="animate-up"/>
+                    <img src={vatsy_category_de_depense} alt="category depense - vatsy" width={300} onClick={()=> handleSeeImage(vatsy_category_de_depense, "vatsy")} className="animate-up"/>
+                    <img src={vatsy_historique_de_vente} alt="historique vente - vatsy" width={300} onClick={()=> handleSeeImage(vatsy_historique_de_vente, "vatsy")} className="animate-up"/>
+                    <img src={vatsy_historique_de_depense} alt="historique depense - vatsy"width={300} onClick={()=> handleSeeImage(vatsy_historique_de_depense, "vatsy")}  className="animate-up"/>
                 </div>
                 <div className="screenShootWeb portfolio-grid" style={{display: projectName === "portfolio" ? 'grid' : 'none'}}>
-                    <img src={portfolio_home} alt="home - portfolio" width={400} className=" animate-up"/>
-                    <img src={portfolio_vatsy} alt="vatsy - portfolio" width={400} className=" animate-up"/>
-                    <img src={portfolio_buyer} alt="buyer - portfolio" width={400} className=" animate-up"/>
-                    <img src={portfolio_projects} alt="projects - portfolio" width={400} className=" animate-up"/>
-                    <img src={portfolio_vatsy_screen} alt="vatsy screen - portfolio" width={400} className=" animate-up"/>
-                    <img src={portfolio_buyer_screen} alt="buyer screen - portfolio" width={400} className=" animate-up"/>
+                    <img src={portfolio_home} alt="home - portfolio" width={400} onClick={()=> handleSeeImage(portfolio_home, "portfolio")} className=" animate-up"/>
+                    <img src={portfolio_vatsy} alt="vatsy - portfolio" width={400} onClick={()=> handleSeeImage(portfolio_vatsy, "portfolio")} className=" animate-up"/>
+                    <img src={portfolio_buyer} alt="buyer - portfolio" width={400} onClick={()=> handleSeeImage(portfolio_buyer, "portfolio")} className=" animate-up"/>
+                    <img src={portfolio_projects} alt="projects - portfolio" width={400} onClick={()=> handleSeeImage(portfolio_projects, "portfolio")} className=" animate-up"/>
+                    <img src={portfolio_vatsy_screen} alt="vatsy screen - portfolio" width={400} onClick={()=> handleSeeImage(portfolio_vatsy_screen, "portfolio")} className=" animate-up"/>
+                    <img src={portfolio_buyer_screen} alt="buyer screen - portfolio" width={400} onClick={()=> handleSeeImage(portfolio_buyer_screen, "portfolio")} className=" animate-up"/>
                 </div>
             </div>
+
+            {openPictureModal && selectedPicture && (
+                <PictureModal
+                    containerClass={""}
+                    moovImage={moveImage}
+                    picture={selectedPicture}
+                    closeModal={handleCloseModalPicture}
+                />
+            )}
         </div>    
     )
 }
