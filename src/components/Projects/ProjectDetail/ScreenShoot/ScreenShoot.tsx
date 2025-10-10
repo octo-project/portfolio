@@ -12,6 +12,7 @@ const Screenshoot: FC<ScreenShootProps> = (props) => {
   const [selectedPicture, setSelectedPicture] = useState<string | null>(null);
 
   const { screenShoots, screenShootType } = props;
+
   const containerClass =
     screenShootType === "mobile" ? "little-img" : "big-img";
   // const containerClass = screenShootType === 'Mobile' ? 'screenShootMobile' : 'screenShootWeb'
@@ -43,10 +44,10 @@ const Screenshoot: FC<ScreenShootProps> = (props) => {
   return (
     <div className="projectDetails">
       <div className="screenShootWeb">
-        {screenShoots.map((item, index) => {
+        {screenShoots.map((item) => {
           return (
             <PictureCard
-              key={index}
+              key={item.image}
               image={item.image}
               label={item.label}
               handleSeePicture={handleSeePicture}

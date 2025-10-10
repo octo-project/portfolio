@@ -1,0 +1,84 @@
+.buyer-persona-grid{
+    display: grid;
+    row-gap: 25px;
+    grid-row-gap: 5;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(5, 1fr);
+}
+
+.expense-grid{
+    display: grid;
+    row-gap: 25px;
+    grid-row-gap: 5;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(5, 100px);
+}
+
+.vatsy-grid {
+    display: grid;
+    row-gap: 60px;
+    grid-row-gap: 5;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+
+}
+
+.portfolio-grid {
+    display: grid;
+    row-gap: 60px;
+    grid-row-gap: 5;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.portfolio-grid > img, .vatsy-grid > img {
+    box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.15);
+}
+
+.projectDetail-screenshoot {
+    gap: 5;
+    height: 87vh; 
+    padding: 26px;
+    display: flex;
+    overflow: auto;
+    flex-direction: column
+}
+
+@media (max-width: 560px) {
+    .vatsy-grid, .portfolio-grid, .buyer-persona-grid {
+        row-gap: 30px;
+        grid-template-rows: auto;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .projectDetail-screenshoot{
+        padding: 0;
+    }
+
+    .buyer-img {
+        margin: auto;
+    }
+}
+
+@media (min-width: 768px) {
+    .vatsy-grid, .portfolio-grid, .buyer-persona-grid {
+        row-gap: 30px;
+        grid-template-rows: auto;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 1745px) {
+     .portfolio-grid {
+        grid-template-rows: auto;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .vatsy-grid {
+        grid-template-rows: auto;
+        grid-template-columns: repeat(4, 1fr);
+    }
+    .buyer-persona-grid  {
+        grid-template-rows: auto;
+        grid-template-columns: repeat(5, 1fr);
+    }
+}

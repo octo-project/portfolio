@@ -118,7 +118,7 @@ h4 {
     flex-direction: column;
   }
   .projectDetail {
-    margin-left: -26px;
+    margin-left: 0;
     padding-left: 0px;
   }
   .projectDetails {
@@ -209,7 +209,7 @@ h4 {
     flex-direction: column;
   }
   .projectDetail {
-    margin-left: -26px;
+    margin-left: 0;
     padding-left: 0px;
   }
   .projectDetails {
@@ -265,7 +265,7 @@ h4 {
     flex-direction: column;
   }
   .projectDetail {
-    margin-left: -26px;
+    margin-left: 0;
     padding-left: 0px;
   }
   .projectDetails {

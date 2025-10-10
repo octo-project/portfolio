@@ -3,6 +3,7 @@ import { store } from "./redux/store";
 import Provider from "./provider/index";
 import Project from "./components/Projects";
 import NotFound from "./components/NotFound";
+import ScreenShoot from "./components/ScreenShoot";
 import Contact from "./components/Contact/Contact";
 import Container from "./common/container/Container";
 import { Provider as ReduxProvider } from "react-redux";
@@ -18,6 +19,7 @@ const App = () => {
             <Switch>
               <Route exact path="/" component={Container(Cv)} />
               <Route exact path="/projects" component={Container(Project)} />
+              <Route exact path="/screenshoots/:name" component={Container(ScreenShoot)} />
               <Route exact path="/contact" component={Container(Contact)} />
               <Route
                 exact
